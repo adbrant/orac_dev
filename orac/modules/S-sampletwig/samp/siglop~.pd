@@ -1,0 +1,10 @@
+#N canvas 0 50 450 300 10;
+#X obj 116 87 sig~ \$1;
+#X obj 110 27 inlet;
+#X obj 118 145 outlet~;
+#X obj 127 110 lop~ 4;
+#X obj 301 71 r samp_ctrlsmooth-\$2;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 1;

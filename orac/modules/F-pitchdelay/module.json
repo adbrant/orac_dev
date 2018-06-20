@@ -1,0 +1,24 @@
+{
+    "name" : "F-pitchdelay",
+    "display" : "PitchDelay",
+    "parameters" :  [ 
+        ["int","pdelay_semi","Semitones",-24,24,12],
+        ["int","pdelay_cent","Cents",-50,50,0],
+        ["float","pdelay_feedback","Feedback",0,1,0.25],
+        ["float","pdelay_mix","Dry/Wet",0,1,0.5],
+        ["int","pdelay_len","Length ",100,4000,1000],
+        ["int","pdelay_dir","FW/RV",0,1,0],
+        ["int","pdelay_heads","Heads",1,3,3],
+        ["float","pdelay_pfilt","Pitch Prefilt",0,15000,15000],        
+        ["float","pdelay_lfospd","LFO Speed",0.01,20,0.5],
+        ["float","pdelay_lfodep","LFO Depth",0,1,0],
+        ["int","pdelay_midictrl","MIDI Control",0,4,0]
+                
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["pdelay_semi","pdelay_feedback","pdelay_len","pdelay_mix"]],
+        ["pg_2","Heads",["pdelay_dir","pdelay_heads","pdelay_midictrl"]],
+        ["pg_3","Mod",["pdelay_pfilt","pdelay_lfospd","pdelay_lfodep","pdelay_cent"]]
+    ]
+}
+

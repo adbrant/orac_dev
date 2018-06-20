@@ -1,0 +1,13 @@
+{
+    "name" : "U-audio2midi",
+    "display" : "audio2midi",
+    "parameters" :  [ 
+        ["int","midithru","Midi Thru",0,1,0],
+        ["float","passthru_vol","Passthru Volume",0,1,1],
+        ["float","threshold","Threshold",0,50,20]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["midithru","passthru_vol","threshold"]]
+    ]
+}
+

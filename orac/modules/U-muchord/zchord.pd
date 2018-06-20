@@ -1,9 +1,9 @@
-#N canvas 8 50 1356 569 10;
+#N canvas 526 119 1356 633 10;
 #X text 24 19 basic polyphonic patch with 8 voices;
 #X obj 169 240 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 72 235 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 73 256;
 #X obj 72 264 t f f f;
 #X obj 249 423 +;
 #X obj 52 406 +;
@@ -13,10 +13,10 @@
 #X msg 458 367 1;
 #X obj 423 323 r sevenon;
 #X obj 400 345 r sevenoff;
-#N canvas 0 50 1360 725 chordlogic 1;
+#N canvas 0 50 1360 725 chordlogic 0;
 #X obj 205 172 % 12;
 #X obj 208 196 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 1 256;
 #X obj 452 684 outlet;
 #X obj 501 692 outlet;
 #X obj 613 687 outlet;
@@ -48,7 +48,7 @@
 #X obj 233 6 inlet;
 #X obj 348 -6 r recalc;
 #X obj 104 57 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 73 256;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array harm 672 float 3;
 #A 0 0 4 7 11 0 4 7 11 0 3 7 10 0 4 7 11 0 3 7 10 0 4 7 11 0 3 6 10
@@ -97,7 +97,7 @@
 #X obj 73 421 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 313 459 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 11 256;
 #X obj 235 256 +;
 #X obj 56 382 tabread harm;
 #X obj 167 379 tabread harm;
@@ -196,15 +196,15 @@ baroque7 jfunk mu;
 #X connect 64 0 3 0;
 #X connect 65 0 5 0;
 #X restore 43 327 pd chordlogic;
-#X obj 129 150 notein_mono;
+#X obj 149 98 notein_mono;
 #X obj 242 271 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 73 256;
 #X obj 331 336 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 84 256;
 #X obj 245 319 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 77 256;
 #X obj 315 276 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 80 256;
 #X obj 230 211 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 85 107 inlet;
@@ -221,6 +221,14 @@ baroque7 jfunk mu;
 #X obj 663 339 r muchord_harm-\$1;
 #X obj 685 262 r muchord_offset-\$1;
 #X obj 651 463 r muchord_inv-\$1;
+#X msg 110 62 72 127;
+#X msg 110 62 72 127;
+#X msg 307 71 72 0;
+#X obj 269 181 print note;
+#X obj 549 175 print velo;
+#X msg 351 55 73 0;
+#X obj 236 576 print noteout;
+#X msg 195 61 73 127;
 #X connect 2 0 3 0;
 #X connect 3 1 12 0;
 #X connect 3 2 4 1;
@@ -240,12 +248,14 @@ baroque7 jfunk mu;
 #X connect 12 2 7 0;
 #X connect 12 3 4 0;
 #X connect 13 0 2 0;
+#X connect 13 0 35 0;
 #X connect 13 1 1 0;
 #X connect 13 1 18 0;
 #X connect 13 1 22 1;
 #X connect 13 1 23 1;
 #X connect 13 1 24 1;
 #X connect 13 1 25 1;
+#X connect 13 1 36 0;
 #X connect 14 0 22 0;
 #X connect 15 0 25 0;
 #X connect 16 0 24 0;
@@ -253,10 +263,18 @@ baroque7 jfunk mu;
 #X connect 19 0 13 0;
 #X connect 21 0 28 1;
 #X connect 22 0 20 0;
+#X connect 22 0 38 0;
 #X connect 23 0 20 0;
+#X connect 23 0 38 0;
 #X connect 24 0 20 0;
+#X connect 24 0 38 0;
 #X connect 25 0 26 0;
+#X connect 25 0 38 0;
 #X connect 26 0 27 0;
 #X connect 26 1 28 0;
 #X connect 27 0 20 0;
 #X connect 28 0 27 1;
+#X connect 32 0 13 0;
+#X connect 34 0 13 0;
+#X connect 37 0 13 0;
+#X connect 39 0 13 0;

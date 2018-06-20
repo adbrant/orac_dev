@@ -1,0 +1,25 @@
+{
+    "name" : "F-shimmer",
+    "display" : "Shimmer",
+    "parameters" :  [ 
+        ["int","shim_shift","Shift Mode",0,4,0],
+        ["float","shim_revdamp","Rev Damping",0,2,0.2],
+        ["float","shim_feedback","Feedback",0,1,0.5],
+        ["float","shim_drywet","Dry/Wet",0,1,0.5],
+        ["time","shim_pdelay","(unused)Pitch Delay ",100,2000,1000],
+        ["float","shim_pdetune","(unused)Pitch Detune",0,1,0],
+        ["float","shim_pmix","Pitch Dry/Wet",0,1,0],
+        ["float","shim_pfilt","Pitch Prefilt",0,15000,15000],        
+        ["float","shim_revmix","Rev Dry/Wet",0,1,0.5],
+        ["float","shim_revsize","Rev Size",0.1,1.1,0.8],
+        ["float","shim_revwidth","Rev Width",0,1,0.5],
+        ["freq","shim_revfilt","Rev Prefilt",0,3000,15000]
+                
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["shim_shift","shim_revlen","shim_fdbck","shim_drywet"]],
+        ["pg_pitch","Pitch",["shim_pdelay","shim_pdetune","shim_pmix","shim_pfilt"]],
+        ["pg_reverb","Reverb",["shim_revdry","shim_revsize","shim_revhicut","shim_revfilt"]]
+    ]
+}
+
