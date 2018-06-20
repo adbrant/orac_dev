@@ -1,0 +1,6 @@
+2997041ebc25f426086dd27c33dfc47d46c905f7  S-stringmachine/blsaw.pd
+a1c7ce43f888bf31d540ef256d64a570ad217b7e  S-stringmachine/deploy.sh
+72e91244ebc4f45bee26590ccd4d761cc98659bc  S-stringmachine/module.pd
+6cb10e6da8c7f51d16ecd523966819d118bcb5a6  S-stringmachine/module.json
+3fa065968747f628feed2323175ebb2b1e19cbab  S-stringmachine/as-simple.pd
+8f26403d2b82ad06ad31cf7e86cafa3f21128046  S-stringmachine/moog~.pd_linux

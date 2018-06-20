@@ -1,0 +1,31 @@
+#N canvas 240 295 1360 725 10;
+#X obj 237 171 int;
+#X obj 230 147 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 227 87 sel 0;
+#X msg 149 204 \$1 100;
+#X msg 222 204 \$1 0;
+#X obj 273 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 140 134 int;
+#X obj 144 160 t f b;
+#X obj 125 18 inlet;
+#X obj 152 263 outlet;
+#X obj 236 27 inlet;
+#X obj 224 61 pipe 10;
+#X text 303 45 delay here to prevent excessive CPU usage on notedown
+;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 1 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 9 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 3 0;
+#X connect 7 0 0 1;
+#X connect 7 1 0 0;
+#X connect 8 0 6 1;
+#X connect 10 0 11 0;
+#X connect 11 0 2 0;

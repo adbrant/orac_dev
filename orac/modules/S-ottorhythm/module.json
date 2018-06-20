@@ -1,0 +1,27 @@
+{
+    "name" : "U-ottorhythm",
+    "display" : "OttoRhythm",
+    "parameters" :  [ 
+        ["int","otto_style","Style",0,29,0],
+        ["int","otto_kit","Drumkit",0,9,0],
+        ["int","otto_volume","Drum Volume",0,99,50],
+        ["bool","otto_play","Play",1],
+        ["bool","otto_chrd_on","Chord",1],
+        ["int","otto_chrd_vel","Velocity",1,127,100],
+        ["time","otto_chrd_len","Length",20,2000,500],
+        ["int","otto_chrd_oct","Octave",-2,2,0],
+        ["bool","otto_bass_on","Bass",1],
+        ["int","otto_bass_vel","Velocity",1,127,100],
+        ["time","otto_bass_len","Length",20,2000,500],
+        ["int","otto_bass_oct","Octave",-2,2,0],
+        ["bool","otto_midi_thru","Midi Thru",0],
+        ["bool","otto_hold","Hold",0]        
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["otto_style","otto_kit","otto_volume","otto_play"]],
+        ["pg_chord","Chord",["otto_chrd_on","otto_chrd_vel","otto_chrd_len","otto_chrd_oct"]],
+        ["pg_bass","Bass",["otto_bass_on","otto_bass_vel","otto_bass_len","otto_bass_oct"]],
+        ["pg_config","Config",["otto_midi_thru","otto_hold"]]      
+    ]
+}
+

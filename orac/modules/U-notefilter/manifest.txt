@@ -1,0 +1,3 @@
+a1c7ce43f888bf31d540ef256d64a570ad217b7e  U-notefilter/deploy.sh
+1df5fbeb3410bd20b9f50600573f9c2603d75be1  U-notefilter/module.pd
+719fbc6540df20fb987942a5edc0c1a9f29c957c  U-notefilter/module.json

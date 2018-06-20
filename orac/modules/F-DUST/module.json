@@ -1,0 +1,13 @@
+{
+    "name" : "F-dust",
+    "display" : "dust",
+    "parameters" :  [
+      ["pct","dust-density","density",0,100,1],
+      ["pct","noise","noise",0,100,0],
+      ["freq","rate","rate",0.1,5,0.2],
+      ["pct","depth","depth",0,100,50]
+    ],
+    "pages" : [
+      ["pg_main","DUST",["dust-density","noise","rate","depth"]]
+    ]
+}

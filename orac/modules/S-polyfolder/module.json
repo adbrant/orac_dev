@@ -1,0 +1,23 @@
+{
+    "name" : "S-polyfolder",
+    "display" : "Polyfolder",
+    "parameters" :  [ 
+        ["int","folder_offset","Semitone Offset",-24,24,0],
+        ["int","folder_type","Type",0,3,0],
+        ["pct","folder_vol","Volume",0,100,50],
+        ["pct","folder_attack","Attack",0,100,50],
+        ["pct","folder_decay","Decay",0,100,50],
+        ["pct","folder_sustain","Sustain",0,100,50],
+        ["pct","folder_folding","Folding",0,100,50],
+        ["freq","folder_vrate","Vibr Rate",0.01,20,1],
+        ["pct","folder_vdepth","Vibr Depth",0,100,0],
+        ["freq","folder_mrate","Mod Rate",0.01,10,1],
+        ["pct","folder_mdepth","Mod Depth",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["folder_offset","folder_type","folder_folding","folder_vol"]],
+        ["pg_env","Env",["folder_attack","folder_decay","folder_sustain"]],
+        ["pg_mod","Mod",["folder_vrate","folder_vdepth","folder_mrate","folder_mdepth"]]
+    ]
+}
+

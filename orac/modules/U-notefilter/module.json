@@ -1,0 +1,11 @@
+{
+    "name" : "U-notefilter",
+    "display" : "Note Filter",
+    "parameters" :  [ 
+        ["pct","rg_pcnt","Percent",0,100,50]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["rg_pcnt"]]
+    ]
+}
+

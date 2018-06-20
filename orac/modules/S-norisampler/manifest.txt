@@ -1,0 +1,6 @@
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  S-norisampler/deploy.sh
+e83ca9fa43c76d12b4829d53f41ff34ac37b45d8  S-norisampler/LICENSE.txt
+c0d4e14a24dd92b645436533192550306c9f2d40  S-norisampler/samplervoice.pd
+e1a2bf332f5793a9b64bf7bdbf5cba388c0ee390  S-norisampler/module.pd
+b61858d719d72d804f6776201d2ec6199d5525df  S-norisampler/sound.wav
+6bdb4ab5c28bcff5baa5f57aebc70e7de61b11fc  S-norisampler/module.json

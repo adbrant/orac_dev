@@ -1,0 +1,13 @@
+{
+    "name" : "U-muchord",
+    "display" : "Muchord",
+    "parameters" :  [ 
+        ["int","muchord_offset","Semitone Offset",-24,24,0],
+        ["int","muchord_harm","Harmony Type",0,13,0],
+        ["int","muchord_inv","Inversion",0,7,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["muchord_offset","muchord_harm","muchord_inv"]]
+    ]
+}
+

@@ -1,0 +1,20 @@
+{
+    "name" : "S-TITAN",
+    "display" : "TITAN",
+    "parameters" :  [
+      ["freq","transpose","transpose",-24,24,-24],
+      ["time","glide","glide",0,200,0],
+      ["time","decay","decay",10,1500,200],
+      ["pct","EGamt","EG amt",0,100,0],
+      ["time","EGdecay","EG decay",10,850,100],
+      ["pct","waveAmt","wave amt",0,100,0],
+      ["freq","waveFreq","wave freq",0,7,0],
+      ["pct","filtAmt","filter amt",0,100,0],
+      ["freq","filtFreq","filter freq",0,4,0]
+    ],
+    "pages" : [
+      ["pg_main","MAIN",["transpose","decay","glide"]],
+      ["pg_eg","EG",["EGamt","EGdecay"]],
+      ["pg_waveFold","WAVE",["waveAmt","waveFreq","filtAmt","filtFreq"]]
+    ]
+}

@@ -1,0 +1,43 @@
+#N canvas 0 69 1276 464 10;
+#X obj 501 137 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 512 265 list split;
+#X obj 514 186 t b f;
+#X obj 532 349 list trim;
+#X obj 253 215 textfile;
+#X msg 281 177 rewind;
+#X obj 466 238 list;
+#X obj 498 152 % 16;
+#X obj 279 274 list length;
+#X obj 302 301 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 241 34 inlet;
+#X obj 557 406 outlet;
+#X obj 314 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 294 144 read \$1, f 10;
+#X obj 251 114 t b b s;
+#X obj 512 292 list split 1;
+#X obj 712 363 outlet;
+#X obj 496 107 r step-\$1;
+#X connect 0 0 7 0;
+#X connect 1 1 15 0;
+#X connect 2 0 6 0;
+#X connect 2 1 1 1;
+#X connect 2 1 16 0;
+#X connect 3 0 11 0;
+#X connect 4 0 6 1;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 9 0 7 1;
+#X connect 10 0 14 0;
+#X connect 12 0 14 0;
+#X connect 13 0 4 0;
+#X connect 14 0 4 0;
+#X connect 14 1 5 0;
+#X connect 14 2 13 0;
+#X connect 15 0 3 0;
+#X connect 17 0 0 0;

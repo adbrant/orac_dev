@@ -1,0 +1,7 @@
+e83ca9fa43c76d12b4829d53f41ff34ac37b45d8  U-muchord/LICENSE.txt
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-muchord/deploy.sh
+46b83c0e82a2f1d4a8e7c36889ff2627b655a871  U-muchord/midify.pd
+d8bafc805a686a055f135b0979fe8a56ecb4c7c3  U-muchord/module.json
+ff693a74f5a818e2f709e335a4aab26b75dd31ba  U-muchord/module.pd
+b24bd9db389b1b561fef1806f8907b8c14626b48  U-muchord/notein_mono.pd
+ce7d0aaf3846494767758850140962685f77625c  U-muchord/zchord.pd

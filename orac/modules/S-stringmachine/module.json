@@ -1,0 +1,13 @@
+{
+    "name" : "S-stringmachine",
+    "display" : "String Machine",
+    "parameters" :  [ 
+        ["float","sm_detune","Detune",-12,12,0.2],
+        ["int","sm_cutoff","Cutoff",100,2100,2100],
+        ["int","sm_envelope","Envelope",1,5000,1000],
+        ["int","sm_transpose","Transpose",-24,24,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["sm_detune","sm_cutoff","sm_envelope","sm_transpose"]]
+    ]
+}
