@@ -3,7 +3,6 @@ Sampletwig
 Based on Samplenest https://patchstorage.com/samplenest/
 Can load one sample only, but now can be pitched via midi input
 
-
 IMPORTANT:
 All samples are stored in /Media/samples/ starting at the base of your USB drive.
 You must create this folder before running the patch.
@@ -11,10 +10,7 @@ I’ve also uploaded an archive with some to get you started (mainly field recor
 https://drive.google.com/file/d/1OJh8TJ1MR_qKNBu9thjmaoJhCkQ9HUr-/view?usp=sharing
 This patch will find files in that folder ending in .wav (case sensitive!).
 
-
 Controls:
-
-
 Main:
   Sample Select - Displays 0-100, but sample name is printed to bottom of screen
   Volume
