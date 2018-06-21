@@ -21,7 +21,7 @@ Pitch:
   Mod Rate
   Mod Depth
 Loop:
-  Mode - Chooses between 6 modes (modes are printed to the bottom of the screen)
+  Mode - Chooses between 6 looping modes (modes are printed to the bottom of the screen)
          gate
          oneshot 
          loop 
