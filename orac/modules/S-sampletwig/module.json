@@ -6,7 +6,7 @@
         ["int","samp_semitone","Semitone",-24,24,0],
         ["float","samp_cent","Fine Tune",-100,100,0],
         ["float","samp_pan","Pan",-1,1,0],
-        ["float","samp_vol","Volume",0,1,.7],
+        ["float","samp_vol","Volume",0,1,0.7],
         ["float","samp_start","Start Point",0,1,0],
         ["float","samp_end","End Point",0,1,1],
         ["int","samp_mode","Mode",0,5,0],
@@ -24,7 +24,7 @@
         ["pg_pitch","Pitch",["samp_semitone","samp_cent","samp_modrate","samp_moddepth"]],
         ["pg_loop","Loop",["samp_mode","samp_start","samp_end","samp_attack"]],
         ["pg_mod","Filter",["samp_lopass","samp_hipass","samp_decay"]],
-        ["pg_misc","Misc",["samp_hold","samp_ctrlsmooth"]],
+        ["pg_misc","Misc",["samp_hold","samp_ctrlsmooth"]]
     ]
 }
 
