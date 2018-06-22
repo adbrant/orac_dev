@@ -1,4 +1,4 @@
-#N canvas 13 67 1351 720 10;
+#N canvas 8 74 1345 720 10;
 #X obj 165 270 unpack 0 0;
 #X obj 162 333 pack 0 0 0;
 #X obj 162 298 poly 8 1, f 10;
@@ -38,11 +38,11 @@
 #X connect 12 0 10 1;
 #X restore 162 362 pd format_for_array;
 #X obj 189 175 sel 1;
-#N canvas 200 139 886 691 latch 0;
+#N canvas 337 162 886 691 latch 1;
 #X obj 43 371 latch-notes;
 #X obj 263 200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 263 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 263 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 171 374 spigot 1;
 #X obj 43 298 spigot 0;
@@ -62,11 +62,12 @@ directly to output if disabled;
 #X msg 383 363 Latch off;
 #X obj 322 265 sel 1;
 #X obj 596 164 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 629 259 == 0;
 #X obj 627 321 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 289 144 spigot 1;
+#X obj 436 139 spigot 0;
 #X connect 0 0 9 0;
 #X connect 1 0 2 0;
 #X connect 2 0 5 0;
@@ -79,10 +80,12 @@ directly to output if disabled;
 #X connect 7 0 1 0;
 #X connect 7 1 6 0;
 #X connect 8 0 21 0;
+#X connect 8 0 22 0;
 #X connect 10 0 4 0;
 #X connect 10 0 3 0;
 #X connect 13 0 2 0;
 #X connect 13 0 18 0;
+#X connect 13 0 22 1;
 #X connect 15 0 14 0;
 #X connect 16 0 14 0;
 #X connect 17 0 15 0;
@@ -91,12 +94,13 @@ directly to output if disabled;
 #X connect 19 0 20 0;
 #X connect 20 0 21 1;
 #X connect 21 0 7 0;
+#X connect 22 0 6 0;
 #X restore 162 239 pd latch;
-#N canvas 8 60 1351 720 bass 1;
+#N canvas 8 60 1351 720 bass 0;
 #X obj 491 88 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 3 256;
 #X obj 319 92 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -1 256;
+-262144 -1 -1 0 256;
 #X obj 476 241 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 481 206 mod;
@@ -116,7 +120,7 @@ directly to output if disabled;
 #X obj 200 184 s newbar;
 #X obj 241 144 sel 0;
 #X obj 830 252 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -1 256;
+-262144 -1 -1 0 256;
 #X obj 696 238 route x;
 #X msg 687 134 symbol chord.txt;
 #X obj 797 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -132,7 +136,7 @@ directly to output if disabled;
 #X msg 814 86 symbol \$1/chord.txt;
 #X obj 703 102 loadbang;
 #X obj 813 154 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 15 256;
+-262144 -1 -1 1 256;
 #X obj 825 304 t b f;
 #X obj 258 230 int;
 #X obj 284 205 + 50;
@@ -172,9 +176,9 @@ directly to output if disabled;
 #X obj 648 316 > 0;
 #X obj 363 515 spigot 0;
 #X obj 656 357 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 508 335 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 69 256;
 #X connect 0 0 3 1;
 #X connect 0 0 4 1;
 #X connect 1 0 8 0;
