@@ -9,9 +9,9 @@
         ["pct","folder_decay","Decay",0,100,50],
         ["pct","folder_sustain","Sustain",0,100,50],
         ["pct","folder_folding","Folding",0,100,50],
-        ["freq","folder_vrate","Vibr Rate",0.01,50,1],
+        ["freq","folder_vrate","Vibr Rate",0.01,20,1],
         ["pct","folder_vdepth","Vibr Depth",0,100,0],
-        ["freq","folder_mrate","Mod Rate",0.01,50,1],
+        ["freq","folder_mrate","Mod Rate",0.01,10,1],
         ["pct","folder_mdepth","Mod Depth",0,100,0]
     ],
     "pages" : [ 
