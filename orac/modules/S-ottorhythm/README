@@ -1,0 +1,31 @@
+Auto Drum/Bass/Chord generator with 29 styles
+Drums are generated as audio, bass and chords are output as notes, and can be individually turned on/off and shifted octave.
+Parameters
+Page1 - main
+1 - Style 
+2 - Drum Set
+3 - Drum Volume
+4 - Stop/Start
+
+Page2 - chord
+1- on/off
+2 - velocity
+3 - note length
+4 - octave
+
+Page3 - bass
+ 1- on/off
+2 - velocity
+3 - note length
+4 - octave
+
+Page6 - Config
+1 - Midi Thru on/off
+2 - Autohold
+
+Misc:
+  Hold: Note Hold (see note on Aux below)
+  Pitch Filt: Amount filtering on pitch (portamento), lower = slower
+  
+Aux: if 'Hold' knob is 0, turns hold on or off. I 'Hold' knob is 1, releases current notes but leaves hold on.
+
