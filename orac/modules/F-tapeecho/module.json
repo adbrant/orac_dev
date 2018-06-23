@@ -1,0 +1,25 @@
+{
+    "name": "F-tapeecho",
+    "display": "RE-Tape Echo",
+    "parameters": [
+        ["int", "mode", "Mode", 0, 5, 3],
+        ["pct", "repeatrate", "Repeat Rate", 0, 100, 10],
+        ["pct", "intensity", "Intensity", 40, 100, 70],
+        ["pct", "echovol", "Echo Volume", 0, 100, 90],
+        ["pct", "wow", "Wow", 0, 100, 0],
+        ["pct", "flutter", "Flutter", 0, 100, 0],
+        ["pct", "dirt", "Dirt", 0, 100, 0],
+        ["pct", "inputbleed", "Input Bleed", 0, 100, 0],
+        ["pct", "tapeloopamount", "Loop Amount", 0, 100, 50],
+        ["int", "playhead_filter", "Playhead Filter", 0, 1, 0],
+        ["pct", "gaininL", "Gain in L", 0, 100, 50],
+        ["pct", "gaininR", "Gain in R", 0, 100, 50],
+        ["int", "iomodes", "IO Modes", 0, 3, 0]
+    ],
+    "pages": [
+        ["pg_main", "Echo", ["mode", "repeatrate", "intensity", "echovol"]],
+        ["pg_wow", "Wow and Flutter", ["wow", "flutter", "dirt"]],
+        ["pg_tlset", "Loop Settings", ["inputbleed", "tapeloopamount", "playhead_filter"]],
+        ["pg_gain", "Gain and IO", ["gaininL", "gaininR", "iomodes"]]
+    ]
+}

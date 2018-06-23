@@ -1,0 +1,12 @@
+{
+    "name" : "S-WarblyUkelele",
+    "display" : "Warbly Ukelele",
+    "parameters" :  [ 
+        ["pct","decay","Decay",1,100,100]
+
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["decay"]]
+    ]
+}
+

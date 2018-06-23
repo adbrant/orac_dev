@@ -1,0 +1,27 @@
+{
+    "name" : "S-spacekittens",
+    "display" : "Space Kittens",
+    "parameters" :  [ 
+        ["int","attack","Attack",5,2000,1000],
+        ["int","decay","Decay",5,2000,1000],
+        ["float","sustain","Sustain",0,1,1],
+        ["int","release","Release",5,2000,1000],
+        ["float","filter-eg","Filter EG",-1,1,0],
+        ["int","cutoff","Cutoff",0,4000,950],
+        ["float","resonance","Resonance",0,4,0.755],
+        ["int","fat","Filter Attack",0,2000,141],
+        ["int","fdc","Filter Decay",0,2000,645],
+        ["float","fsu","Filter Sustain",0,1,0.5],
+        ["int","fre","Filter Release",0,2000,267],
+        ["int","vibosc","Vibrato Freq",0,10,4],
+        ["float","vibdep","Vibrato Depth",0,10,0.55]
+
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["attack","decay","sustain","release"]],
+        ["pg_filter","Filter",["filter-eg","cutoff","resonance"]],
+        ["pg_filenv","Filter Envelope",["fat","fdc","fsu","fre"]],
+        ["pg_vibr","Vibrato",["vibosc","vibdep"]]
+    ]
+}
+

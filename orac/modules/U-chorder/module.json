@@ -1,0 +1,50 @@
+{
+    "name" : "U.MIJ-chorder",
+    "display" : "MIJ-CHORDER",
+    "parameters" :  [ 
+        ["int","scale","Musical Scale",1,9,1],
+        ["int","chordAmt","Amount of chords",1,8,4],
+	["int","noteAmt","Amount of notes",1,5,3],
+	["pct","chordlngth","Chord Length",1,200,100],
+        ["int","chord1","Chord 1",0,7,1],
+        ["int","chord2","Chord 2",0,7,1],
+        ["int","chord3","Chord 3",0,7,1],
+        ["int","chord4","Chord 4",0,7,1],
+        ["int","chord5","Chord 5",0,7,1],
+        ["int","chord6","Chord 6",0,7,1],
+        ["int","chord7","Chord 7",0,7,1],
+        ["int","chord8","Chord 8",0,7,1],
+        ["int","pos1","Position 1",1,14,1],
+        ["int","pos2","Position 2",1,14,1],
+        ["int","pos3","Position 3",1,14,1],
+        ["int","pos4","Position 4",1,14,1],
+        ["int","pos5","Position 5",1,14,1],
+        ["int","pos6","Position 6",1,14,1],
+        ["int","pos7","Position 7",1,14,1],
+        ["int","pos8","Position 8",1,14,1],
+        ["int","rot1","Rotation 1",0,3,0],
+        ["int","rot2","Rotation 2",0,3,0],
+        ["int","rot3","Rotation 3",0,3,0],
+        ["int","rot4","Rotation 4",0,3,0],
+        ["int","rot5","Rotation 5",0,3,0],
+        ["int","rot6","Rotation 6",0,3,0],
+        ["int","rot7","Rotation 7",0,3,0],
+        ["int","rot8","Rotation 8",0,3,0],
+        ["int","transpose","Transpose",-4,4,0],
+	["int","basenote","Base Note",0,11,0],
+	["int","bpmOrNoteIn","BPM or Note In",0,1,0],
+	["int","noteThrough","Let note through",0,1,0]
+
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["scale","chordAmt","noteAmt", "chordlngth"]],
+        ["pg_chord14","Chord 1-4",["chord1","chord2", "chord3", "chord4"]],
+        ["pg_14pos","1-4 Position",["pos1","pos2", "pos3", "pos4"]],
+        ["pg_14rot","1-4 Rotation",["rot1","rot2", "rot3", "rot4"]],
+		["pg_chord58","Chord 5-8",["chord5","chord6", "chord7", "chord8"]], 
+		["pg_58pos","5-8 Position",["pos5","pos6", "pos7", "pos8"]],
+		["pg_58rot","5-8 Rotation",["rot5","rot6", "rot7", "rot8"]],
+		["pg_trans","Transpose + Settings",["transpose", "basenote", "bpmOrNoteIn", "noteThrough"]]
+    ]
+}
+
