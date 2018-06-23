@@ -1,0 +1,18 @@
+An attempt at the Eno/Lanois pitch shift + reverb feedback loop effect.
+The most important parameters are on page 1.
+Uses a simple rotary head style pitch shift / delay and the freeverb~ external
+
+Parameters
+p1:
+Shift Mode - 5 modes with different pitch shifts, also some have reversed playback direction
+Rev Size - Size of reverb, also affects feedback
+Feedback - Amount of pitch shift fed into the reverb
+Dry/Wet  - Total dry/wet balance
+p2:
+P. In/Rev - Balance of dry input signal and reverb signal to feed into the pitch shift 
+            At 0 (all dry) there will be no feeback, and at 1 (all reverb) there is no input
+P. LPF   - Frequency of low pass filterig right before the pitch shifter input
+p3:
+Rev Dry/Wet - Amount of dry input vs pitch shift fed into the reverb
+Rev Damp - Damping of the reverb algorithm
+Rev Prefilt - Frequency of low pass filtering right before the reverb input
