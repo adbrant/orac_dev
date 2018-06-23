@@ -1,0 +1,6 @@
+0448f181f1db16b4ca584e155ee325e3ba530225  U-arperopt/counter-down.pd
+e7ef444074a6d269178a05e4a1e1ed28e865e449  U-arperopt/counter-up.pd
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-arperopt/deploy.sh
+ba1c8743065afeecbe3ac5f8f17bc9e8a494751b  U-arperopt/latch-notes.pd
+8fe0574759b372c9756276a6c70f29c1081f8fdd  U-arperopt/module.json
+22af1040e1db85963e71cc8df9f364ab993f6097  U-arperopt/module.pd

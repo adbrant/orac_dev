@@ -1,0 +1,7 @@
+e7ef444074a6d269178a05e4a1e1ed28e865e449  U-punchyl/counter-up.pd
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-punchyl/deploy.sh
+ba1c8743065afeecbe3ac5f8f17bc9e8a494751b  U-punchyl/latch-notes.pd
+9c7e8a1051a9876828d2a8bf7b53826224f079e6  U-punchyl/module.json
+69be637cece31e86478c84e9e5f1e9c74ed04815  U-punchyl/module.pd
+9aad4f0679a450f8d95c40ecf28c8f249da77f38  U-punchyl/punchy-seq.txt
+2104b36ccaf94a3cf72f070e3d9ed7421ef03165  U-punchyl/punchy-seqvel.txt
