@@ -1,0 +1,7 @@
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  S-polyfolder/deploy.sh
+e83ca9fa43c76d12b4829d53f41ff34ac37b45d8  S-polyfolder/LICENSE.txt
+9ec3990060cdc907a0afc7ee5eabb7e82d740cc1  S-polyfolder/module.json
+f6053db70682a0e86046e120c12635b3d2acef9b  S-polyfolder/module.pd
+a6a680fa64012aebab8283a29dba87e8aaf30932  S-polyfolder/polyfolder.pd
+bde30f078cce7b1695203f9a33ef737088def2ed  S-polyfolder/smoothswitch.pd
+00839f9dede4e1150ee392e961070ffaf178b526  S-polyfolder/voice.pd

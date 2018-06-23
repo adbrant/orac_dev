@@ -1,0 +1,10 @@
+3f962812fc6883b7690bf7be4625cbfc1f86bec5  F-shimmer/c_xfade.pd
+bba7bf8492afe617cdd9fed48e1a7ccf7fd32064  F-shimmer/delay3sec.pd
+f15fd4c82ba62184eb6f803f1a8d5d04234459e6  F-shimmer/freeverb~-help.pd
+b215273750385c57944fd59a709c4c797464173a  F-shimmer/freeverb~.dll
+531bc0bba505e2cba1f1b9586a733fe18a537de1  F-shimmer/freeverb~.pd_linux
+45e1e35646f14cb4eba173c3f2d065b46f1fce0f  F-shimmer/module.json
+c6dc880783f7ef8ec7cdf387d73f09a3133cb71f  F-shimmer/module.pd
+d1f38eb0e08c32187ef7063b410d4acba5613573  F-shimmer/shimmer.pd
+3ecaa1f47ed0dc27cbc0415cb81ff05b7d7cc561  F-shimmer/README
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  F-shimmer/deploy.sh

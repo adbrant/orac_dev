@@ -1,0 +1,8 @@
+e83ca9fa43c76d12b4829d53f41ff34ac37b45d8  U-audio2midi/LICENSE.txt
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-audio2midi/deploy.sh
+72f16e2131ecaa4e983e5d44d52335df42bee785  U-audio2midi/main.pd
+3ef8420ccb85d6bf676f35507a7dd472b89a89a2  U-audio2midi/module.json
+bd8cf955c335c60f9f0a7f3e6eed9866a4217a29  U-audio2midi/module.pd
+b24bd9db389b1b561fef1806f8907b8c14626b48  U-audio2midi/notein_mono.pd
+2f7b1013933c8106c2b863256a14b4e6fe64bb7a  U-audio2midi/polytracker.pd
+e26ef5284528bfa1041fedd69ff0240a93d829e8  U-audio2midi/tracker.pd

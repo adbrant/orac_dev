@@ -4,6 +4,8 @@ echo create install package for $1
 
 INSTALL_DIR=$1
 cd  ../orac/modules/
+cp ../../pkg/deploy.sh ./$INSTALL_DIR/
+
 if [ -f "$INSTALL_DIR/deploy.sh" ]
 then
     chmod +x "$INSTALL_DIR/deploy.sh"
