@@ -17,7 +17,7 @@
                 
     ],
     "pages" : [ 
-        ["pg_main","Main",["shim_shift","shim_revlen","shim_fdbck","shim_drywet"]],
+        ["pg_main","Main",["shim_shift","shim_revlen","shim_feedback","shim_drywet"]],
         ["pg_pitch","Pitch",["shim_pdelay","shim_pdetune","shim_pmix","shim_pfilt"]],
         ["pg_reverb","Reverb",["shim_revdry","shim_revsize","shim_revhicut","shim_revfilt"]]
     ]
