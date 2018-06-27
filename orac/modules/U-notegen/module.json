@@ -1,0 +1,12 @@
+{
+    "name" : "U-notegen",
+    "display" : "NoteGen",
+    "parameters" :  [ 
+        ["int","ng_trigger","Midi Trigger",0,1,0],
+        ["float","ng_speed","Speed",0,100,50],
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["ng_trigger","ng_speed"]]
+    ]
+}
+
