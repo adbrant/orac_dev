@@ -13,7 +13,7 @@
     ],
     "pages" : [ 
         ["pg_main","Main",["c_bpm","c_swing8","c_swing16","c_midiout"]],
-        ["pg_main","Humanize",["c_jitter","c_drift","c_driftrate"]]
+        ["pg_human","Humanize",["c_jitter","c_drift","c_driftrate"]]
     ]
 }
 
