@@ -16,8 +16,8 @@
 #X msg 575 105 1;
 #X text 535 62 always running. mute incoming BPM to turn off in other
 Modules;
-#N canvas -4 0 1356 714 metro 1;
-#X obj 217 164 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 0 50 1356 714 metro 1;
+#X obj 217 164 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 375 164 5 0 0 0 - - -, f 5;
 #N canvas 285 555 292 294 mstobpm 0;
@@ -299,13 +299,12 @@ use internal or MIDI clock if present.;
 #X obj 995 196 pipe 0;
 #X obj 1050 118 random 1024;
 #X obj 1078 165 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 13.5313 256;
+0 10 -262144 -1 -1 0 256;
 #X obj 1049 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 996 224 print tickts;
 #X obj 1205 137 clip 0 1;
 #X obj 1193 259 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 6.70051 256;
+0 10 -262144 -1 -1 0 256;
 #X obj 1193 112 +;
 #X obj 1110 32 - 512;
 #X obj 1122 49 / 512;
@@ -313,7 +312,7 @@ use internal or MIDI clock if present.;
 #X obj 789 93 / 100;
 #X obj 614 79 / 100;
 #X obj 1153 182 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1600 1;
+-1 -1 0 1;
 #X obj 1149 94 * 1;
 #X obj 1011 84 % 6;
 #X obj 1012 103 sel 0;
@@ -324,16 +323,16 @@ use internal or MIDI clock if present.;
 #X obj 622 48 r c_jitter-\$1;
 #X obj 770 57 r c_drift-\$1;
 #X obj 1103 241 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 10.137 256;
+0 10 -262144 -1 -1 0 256;
 #X obj 1102 196 * 0;
 #X obj 1231 233 * 0;
 #X obj 1252 194 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6300 1;
+-1 -1 0 1;
 #X obj 1212 38 / 100;
 #X obj 1193 18 r c_driftrate-\$1;
 #X obj 1220 65 * 0.1;
 #X obj 1264 43 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2900 1;
+-1 -1 0 1;
 #X connect 0 0 4 0;
 #X connect 0 0 35 1;
 #X connect 1 0 32 0;
@@ -384,40 +383,39 @@ use internal or MIDI clock if present.;
 #X connect 54 0 16 0;
 #X connect 54 0 24 0;
 #X connect 55 0 56 0;
-#X connect 55 1 71 0;
+#X connect 55 1 70 0;
 #X connect 56 0 54 0;
-#X connect 56 0 60 0;
-#X connect 57 0 64 0;
-#X connect 57 0 75 0;
-#X connect 58 0 80 0;
+#X connect 57 0 63 0;
+#X connect 57 0 74 0;
+#X connect 58 0 79 0;
 #X connect 59 0 57 0;
-#X connect 61 0 73 0;
-#X connect 61 0 76 0;
-#X connect 62 0 66 1;
-#X connect 63 0 61 0;
-#X connect 64 0 65 0;
-#X connect 65 0 70 0;
-#X connect 66 0 56 1;
-#X connect 66 0 79 0;
-#X connect 67 0 81 1;
-#X connect 68 0 80 1;
-#X connect 69 0 80 1;
-#X connect 70 0 74 0;
-#X connect 71 0 72 0;
-#X connect 72 0 59 0;
-#X connect 73 0 63 1;
-#X connect 74 0 63 0;
-#X connect 75 0 58 0;
-#X connect 76 0 81 0;
-#X connect 77 0 68 0;
-#X connect 78 0 67 0;
-#X connect 80 0 66 0;
-#X connect 81 0 62 0;
-#X connect 82 0 81 1;
-#X connect 83 0 85 0;
-#X connect 84 0 83 0;
-#X connect 85 0 74 1;
-#X connect 86 0 85 0;
+#X connect 60 0 72 0;
+#X connect 60 0 75 0;
+#X connect 61 0 65 1;
+#X connect 62 0 60 0;
+#X connect 63 0 64 0;
+#X connect 64 0 69 0;
+#X connect 65 0 56 1;
+#X connect 65 0 78 0;
+#X connect 66 0 80 1;
+#X connect 67 0 79 1;
+#X connect 68 0 79 1;
+#X connect 69 0 73 0;
+#X connect 70 0 71 0;
+#X connect 71 0 59 0;
+#X connect 72 0 62 1;
+#X connect 73 0 62 0;
+#X connect 74 0 58 0;
+#X connect 75 0 80 0;
+#X connect 76 0 67 0;
+#X connect 77 0 66 0;
+#X connect 79 0 65 0;
+#X connect 80 0 61 0;
+#X connect 81 0 80 1;
+#X connect 82 0 84 0;
+#X connect 83 0 82 0;
+#X connect 84 0 73 1;
+#X connect 85 0 84 0;
 #X restore 577 181 pd metro;
 #X text 704 214 Master Metro Module. Only use one for each Modular
 Patch. Sends 24 ticks per Beat (master-ticks). Sends a Beat count relative
