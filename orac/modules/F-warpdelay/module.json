@@ -4,7 +4,7 @@
     "parameters" :  [ 
         ["int","wdelay_semi","Semitones",-24,24,12],
         ["int","wdelay_cent","Cents",-50,50,0],
-        ["float","wdelay_feedback","Feedback",0,1,0.25],
+        ["float","wdelay_feedback","Feedback",0,1.5,0.25],
         ["float","wdelay_mix","Dry/Wet",0,1,0.5],
         ["int","wdelay_len","Length ",100,4000,1000],
         ["int","wdelay_dir","FW/RV",0,1,0],
@@ -17,7 +17,7 @@
     ],
     "pages" : [ 
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
-        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_midictrl"]]
+        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_midictrl","wdelay_pfilt"]]
     ]
 }
 

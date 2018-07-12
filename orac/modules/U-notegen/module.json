@@ -3,10 +3,39 @@
     "display" : "NoteGen",
     "parameters" :  [ 
         ["int","ng_trigger","Midi Trigger",0,1,0],
-        ["float","ng_speed","Speed",0,100,50],
+        ["int","ng_beatdiv","MidiClk Div",0,24,0],
+        ["time","ng_speed","Speed",0,1000,0],
+        ["float","ng_prob","Probability",0,100,0],
+        ["int","ng_poly","Poly Trigger",1,8,1],
+        ["int","ng_octmin","Oct Min",-3,3,0],
+        ["int","ng_octmax","Oct Max",-3,3,0],
+        ["int","ng_velmin","Velocity Min",1,127,127],
+        ["int","ng_velmax","Velocity Max",1,127,127],
+        ["float","ng_lenmin","Len Min",1,1000,500],
+        ["float","ng_lenmax","Len Min",1,1000,500],
+        ["int","ng_midithru","Midi Thru",0,1,1],
+        ["int","ng_note0","C",50,100,100],
+        ["int","ng_note1","Db",0,100,100],
+        ["int","ng_note2","D",0,100,100],
+        ["int","ng_note3","Eb",0,100,100],
+        ["int","ng_note4","E",0,100,100],
+        ["int","ng_note5","F",0,100,100],
+        ["int","ng_note6","Gb",0,100,100],
+        ["int","ng_note7","G",0,100,100],
+        ["int","ng_note8","Ab",0,100,100],
+        ["int","ng_note9","A",0,100,100],
+        ["int","ng_note10","Bb",0,100,100],
+        ["int","ng_note11","B",0,100,100]
+        
     ],
     "pages" : [ 
-        ["pg_main","Main",["ng_trigger","ng_speed"]]
+        ["pg_trig","Trigger 1",["ng_speed","ng_beatdiv","ng_trigger","ng_prob"]],
+        ["pg_trig2","Trigger 2",["ng_poly","ng_midithru"]],
+        ["pg_note1","Note 1",["ng_octmin","ng_octmax","ng_velmin","ng_velmax"]],
+        ["pg_note2","Note 2",["ng_velmin","ng_velmax"]],
+        ["pg_nprob1","C-Eb",["ng_note0","ng_note1","ng_note2","ng_note3"]],
+        ["pg_nprob2","E-G",["ng_note4","ng_note5","ng_note6","ng_note7"]],
+        ["pg_nprob3","Ab-B",["ng_note8","ng_note9","ng_note10","ng_note11"]],
     ]
 }
 

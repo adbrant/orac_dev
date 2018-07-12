@@ -1,4 +1,4 @@
-#N canvas 1 144 1360 707 10;
+#N canvas 636 77 1360 430 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 490 s notesOut-\$1;
 #X obj 23 9 r loaddefs-\$1;
@@ -15,6 +15,15 @@
 #X obj 486 356 r fsIn-\$1;
 #X obj 181 45 print loaded:notegen into \$1, f 35;
 #X obj 23 113 KontrolModule \$1 U-notegen;
+#X obj 271 331 notegen \$1;
+#X obj 293 275 triggen \$1;
+#X obj 260 385 midigen \$1;
+#X obj 251 221 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 464 215 r ng_midithru-\$1;
+#X obj 401 266 spigot 1;
+#X connect 0 0 17 0;
+#X connect 0 0 21 0;
 #X connect 2 0 6 0;
 #X connect 2 0 5 0;
 #X connect 3 0 15 0;
@@ -22,3 +31,9 @@
 #X connect 6 0 3 0;
 #X connect 7 0 9 0;
 #X connect 8 0 10 0;
+#X connect 16 0 18 0;
+#X connect 17 0 16 0;
+#X connect 18 0 1 0;
+#X connect 19 0 16 0;
+#X connect 20 0 21 1;
+#X connect 21 0 1 0;

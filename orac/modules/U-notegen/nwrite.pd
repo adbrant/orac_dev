@@ -1,0 +1,17 @@
+#N canvas 761 162 529 300 10;
+#X obj 137 59 r ng_note\$2-\$1;
+#X obj 210 171 f \$2;
+#X obj 130 247 tabwrite probarray-\$1;
+#X obj 146 118 t b f b;
+#X obj 77 204 s recalc-\$1;
+#X obj 288 21 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4500 1;
+#X obj 267 116 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0.354331 256;
+#X connect 0 0 3 0;
+#X connect 1 0 2 1;
+#X connect 3 0 4 0;
+#X connect 3 1 2 0;
+#X connect 3 1 6 0;
+#X connect 3 2 1 0;
+#X connect 5 0 3 0;
