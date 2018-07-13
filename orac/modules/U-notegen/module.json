@@ -35,7 +35,7 @@
         ["pg_note2","Note 2",["ng_velmin","ng_velmax"]],
         ["pg_nprob1","C-Eb",["ng_note0","ng_note1","ng_note2","ng_note3"]],
         ["pg_nprob2","E-G",["ng_note4","ng_note5","ng_note6","ng_note7"]],
-        ["pg_nprob3","Ab-B",["ng_note8","ng_note9","ng_note10","ng_note11"]],
+        ["pg_nprob3","Ab-B",["ng_note8","ng_note9","ng_note10","ng_note11"]]
     ]
 }
 
