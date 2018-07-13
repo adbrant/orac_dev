@@ -15,17 +15,17 @@
         ["float","ng_lenmax","Len Min",1,1000,500],
         ["int","ng_midithru","Midi Thru",0,1,1],
         ["int","ng_note0","C",50,100,100],
-        ["int","ng_note1","Db",0,100,100],
-        ["int","ng_note2","D",0,100,100],
-        ["int","ng_note3","Eb",0,100,100],
-        ["int","ng_note4","E",0,100,100],
-        ["int","ng_note5","F",0,100,100],
-        ["int","ng_note6","Gb",0,100,100],
-        ["int","ng_note7","G",0,100,100],
-        ["int","ng_note8","Ab",0,100,100],
-        ["int","ng_note9","A",0,100,100],
-        ["int","ng_note10","Bb",0,100,100],
-        ["int","ng_note11","B",0,100,100]
+        ["int","ng_note1","Db",0,100,0],
+        ["int","ng_note2","D",0,100,0],
+        ["int","ng_note3","Eb",0,100,0],
+        ["int","ng_note4","E",0,100,0],
+        ["int","ng_note5","F",0,100,0],
+        ["int","ng_note6","Gb",0,100,0],
+        ["int","ng_note7","G",0,100,0],
+        ["int","ng_note8","Ab",0,100,0],
+        ["int","ng_note9","A",0,100,0],
+        ["int","ng_note10","Bb",0,100,0],
+        ["int","ng_note11","B",0,100,0]
         
     ],
     "pages" : [ 
