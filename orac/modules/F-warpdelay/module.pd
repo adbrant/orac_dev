@@ -1,4 +1,4 @@
-#N canvas 8 60 1345 720 10;
+#N canvas 13 67 1345 720 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 671 s notesOut-\$1;
 #X obj 23 9 r loaddefs-\$1;
@@ -22,15 +22,15 @@
 #X obj 105 446 C:/users/alexd_000/Documents/PD/out_tester;
 #X obj 253 279 notein_mono;
 #X obj 249 311 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 67 256;
+-262144 -1 -1 72 256;
 #X obj 337 312 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 100 256;
+-262144 -1 -1 0 256;
 #X obj 259 360 spigot 0;
 #X obj 327 338 r wdelay_midictrl-\$1;
 #X obj 308 335 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 346 358 sel 0;
-#X msg 351 387 0;
+#X msg 351 387 72;
 #X connect 0 0 1 0;
 #X connect 0 0 20 0;
 #X connect 2 0 6 0;
