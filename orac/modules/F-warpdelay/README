@@ -1,0 +1,14 @@
+ A variable pitch/direction delay (similar to mode 1 of the count to five pedal by montreal assembly).
+ Delay buffer can be read back at a variable speed or direction, independently of the write head. 
+ Pitch be controlled by incoming MIDI.
+ Paramters
+ Page 1 
+ Semitones - Pitch shift from -24 to +24  semitones
+ Feedback - Amount of feedback (up to 1.5x)
+ Length - Delay buffer size, 100-4000 ms
+ Dry/Wet - balance of dry and wet signal
+ Page 2
+ Cents - Fine tune -50 to 50 cents
+ FW/RV - direction of delay readback
+ MIDI Control - 0/1, if 1 then incoming MIDI or keypresses will change the pitch from the current knob setting  (note 72 is the original setting)
+ Prefilt - Lowpass filter before the signal is written to delay buffer
