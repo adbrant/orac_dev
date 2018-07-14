@@ -1,0 +1,33 @@
+MIDI note generator
+First two pages control when notes are triggered (from an internal clock , the midi clock, or by incoming note on). 
+Next two control ranges of the octave, velocity and length of generated notes.
+Last three pages control the relative probability of each note in the octave.
+Each note C-B has a probablity parameter. 
+At 0 the note will never sound, so only the RATIO of probabilites matters 
+(ie if all notes are 0.01 will produce the same result as all notes being 0.99).
+Controls values are squared for each probability ie 50 is 25%, 10 is 1%.
+      
+Page: Trigger 1
+Speed -  when over 10ms, note could be generated every N ms
+MidiClk Div - Subidivisios of the midi clock  0 (off), 1 = quarter note, 2 = eighth, 3 = triplets, 4 = 16th notes ......24
+Midi Trigger - Note could be triggered at incoming midi note on
+Probability - Chance of a note being generated at each trigger
+
+Page: Trigger 2
+Poly Trigger - From 1-8 notes can  be generated on each trigger 9depending on probability
+Midi Thru - Incoming midi stream can be passed through or turned off
+
+Page: Note 1 
+Oct Min
+Oct Max
+Velocity Min
+Velocity Max
+
+Page: Note 2
+Len Min
+Len Max
+
+Page: C-Eb
+Page: E-G
+Page: Ab-b
+
