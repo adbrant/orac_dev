@@ -1,0 +1,11 @@
+Clock with swing control and humanization.
+
+Page 1:
+BPM - Same as normal clock
+Swing 8 - Amount of swing on 8th notes (0 = no swing, 100 = odd notes are delayed by an entire 8th note)
+Swing 16 - Amount of swing on 16th notes (0 = no swing, 100 = odd notes are delayed by an entire 16th note) 
+Midi Out - Same as normal clock
+Page 2
+Jitter - Amount of random delay on each clock tick
+Drift - Amount of slowly changing delay applied to each note
+Drift Rate - How quickly the drift delay changes
