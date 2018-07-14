@@ -1,4 +1,4 @@
-#N canvas 0 50 1360 725 10;
+#N canvas 283 133 1345 720 10;
 #X obj 207 27 inlet;
 #X obj 236 574 outlet;
 #X obj 325 55 r master-ticks;
@@ -15,8 +15,8 @@
 #X obj 711 404 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 704 316 sel 1;
-#X obj 777 318 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 5 256;
+#X obj 777 318 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
 #X msg 738 340 stop;
 #X obj 264 257 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -31,23 +31,26 @@
 -1 -1;
 #X obj 168 529 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 290 415 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 1.69 256;
+#X obj 290 415 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 25 256;
 #X obj 287 332 t f f;
 #X obj 292 382 / 100;
 #X obj 292 355 *;
-#X obj 797 156 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 5 256;
-#X obj 359 338 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 13 256;
+#X obj 797 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 359 338 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 699 278 >= 5;
 #X obj 242 550 until;
 #X obj 240 523 f 1;
 #X obj 339 495 r ng_poly-\$1;
-#X obj 308 465 nbx 5 14 1 1e+037 0 0 empty empty empty 0 -8 0 10 -262144
+#X obj 308 465 nbx 5 14 1 1e+37 0 0 empty empty empty 0 -8 0 10 -262144
 -1 -1 1 256;
+#X obj 327 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 7 0;
 #X connect 2 0 18 0;
+#X connect 2 0 37 0;
 #X connect 3 0 11 0;
 #X connect 4 0 12 0;
 #X connect 4 0 16 0;

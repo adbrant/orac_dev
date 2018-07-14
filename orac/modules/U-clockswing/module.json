@@ -1,6 +1,6 @@
 {
-    "name" : "U-clock",
-    "display" : "Clock",
+    "name" : "U-clockswing",
+    "display" : "ClockSwing",
     "parameters" :  [ 
         ["int","c_bpm","BPM",10,480,120],
         ["float","c_swing8","Swing 8",0,100,0],
