@@ -1,0 +1,24 @@
+{
+    "name" : "S-modalsyn",
+    "display" : "ModalSyn",
+    "parameters" :  [ 
+        ["pitch","ms_trans","Transpose",-24,24,0],
+        ["float","ms_q","Q factor",1,5000,2000],
+        ["float","ms_volume","Volume",0,100,25],
+        ["int","ms_m1_coarse","M1 Coarse",1,50,1],
+        ["float","ms_m1_fine","M1 Fine",-100,100,0],
+        ["int","ms_m2_coarse","M2 Coarse",1,50,1],
+        ["float","ms_m2_fine","M2 Fine",-100,100,0],
+        ["int","ms_m3_coarse","M3 Coarse",1,50,1],
+        ["float","ms_m3_fine","M3 Fine",-100,100,0],        
+        ["int","ms_m4_coarse","M4 Coarse",1,50,1],
+        ["float","ms_m4_fine","M4 Fine",-100,100,0]       
+        
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["ms_trans","ms_q","ms_volume"]],
+        ["pg_m12", "Tune 1/2",["ms_m1_coarse","ms_m1_fine","ms_m2_coarse","ms_m2_fine" ]],
+        ["pg_m34", "Tune 3/4",["ms_m3_coarse","ms_m3_fine","ms_m4_coarse","ms_m4_fine" ]]-
+    ]
+}
+

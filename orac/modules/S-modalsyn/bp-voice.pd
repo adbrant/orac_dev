@@ -1,0 +1,8 @@
+#N canvas 87 6 1082 583 10;
+#X text 352 23 note messages;
+#X obj 305 32 inlet;
+#X obj 309 157 outlet~;
+#X text 25 10 synth voice with waveform change;
+#X obj 301 110 modal \$1;
+#X connect 1 0 4 0;
+#X connect 4 0 2 0;
