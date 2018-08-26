@@ -1,0 +1,16 @@
+{
+    "name" : "F-del+dist-trig",
+    "display" : "Delay + Distort Trigger",
+    "parameters" :  [ 
+        ["pct","rdd_delLen","Delay Length",0,100,25],
+        ["pct","rdd_distLen","Dist. Length",0,100,25],
+        ["pct","rdd_depth","Depth",0,100,50],
+	["pct","rdd_wetdry","Wet/Dry",0,100,50]
+
+	
+    ],
+    "pages" : [ 
+        ["pg_main","Main", ["rdd_delLen","rdd_distLen","rdd_depth","rdd_wetdry"]]
+    ]
+}
+

@@ -1,0 +1,17 @@
+{
+    "name" : "S-roganelle",
+    "display" : "Roganelle",
+    "parameters" :  [ 
+        ["pct","ro_viola", "Viola Vol",0,100,25],
+        ["pct","ro_violin","Violin Vol",0,100,25],
+        ["time","ro_attack","Attack",0,3000,250],
+        ["time","ro_release","Release",0,3000,250],
+        ["freq","ro_cutoff","Cutoff",0,2100,2100],
+        ["pct","ro_resonance","Resonance",0,100,0]
+    ],
+    "pages" : [ 
+        ["ro_main","Main",["ro_viola","ro_violin","ro_trans","ro_attack","ro_release"]],
+        ["ro_filter", "Filter", ["ro_cutoff", "ro_resonance"]]
+    ]
+}
+
