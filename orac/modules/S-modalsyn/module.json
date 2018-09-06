@@ -18,7 +18,7 @@
     "pages" : [ 
         ["pg_main","Main",["ms_trans","ms_q","ms_volume"]],
         ["pg_m12", "Tune 1/2",["ms_m1_coarse","ms_m1_fine","ms_m2_coarse","ms_m2_fine" ]],
-        ["pg_m34", "Tune 3/4",["ms_m3_coarse","ms_m3_fine","ms_m4_coarse","ms_m4_fine" ]]-
+        ["pg_m34", "Tune 3/4",["ms_m3_coarse","ms_m3_fine","ms_m4_coarse","ms_m4_fine" ]]
     ]
 }
 
