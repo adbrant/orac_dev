@@ -17,14 +17,18 @@
         ["float","samp_lopass","Low Pass",0,1,1],
         ["float","samp_hipass","High Pass",0,1,0],
         ["bool","samp_hold","Hold",0],
-         ["float","samp_ctrlsmooth","Pitch Filt",1,20,4]
+         ["float","samp_ctrlsmooth","Pitch Filt",1,20,4],
+         ["float","samp_rc_size","RndCut len",0,1,1],
+         ["float","samp_rc_env","RndCut env",0,1,0.1]
+         
     ],
     "pages" : [ 
         ["pg_main","Main",["samp_select","samp_vol","samp_pan"]],
         ["pg_pitch","Pitch",["samp_semitone","samp_cent","samp_modrate","samp_moddepth"]],
         ["pg_loop","Loop",["samp_mode","samp_start","samp_end","samp_attack"]],
         ["pg_mod","Filter",["samp_lopass","samp_hipass"]],
-        ["pg_misc","Misc",["samp_hold","samp_ctrlsmooth"]]
+        ["pg_misc","Misc",["samp_hold","samp_ctrlsmooth"]],
+        ["pg_rc","RndCut",["samp_rc_size","samp_rc_env"]]
     ]
 }
 
