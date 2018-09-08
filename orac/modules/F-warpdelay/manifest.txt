@@ -1,0 +1,10 @@
+3f962812fc6883b7690bf7be4625cbfc1f86bec5  F-warpdelay/c_xfade.pd
+bba7bf8492afe617cdd9fed48e1a7ccf7fd32064  F-warpdelay/delay3sec.pd
+f15fd4c82ba62184eb6f803f1a8d5d04234459e6  F-warpdelay/freeverb~-help.pd
+b215273750385c57944fd59a709c4c797464173a  F-warpdelay/freeverb~.dll
+531bc0bba505e2cba1f1b9586a733fe18a537de1  F-warpdelay/freeverb~.pd_linux
+e85349a11eefe5541b433c3627e8fa413d1377c5  F-warpdelay/module.json
+2ad6709f7a20932cf092f966c2f92af717235d5c  F-warpdelay/module.pd
+b24bd9db389b1b561fef1806f8907b8c14626b48  F-warpdelay/notein_mono.pd
+9d680048f7ab3c554e1a1e7f2bd9a34cd5dbc42c  F-warpdelay/pdelay.pd
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  F-warpdelay/deploy.sh

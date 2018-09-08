@@ -3,12 +3,12 @@
     "display" : "AddSynth",
     "parameters" :  [ 
         ["pitch","r_trans","Transpose",-24,24,0],
-        ["int","r_preset","Preset",1,22,1],
-        ["pct","r_res","Res",0,100,50],
-        ["pct","r_freq","Freq",0,100,50]
+        ["int","r_preset","Preset",0,21,0],
+        ["pct","r_res","Res",0,100,0],
+        ["pct","r_freq","Freq",0,100,100]
     ],
     "pages" : [ 
-        ["pg_main","Main",["r_trans","r_tone","r_res","r_freq"]]
+        ["pg_main","Main",["r_trans","r_preset","r_res","r_freq"]]
     ]
 }
 

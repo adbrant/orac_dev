@@ -1,9 +1,9 @@
-#N canvas 201 42 975 674 10;
+#N canvas 211 67 975 674 10;
 #X obj 28 52 r addsyn-\$1-notes-in;
 #X obj 28 146 pack 0 0 0;
 #X obj 28 168 route 1 2 3 4, f 50;
 #X obj 112 319 s~ addsyn-\$1-out;
-#N canvas 17 50 1040 639 adsr+global-amplitude 1;
+#N canvas 17 50 1040 639 adsr+global-amplitude 0;
 #X obj 218 476 pack \$1 0 0;
 #X obj 218 442 t b a;
 #X obj 218 324 until;
@@ -117,7 +117,7 @@
 #X connect 44 0 47 0;
 #X connect 46 0 17 0;
 #X restore 42 448 pd adsr+global-amplitude;
-#N canvas -98 104 1358 598 knobs 1;
+#N canvas 8 111 1351 598 knobs 1;
 #X obj 132 361 f \$1;
 #X obj 64 386 f \$1;
 #X obj 64 362 loadbang;
@@ -175,7 +175,7 @@ to the first partial (which usually is 1) than the second to the second
 partial etc... up to 12 Changing the numbers on this list is fun but
 a little complicated \, make sure to save the text file(ctrl-s) than
 click the bang* with the write button.;
-#X obj 238 10 loadbang;
+#X obj 230 7 loadbang;
 #X obj 33 77 change -1;
 #X obj 238 71 - 1;
 #X floatatom 118 76 5 0 0 0 - - -, f 5;
@@ -194,8 +194,10 @@ click the bang* with the write button.;
 -1;
 #X obj 308 2 r loadbang-\$2;
 #X obj 6 299 r loadbang-\$2;
-#X obj 786 290 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0.76 256;
+#X obj 786 290 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 203 108;
+#X msg 320 134 0;
 #X connect 0 0 54 0;
 #X connect 1 0 52 0;
 #X connect 2 0 1 0;
@@ -247,9 +249,11 @@ click the bang* with the write button.;
 #X connect 57 0 38 0;
 #X connect 59 0 60 0;
 #X connect 60 0 51 0;
+#X connect 62 0 67 0;
 #X connect 63 0 55 0;
 #X connect 63 0 62 0;
 #X connect 64 0 1 0;
+#X connect 67 0 36 0;
 #X restore 43 409 pd knobs;
 #X obj 60 344 outlet~;
 #X obj 78 22 inlet;

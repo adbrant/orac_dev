@@ -1,4 +1,4 @@
-#N canvas 192 8 913 708 10;
+#N canvas 207 74 913 708 10;
 #X obj 127 15 inlet;
 #X obj 127 37 unpack 0 0, f 23;
 #X obj 125 456 catch~ addsyn-\$1-bus\$2;
@@ -19,8 +19,8 @@
 #X obj 713 41 addsyn-partial \$1 \$2 0;
 #X obj 42 435 *~;
 #X obj 42 457 *~;
-#X obj 247 324 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 15 256;
+#X obj 247 324 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -16 256;
 #X obj 713 201 addsyn-partial \$1 \$2 8;
 #X obj 713 261 addsyn-partial \$1 \$2 11;
 #X obj 713 81 addsyn-partial \$1 \$2 2;

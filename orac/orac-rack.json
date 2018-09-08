@@ -1,6 +1,499 @@
 {
 	"presets":	{
+		"New 6":	{
+			"m9":	{
+				"moduleType":	"R-1x10",
+				"params":	{
+					"r-out-midich-m9":	0,
+					"r-gain-m8":	100,
+					"r-notethru-m7":	1,
+					"r-gain-m7":	100,
+					"r-gain-m6":	100,
+					"r-out-gain-m9":	100,
+					"r-notethru-m8":	1,
+					"r-notethru-m5":	1,
+					"r-gain-m5":	100,
+					"r-notethru-m4":	1,
+					"r-gain-m4":	100,
+					"r-notethru-m6":	1,
+					"r-gain-m0":	100,
+					"r-notethru-m3":	1,
+					"r-in-gain-m0":	0,
+					"r-notethru-m0":	1,
+					"r-notethru-m1":	0,
+					"r-gain-m2":	100,
+					"r-in-midich-m0":	0,
+					"r-gain-m1":	100,
+					"r-notethru-m2":	1,
+					"r-gain-m3":	100
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m8":	{
+				"moduleType":	"U-clock",
+				"params":	{
+					"c_midiout":	0,
+					"c_bpm":	120
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m6":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m5":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m4":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m0":	{
+				"moduleType":	"U-seq2",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m1":	{
+				"moduleType":	"S-polyfolder",
+				"params":	{
+					"folder_mdepth":	0,
+					"folder_vol":	50,
+					"folder_attack":	74.975563,
+					"folder_vrate":	1,
+					"folder_type":	0,
+					"folder_offset":	0,
+					"folder_decay":	50,
+					"folder_sustain":	50,
+					"folder_mrate":	1,
+					"folder_folding":	50,
+					"folder_vdepth":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m7":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m2":	{
+				"moduleType":	"F-mooglfo",
+				"params":	{
+					"moog_res":	19.648094,
+					"moog_depth":	100,
+					"moog_rate":	0.782014,
+					"moog_cut":	1788.856323
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m3":	{
+				"moduleType":	"F-warpdelay",
+				"params":	{
+					"wdelay_midictrl":	0,
+					"wdelay_mix":	0.500000,
+					"wdelay_feedback":	0.511730,
+					"wdelay_cent":	3,
+					"wdelay_dir":	0,
+					"wdelay_lfospd":	0.500000,
+					"wdelay_heads":	3,
+					"wdelay_pfilt":	12000,
+					"wdelay_semi":	12,
+					"wdelay_len":	3184,
+					"wdelay_lfodep":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			}
+		},
+		"New 3":	{
+			"m1":	{
+				"moduleType":	"S-stringmachine",
+				"params":	{
+					"sm_transpose":	0,
+					"sm_envelope":	1000,
+					"sm_cutoff":	1353,
+					"sm_detune":	0.200000
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m7":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m2":	{
+				"moduleType":	"U-ottorhythm",
+				"params":	{
+					"otto_hold":	0,
+					"otto_midi_thru":	0,
+					"otto_bass_oct":	2,
+					"otto_play":	1,
+					"otto_style":	12,
+					"otto_kit":	0,
+					"otto_volume":	0,
+					"otto_chrd_on":	0,
+					"otto_bass_vel":	127,
+					"otto_bass_len":	1177.419312,
+					"otto_chrd_vel":	100,
+					"otto_chrd_len":	645.161255,
+					"otto_bass_on":	1,
+					"otto_chrd_oct":	2
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m3":	{
+				"moduleType":	"S-rhodey",
+				"params":	{
+					"r_decay":	2000,
+					"r_mod":	100,
+					"r_tone":	56.695992,
+					"r_trans":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m0":	{
+				"moduleType":	"U-muchord",
+				"params":	{
+					"muchord_harm":	0,
+					"muchord_inv":	0,
+					"muchord_offset":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m4":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m5":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m6":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m8":	{
+				"moduleType":	"U-clock",
+				"params":	{
+					"c_midiout":	0,
+					"c_bpm":	120
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m9":	{
+				"moduleType":	"R-1x10",
+				"params":	{
+					"r-out-midich-m9":	0,
+					"r-gain-m8":	100,
+					"r-notethru-m7":	1,
+					"r-gain-m7":	100,
+					"r-gain-m6":	100,
+					"r-out-gain-m9":	100,
+					"r-notethru-m8":	1,
+					"r-notethru-m5":	1,
+					"r-gain-m5":	100,
+					"r-notethru-m4":	1,
+					"r-gain-m4":	100,
+					"r-notethru-m6":	1,
+					"r-gain-m0":	100,
+					"r-notethru-m3":	1,
+					"r-in-gain-m0":	0,
+					"r-notethru-m0":	1,
+					"r-notethru-m1":	1,
+					"r-gain-m2":	100,
+					"r-in-midich-m0":	0,
+					"r-gain-m1":	100,
+					"r-notethru-m2":	1,
+					"r-gain-m3":	100
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			}
+		},
+		"New 2":	{
+			"m9":	{
+				"moduleType":	"R-1x10",
+				"params":	{
+					"r-out-midich-m9":	0,
+					"r-gain-m8":	100,
+					"r-notethru-m7":	1,
+					"r-gain-m7":	100,
+					"r-gain-m6":	100,
+					"r-out-gain-m9":	100,
+					"r-notethru-m8":	1,
+					"r-notethru-m5":	1,
+					"r-gain-m5":	100,
+					"r-notethru-m4":	1,
+					"r-gain-m4":	100,
+					"r-notethru-m6":	1,
+					"r-gain-m0":	100,
+					"r-notethru-m3":	1,
+					"r-in-gain-m0":	0,
+					"r-notethru-m0":	1,
+					"r-notethru-m1":	1,
+					"r-gain-m2":	100,
+					"r-in-midich-m0":	0,
+					"r-gain-m1":	100,
+					"r-notethru-m2":	1,
+					"r-gain-m3":	100
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m8":	{
+				"moduleType":	"U-clock",
+				"params":	{
+					"c_midiout":	0,
+					"c_bpm":	93
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m6":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m5":	{
+				"moduleType":	"F-delay",
+				"params":	{
+					"dly_hip":	0,
+					"dly_fb":	37.536655,
+					"dly_time":	325.513214,
+					"dly_dw":	29.130009
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m4":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m0":	{
+				"moduleType":	"U-punchyl",
+				"params":	{
+					"punchy_velo":	100,
+					"punchy_length":	2187.954102,
+					"punchy_beat":	32
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m1":	{
+				"moduleType":	"U-muchord",
+				"params":	{
+					"muchord_harm":	1,
+					"muchord_inv":	4,
+					"muchord_offset":	-24
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m7":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m2":	{
+				"moduleType":	"U-arperopt",
+				"params":	{
+					"arper_length":	2000,
+					"arper_pattern":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m3":	{
+				"moduleType":	"S-rngs",
+				"params":	{
+					"rngs_i_exciter":	1,
+					"rngs_bypass":	0,
+					"rngs_model":	0,
+					"rngs_fm":	0,
+					"rngs_struct":	100,
+					"rngs_poly":	3,
+					"rngs_trans":	0,
+					"rngs_easter":	0,
+					"rngs_pos":	70.576736,
+					"rngs_i_note":	0,
+					"rngs_bright":	37.341152,
+					"rngs_damp":	70.185730,
+					"rngs_chord":	2,
+					"rngs_i_strum":	1
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			}
+		},
 		"New 5":	{
+			"m3":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m2":	{
+				"moduleType":	"U-muchord",
+				"params":	{
+					"muchord_harm":	12,
+					"muchord_inv":	0,
+					"muchord_offset":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m7":	{
+				"moduleType":	"F-delay",
+				"params":	{
+					"dly_hip":	0,
+					"dly_fb":	47.507332,
+					"dly_time":	445.747833,
+					"dly_dw":	72.629524
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m1":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m0":	{
+				"moduleType":	"U-punchyl",
+				"params":	{
+					"punchy_velo":	100,
+					"punchy_length":	3000,
+					"punchy_beat":	64
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m4":	{
+				"moduleType":	"S-stringmachine",
+				"params":	{
+					"sm_transpose":	-12,
+					"sm_envelope":	4301,
+					"sm_cutoff":	1865,
+					"sm_detune":	0.175953
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
 			"m9":	{
 				"moduleType":	"R-1x10",
 				"params":	{
@@ -67,14 +560,72 @@
 					"cc":	{
 					}
 				}
+			}
+		},
+		"New 4":	{
+			"m5":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m6":	{
+				"moduleType":	"U-default",
+				"params":	{
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m8":	{
+				"moduleType":	"U-clock",
+				"params":	{
+					"c_midiout":	0,
+					"c_bpm":	85
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m9":	{
+				"moduleType":	"R-1x10",
+				"params":	{
+					"r-out-midich-m9":	0,
+					"r-gain-m8":	100,
+					"r-notethru-m7":	1,
+					"r-gain-m7":	100,
+					"r-gain-m6":	100,
+					"r-out-gain-m9":	100,
+					"r-notethru-m8":	1,
+					"r-notethru-m5":	1,
+					"r-gain-m5":	100,
+					"r-notethru-m4":	1,
+					"r-gain-m4":	100,
+					"r-notethru-m6":	1,
+					"r-gain-m0":	100,
+					"r-notethru-m3":	1,
+					"r-in-gain-m0":	0,
+					"r-notethru-m0":	1,
+					"r-notethru-m1":	1,
+					"r-gain-m2":	100,
+					"r-in-midich-m0":	0,
+					"r-gain-m1":	100,
+					"r-notethru-m2":	1,
+					"r-gain-m3":	100
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
 			},
 			"m4":	{
-				"moduleType":	"S-stringmachine",
+				"moduleType":	"U-default",
 				"params":	{
-					"sm_transpose":	-12,
-					"sm_envelope":	4301,
-					"sm_cutoff":	1865,
-					"sm_detune":	0.175953
 				},
 				"midi-mapping":	{
 					"cc":	{
@@ -82,62 +633,17 @@
 				}
 			},
 			"m0":	{
-				"moduleType":	"U-punchyl",
+				"moduleType":	"U-punch",
 				"params":	{
 					"punchy_velo":	100,
-					"punchy_length":	3000,
-					"punchy_beat":	64
+					"punchy_length":	100,
+					"punchy_beat":	4
 				},
 				"midi-mapping":	{
 					"cc":	{
 					}
 				}
 			},
-			"m1":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m7":	{
-				"moduleType":	"F-delay",
-				"params":	{
-					"dly_hip":	0,
-					"dly_fb":	47.507332,
-					"dly_time":	445.747833,
-					"dly_dw":	72.629524
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m2":	{
-				"moduleType":	"U-muchord",
-				"params":	{
-					"muchord_harm":	12,
-					"muchord_inv":	0,
-					"muchord_offset":	0
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m3":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			}
-		},
-		"New 4":	{
 			"m3":	{
 				"moduleType":	"F-chorus",
 				"params":	{
@@ -182,20 +688,24 @@
 					"cc":	{
 					}
 				}
-			},
-			"m0":	{
-				"moduleType":	"U-punch",
+			}
+		},
+		"Default":	{
+			"m1":	{
+				"moduleType":	"S-basicpoly",
 				"params":	{
-					"punchy_velo":	100,
-					"punchy_length":	100,
-					"punchy_beat":	4
+					"bp_vdepth":	0,
+					"bp_vrate":	1,
+					"bp_decay":	5,
+					"bp_wave":	0,
+					"bp_trans":	0
 				},
 				"midi-mapping":	{
 					"cc":	{
 					}
 				}
 			},
-			"m4":	{
+			"m7":	{
 				"moduleType":	"U-default",
 				"params":	{
 				},
@@ -204,42 +714,9 @@
 					}
 				}
 			},
-			"m9":	{
-				"moduleType":	"R-1x10",
+			"m2":	{
+				"moduleType":	"U-default",
 				"params":	{
-					"r-out-midich-m9":	0,
-					"r-gain-m8":	100,
-					"r-notethru-m7":	1,
-					"r-gain-m7":	100,
-					"r-gain-m6":	100,
-					"r-out-gain-m9":	100,
-					"r-notethru-m8":	1,
-					"r-notethru-m5":	1,
-					"r-gain-m5":	100,
-					"r-notethru-m4":	1,
-					"r-gain-m4":	100,
-					"r-notethru-m6":	1,
-					"r-gain-m0":	100,
-					"r-notethru-m3":	1,
-					"r-in-gain-m0":	0,
-					"r-notethru-m0":	1,
-					"r-notethru-m1":	1,
-					"r-gain-m2":	100,
-					"r-in-midich-m0":	0,
-					"r-gain-m1":	100,
-					"r-notethru-m2":	1,
-					"r-gain-m3":	100
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m8":	{
-				"moduleType":	"U-clock",
-				"params":	{
-					"c_midiout":	0,
-					"c_bpm":	85
 				},
 				"midi-mapping":	{
 					"cc":	{
@@ -255,17 +732,26 @@
 					}
 				}
 			},
-			"m5":	{
-				"moduleType":	"U-default",
+			"m9":	{
+				"moduleType":	"R-1x10",
 				"params":	{
 				},
 				"midi-mapping":	{
 					"cc":	{
 					}
 				}
-			}
-		},
-		"Default":	{
+			},
+			"m8":	{
+				"moduleType":	"U-clock",
+				"params":	{
+					"c_midiout":	0,
+					"c_bpm":	120
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
 			"m5":	{
 				"moduleType":	"U-default",
 				"params":	{
@@ -305,30 +791,14 @@
 					"cc":	{
 					}
 				}
-			},
-			"m8":	{
-				"moduleType":	"U-clock",
+			}
+		},
+		"New 1":	{
+			"m3":	{
+				"moduleType":	"U-arperopt",
 				"params":	{
-					"c_midiout":	0,
-					"c_bpm":	120
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m9":	{
-				"moduleType":	"R-1x10",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m6":	{
-				"moduleType":	"U-default",
-				"params":	{
+					"arper_length":	500,
+					"arper_pattern":	0
 				},
 				"midi-mapping":	{
 					"cc":	{
@@ -336,8 +806,13 @@
 				}
 			},
 			"m2":	{
-				"moduleType":	"U-default",
+				"moduleType":	"S-basicpoly",
 				"params":	{
+					"bp_vdepth":	0,
+					"bp_trans":	12,
+					"bp_decay":	5,
+					"bp_wave":	3,
+					"bp_vrate":	1
 				},
 				"midi-mapping":	{
 					"cc":	{
@@ -345,8 +820,12 @@
 				}
 			},
 			"m7":	{
-				"moduleType":	"U-default",
+				"moduleType":	"F-delay",
 				"params":	{
+					"dly_hip":	0,
+					"dly_fb":	48.289345,
+					"dly_time":	322.580658,
+					"dly_dw":	68.328445
 				},
 				"midi-mapping":	{
 					"cc":	{
@@ -354,21 +833,43 @@
 				}
 			},
 			"m1":	{
-				"moduleType":	"S-basicpoly",
+				"moduleType":	"U-muchord",
 				"params":	{
-					"bp_vdepth":	0,
-					"bp_vrate":	1,
-					"bp_decay":	5,
-					"bp_wave":	0,
-					"bp_trans":	0
+					"muchord_harm":	13,
+					"muchord_inv":	0,
+					"muchord_offset":	12
 				},
 				"midi-mapping":	{
 					"cc":	{
 					}
 				}
-			}
-		},
-		"New 1":	{
+			},
+			"m0":	{
+				"moduleType":	"U-punchyl",
+				"params":	{
+					"punchy_velo":	100,
+					"punchy_length":	2293.490723,
+					"punchy_beat":	32
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m4":	{
+				"moduleType":	"S-basicpoly",
+				"params":	{
+					"bp_vdepth":	0,
+					"bp_trans":	24,
+					"bp_decay":	5,
+					"bp_wave":	3,
+					"bp_vrate":	1
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
 			"m9":	{
 				"moduleType":	"R-1x10",
 				"params":	{
@@ -426,365 +927,6 @@
 			"m5":	{
 				"moduleType":	"U-default",
 				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m4":	{
-				"moduleType":	"S-basicpoly",
-				"params":	{
-					"bp_vdepth":	0,
-					"bp_trans":	24,
-					"bp_decay":	5,
-					"bp_wave":	3,
-					"bp_vrate":	1
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m0":	{
-				"moduleType":	"U-punchyl",
-				"params":	{
-					"punchy_velo":	100,
-					"punchy_length":	2293.490723,
-					"punchy_beat":	32
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m1":	{
-				"moduleType":	"U-muchord",
-				"params":	{
-					"muchord_harm":	13,
-					"muchord_inv":	0,
-					"muchord_offset":	12
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m7":	{
-				"moduleType":	"F-delay",
-				"params":	{
-					"dly_hip":	0,
-					"dly_fb":	48.289345,
-					"dly_time":	322.580658,
-					"dly_dw":	68.328445
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m2":	{
-				"moduleType":	"S-basicpoly",
-				"params":	{
-					"bp_vdepth":	0,
-					"bp_trans":	12,
-					"bp_decay":	5,
-					"bp_wave":	3,
-					"bp_vrate":	1
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m3":	{
-				"moduleType":	"U-arperopt",
-				"params":	{
-					"arper_length":	500,
-					"arper_pattern":	0
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			}
-		},
-		"New 2":	{
-			"m1":	{
-				"moduleType":	"U-muchord",
-				"params":	{
-					"muchord_harm":	1,
-					"muchord_inv":	4,
-					"muchord_offset":	-24
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m7":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m2":	{
-				"moduleType":	"U-arperopt",
-				"params":	{
-					"arper_length":	2000,
-					"arper_pattern":	0
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m3":	{
-				"moduleType":	"S-rngs",
-				"params":	{
-					"rngs_i_exciter":	1,
-					"rngs_bypass":	0,
-					"rngs_model":	0,
-					"rngs_fm":	0,
-					"rngs_struct":	100,
-					"rngs_poly":	3,
-					"rngs_trans":	0,
-					"rngs_easter":	0,
-					"rngs_pos":	70.576736,
-					"rngs_i_note":	0,
-					"rngs_bright":	37.341152,
-					"rngs_damp":	70.185730,
-					"rngs_chord":	2,
-					"rngs_i_strum":	1
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m0":	{
-				"moduleType":	"U-punchyl",
-				"params":	{
-					"punchy_velo":	100,
-					"punchy_length":	2187.954102,
-					"punchy_beat":	32
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m4":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m5":	{
-				"moduleType":	"F-delay",
-				"params":	{
-					"dly_hip":	0,
-					"dly_fb":	37.536655,
-					"dly_time":	325.513214,
-					"dly_dw":	29.130009
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m6":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m8":	{
-				"moduleType":	"U-clock",
-				"params":	{
-					"c_midiout":	0,
-					"c_bpm":	93
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m9":	{
-				"moduleType":	"R-1x10",
-				"params":	{
-					"r-out-midich-m9":	0,
-					"r-gain-m8":	100,
-					"r-notethru-m7":	1,
-					"r-gain-m7":	100,
-					"r-gain-m6":	100,
-					"r-out-gain-m9":	100,
-					"r-notethru-m8":	1,
-					"r-notethru-m5":	1,
-					"r-gain-m5":	100,
-					"r-notethru-m4":	1,
-					"r-gain-m4":	100,
-					"r-notethru-m6":	1,
-					"r-gain-m0":	100,
-					"r-notethru-m3":	1,
-					"r-in-gain-m0":	0,
-					"r-notethru-m0":	1,
-					"r-notethru-m1":	1,
-					"r-gain-m2":	100,
-					"r-in-midich-m0":	0,
-					"r-gain-m1":	100,
-					"r-notethru-m2":	1,
-					"r-gain-m3":	100
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			}
-		},
-		"New 3":	{
-			"m5":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m6":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m8":	{
-				"moduleType":	"U-clock",
-				"params":	{
-					"c_midiout":	0,
-					"c_bpm":	120
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m9":	{
-				"moduleType":	"R-1x10",
-				"params":	{
-					"r-out-midich-m9":	0,
-					"r-gain-m8":	100,
-					"r-notethru-m7":	1,
-					"r-gain-m7":	100,
-					"r-gain-m6":	100,
-					"r-out-gain-m9":	100,
-					"r-notethru-m8":	1,
-					"r-notethru-m5":	1,
-					"r-gain-m5":	100,
-					"r-notethru-m4":	1,
-					"r-gain-m4":	100,
-					"r-notethru-m6":	1,
-					"r-gain-m0":	100,
-					"r-notethru-m3":	1,
-					"r-in-gain-m0":	0,
-					"r-notethru-m0":	1,
-					"r-notethru-m1":	1,
-					"r-gain-m2":	100,
-					"r-in-midich-m0":	0,
-					"r-gain-m1":	100,
-					"r-notethru-m2":	1,
-					"r-gain-m3":	100
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m4":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m0":	{
-				"moduleType":	"U-muchord",
-				"params":	{
-					"muchord_harm":	0,
-					"muchord_inv":	0,
-					"muchord_offset":	0
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m3":	{
-				"moduleType":	"S-rhodey",
-				"params":	{
-					"r_decay":	2000,
-					"r_mod":	100,
-					"r_tone":	56.695992,
-					"r_trans":	0
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m2":	{
-				"moduleType":	"U-ottorhythm",
-				"params":	{
-					"otto_hold":	0,
-					"otto_midi_thru":	0,
-					"otto_bass_oct":	2,
-					"otto_play":	1,
-					"otto_style":	12,
-					"otto_kit":	0,
-					"otto_volume":	0,
-					"otto_chrd_on":	0,
-					"otto_bass_vel":	127,
-					"otto_bass_len":	1177.419312,
-					"otto_chrd_vel":	100,
-					"otto_chrd_len":	645.161255,
-					"otto_bass_on":	1,
-					"otto_chrd_oct":	2
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m7":	{
-				"moduleType":	"U-default",
-				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m1":	{
-				"moduleType":	"S-stringmachine",
-				"params":	{
-					"sm_transpose":	0,
-					"sm_envelope":	1000,
-					"sm_cutoff":	1353,
-					"sm_detune":	0.200000
 				},
 				"midi-mapping":	{
 					"cc":	{
