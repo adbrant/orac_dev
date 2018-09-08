@@ -1,0 +1,39 @@
+Sampletwig
+
+Based on Samplenest https://patchstorage.com/samplenest/
+Can load one sample only, but now can be pitched via midi input
+
+IMPORTANT:
+All samples are stored in /Media/samples/ starting at the base of your USB drive.
+You must create this folder before running the patch.
+I’ve also uploaded an archive with some to get you started (mainly field recordings and other organelle patches) here:
+https://drive.google.com/file/d/1OJh8TJ1MR_qKNBu9thjmaoJhCkQ9HUr-/view?usp=sharing
+This patch will find files in that folder ending in .wav (case sensitive!).
+
+Controls:
+Main:
+  Sample Select - Displays 0-100, but sample name is printed to bottom of screen
+  Volume
+  Pan
+Pitch: 
+  Semitone
+  Fine Tune
+  Mod Rate
+  Mod Depth
+Loop:
+  Mode - Chooses between 6 looping modes (modes are printed to the bottom of the screen)
+         gate
+         oneshot 
+         loop 
+         pingpong
+         randpp - random ping pong, read pointer will reverse direction at a random point in the loop
+         randcut - plays random sections of the loop, Env control adjusts envelop at each cut point
+  Start - Sample start point
+  End   - Sample end point (if less than start value playback is reversed)
+  Env   - adds attack and decay, if 0 samples may click
+
+Misc:
+  Hold: Note Hold (see note on Aux below)
+  Pitch Filt: Amount filtering on pitch (portamento), lower = slower
+  
+Aux: if 'Hold' knob is 0, turns hold on or off. I 'Hold' knob is 1, releases current notes but leaves hold on.
