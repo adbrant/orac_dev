@@ -1,4 +1,4 @@
-#N canvas -6 1 1356 714 10;
+#N canvas 8 60 1345 714 10;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-plot 40000 float 2;
 #X coords 0 1 40000 -1 200 280 1 0 0;
@@ -34,8 +34,8 @@
 #X restore 1014 31 graph;
 #X obj 544 549 *~ 20000;
 #X obj 464 521 +~;
-#X obj 329 158 nbx 10 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 174682 256;
+#X obj 329 158 nbx 10 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 355237 256;
 #N canvas 0 50 450 300 rand~ 0;
 #X obj 95 148 outlet~;
 #X obj 123 64 noise~;
@@ -58,8 +58,8 @@
 #X obj 589 395 -~;
 #X obj 788 371 expr~ tanh($v1*$v2);
 #X obj 821 315 sig~ 1;
-#X obj 816 217 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 816 217 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 201.963 256;
 #X obj 799 289 / 10;
 #X obj 144 481 *~;
 #X obj 332 534 *~ 1;
@@ -75,16 +75,16 @@
 #X obj 460 98 inlet;
 #X obj 673 512 max~ 1;
 #X obj 659 300 == 0;
-#X obj 695 420 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 695 420 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
 #X obj 572 601 *~ 0;
 #X text 492 60 env;
 #X obj 477 637 tabwrite~ \$0-plot4;
 #X obj 491 557 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 500 213 * -1;
-#X obj 520 159 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 8 256;
+#X obj 520 159 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 20.2269 256;
 #X obj 505 246 + 2010;
 #X obj 530 263 / 2000;
 #X obj 542 338 * 200;
@@ -92,6 +92,8 @@
 #X obj 494 184 / 3;
 #X obj 107 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 197 510 *~ 1;
+#X obj 265 395 r samp_rc_size-\$1;
 #X connect 1 0 6 0;
 #X connect 1 0 9 1;
 #X connect 1 0 17 1;
@@ -131,7 +133,7 @@
 #X connect 29 0 28 1;
 #X connect 30 0 31 0;
 #X connect 31 0 29 0;
-#X connect 32 0 21 1;
+#X connect 32 0 59 0;
 #X connect 33 0 6 1;
 #X connect 34 0 15 0;
 #X connect 39 0 1 0;
@@ -151,3 +153,5 @@
 #X connect 55 0 30 0;
 #X connect 56 0 55 0;
 #X connect 57 0 51 0;
+#X connect 59 0 21 1;
+#X connect 60 0 59 1;

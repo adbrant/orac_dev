@@ -1,0 +1,9 @@
+1827b948b535e35498f561d60f30b06c4eba961e  U-notegen/module.json
+5d86f50e35d5564c1cdfd6e87321b4a9a1198435  U-notegen/module.pd
+995798629f57f7fc79b766da546975020e871ea7  U-notegen/notegen.pd
+bd065cad62235728451bc8267b14707a60313de7  U-notegen/beatdiv.pd
+9fc95283a09b3ec77b258c18804e96dc592c1782  U-notegen/midigen.pd
+5a5eb9ffe1d6a8b6dd5f4f85c08585ec0ca55d7e  U-notegen/nwrite.pd
+80ae9989c06109e13995ce1b04694e374954a5db  U-notegen/randrange.pd
+0142fb41b5e48f4669a79eed69c1535d056677db  U-notegen/triggen.pd
+6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-notegen/deploy.sh

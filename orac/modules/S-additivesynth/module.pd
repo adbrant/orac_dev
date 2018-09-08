@@ -1,4 +1,4 @@
-#N canvas 0 50 1366 725 10;
+#N canvas 13 67 1351 720 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 491 s notesOut-\$1;
 #X obj 23 9 r loaddefs-\$1;
@@ -28,23 +28,23 @@
 #X obj 697 294 r r_preset-\$1;
 #X floatatom 666 253 5 0 0 0 - - -, f 5;
 #X obj 472 299 r r_trans-\$1;
-#X obj 906 220 r r_res;
-#X obj 1059 175 r r_freq;
 #X obj 904 281 / 100;
 #X obj 1076 277 / 100;
 #X obj 231 229 ../../../../in_tester;
 #X obj 217 441 C:/users/alexd_000/Documents/PD/out_tester;
-#X obj 917 245 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
-#X obj 1074 231 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 55 256;
-#X obj 512 222 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 4 256;
+#X obj 917 245 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 1074 231 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 28.348 256;
+#X obj 512 222 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 491 522 s loadbang-\$1;
 #X obj 505 485 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1106 352 s addsyn-\$0-filterPole;
 #X obj 893 336 s addsyn-\$0-filterRez;
+#X obj 906 220 r r_res-\$1;
+#X obj 1059 184 r r_freq-\$1;
 #X connect 0 0 1 0;
 #X connect 0 0 25 0;
 #X connect 2 0 6 0;
@@ -59,17 +59,18 @@
 #X connect 22 0 19 0;
 #X connect 25 0 14 1;
 #X connect 25 0 15 1;
-#X connect 25 0 34 0;
-#X connect 25 0 34 1;
+#X connect 25 0 32 0;
+#X connect 25 0 32 1;
 #X connect 26 0 21 0;
 #X connect 27 0 21 0;
 #X connect 28 0 16 0;
-#X connect 29 0 31 0;
-#X connect 30 0 32 0;
-#X connect 31 0 41 0;
-#X connect 32 0 40 0;
-#X connect 33 2 25 0;
-#X connect 35 0 31 0;
-#X connect 36 0 32 0;
-#X connect 37 0 16 0;
-#X connect 39 0 38 0;
+#X connect 29 0 39 0;
+#X connect 30 0 38 0;
+#X connect 31 2 25 0;
+#X connect 33 0 29 0;
+#X connect 34 0 30 0;
+#X connect 35 0 16 0;
+#X connect 37 0 36 0;
+#X connect 40 0 29 0;
+#X connect 41 0 30 0;
+#X connect 41 0 34 0;
