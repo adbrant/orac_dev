@@ -1,0 +1,21 @@
+{
+    "name" : "U-polystep",
+    "display" : "PolyStep",
+    "parameters" :  [ 
+        ["bool","ps_record","Record",1],
+        ["bool","ps_play","Play",1],
+        ["bool","ps_thru","Midi Thru",1],
+        ["bool","ps_rev","Reverse",1],
+        ["bool","ps_rand","Random",1],
+        ["int","ps_div","Beat Div/24",1,24,6],
+        ["int","ps_mul","Beat Mul.",1,64,2],
+        ["time","ps_length","Length",1,1000,100],
+        ["int","ps_velo","Note Vel",0,127,100]
+     ],
+    "pages" : [ 
+        ["pg_main","Main",["ps_record","ps_play","ps_rev","ps_rand"]],
+        ["pg_time","Time",["ps_div","ps_mul","ps_length"]],
+        ["pg_misc","Misc",["ps_velo","ps_thru"]]
+    ]
+}
+
