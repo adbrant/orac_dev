@@ -1,4 +1,4 @@
-#N canvas 17 70 1351 548 10;
+#N canvas 22 77 1351 548 10;
 #X obj 142 70 poly 8 0;
 #X obj 140 109 pack 0 0 0;
 #N canvas 0 50 450 250 (subpatch) 0;
@@ -14,14 +14,14 @@
 #X obj 403 26 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 164 242 + 0, f 4;
-#X obj 210 72 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 76 256;
-#X obj 82 66 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 8 256;
+#X obj 210 72 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 65 256;
+#X obj 82 66 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 3 256;
 #X obj 321 128 sel 0;
 #X obj 354 164 f 0;
-#X obj 333 204 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 -2 256;
+#X obj 333 204 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 357 183 + 1;
 #X obj 320 182 - 1;
 #X obj 320 163 f 0;
@@ -32,8 +32,8 @@
 #X msg 423 253 0;
 #X obj 336 225 sel 0;
 #X obj 336 249 f 0;
-#X obj 345 320 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 345 320 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 16 256;
 #X obj 338 267 + 1;
 #X obj 125 122 t a a a;
 #X obj 204 149 unpack 0 0 0, f 6;
@@ -59,14 +59,14 @@
 #X msg 736 236 stop;
 #X obj 775 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas -93 104 1351 716 player 0;
+#N canvas 0 104 1351 716 player 0;
 #X obj 213 488 tabread notearray-\$0;
 #X obj 282 448 + 0;
 #X obj 226 126 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 230 144 f 0;
-#X obj 198 236 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 198 236 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 15 256;
 #X obj 235 170 + 1;
 #X obj 241 191 mod 64;
 #X obj 265 524 sel 0;
@@ -76,10 +76,10 @@
 #X obj 227 409 + 1;
 #X obj 263 424 sel 8;
 #X msg 246 358 0;
-#X obj 357 412 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
-#X obj 339 451 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 357 412 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 112 256;
+#X obj 339 451 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 112 256;
 #X obj 245 379 f;
 #X obj 299 222 print step;
 #X floatatom 95 74 5 0 0 2 steps - -, f 5;
@@ -90,12 +90,12 @@
 #X obj 217 141 mod 1;
 #X obj 152 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 124 118 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 124 118 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 143 164 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 244 115 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 244 115 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
 #X obj 216 123 + 1;
 #X obj 227 264 outlet;
 #X obj 231 46 r ps_div-\$1;
@@ -127,8 +127,8 @@
 #X obj 499 114 r ps_rev-\$1;
 #X obj 548 161 r ps_rand-\$1;
 #X obj 569 273 random 0;
-#X obj 570 296 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 570 296 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 246 285 spigot 1;
 #X obj 332 298 spigot 0;
 #X obj 543 212 == 0;
@@ -217,14 +217,14 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 501 489 outlet;
 #X obj 486 32 r ps_record-\$1;
 #X obj 516 190 timer;
-#X obj 518 213 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 18721.5 256;
+#X obj 518 213 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1757.46 256;
 #X floatatom 512 140 5 0 0 0 - - -, f 5;
 #X obj 494 163 sel 1;
 #X obj 558 167 sel 0;
 #X obj 517 250 int;
-#X obj 516 269 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 12 256;
+#X obj 516 269 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
 #X obj 514 298 sel 0;
 #X obj 601 72 r auxIn-\$1;
 #X obj 520 121 r auxIn-\$1;
@@ -242,8 +242,8 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 109 313 spigot 1;
 #X obj 125 342 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 113 364 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 100 256;
+#X obj 113 364 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 100 256;
 #X obj 325 374 r activestep-\$0;
 #X obj 335 392 - 1;
 #X obj 338 414 max 0;
@@ -251,18 +251,18 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 313 445 r undo-\$0;
 #X obj 323 412 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas -8 -8 1366 725 aux 0;
+#N canvas 8 60 1351 720 aux 1;
 #X obj 166 66 inlet;
 #X obj 50 223 bng 15 250 50 0 empty empty clear 17 7 0 10 -262144 -1
 -1;
 #X obj 33 277 s clear-\$0;
-#X obj 185 403 s aux-label-\$1;
+#X obj 162 452 s aux-label-\$1;
 #X obj 168 105 f 0;
 #X obj 169 140 sel 0 1 2 3;
 #X obj 319 159 sel 0 1 2 3;
 #X msg 278 255 aux: erase;
 #X msg 297 272 aux: undo;
-#X msg 312 297 aux: save;
+#X msg 311 283 aux: save;
 #X msg 336 324 aux: load;
 #X obj 316 116 r ps_aux-\$1;
 #X obj 145 206 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -292,6 +292,8 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 561 194 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X text 646 325 load then send out sequence length;
+#X msg 416 300 saved!;
+#X msg 426 320 loaded!;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 4 0 5 0;
@@ -308,13 +310,16 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X connect 9 0 3 0;
 #X connect 10 0 3 0;
 #X connect 11 0 6 0;
+#X connect 11 0 4 1;
 #X connect 12 0 13 0;
 #X connect 14 0 15 1;
 #X connect 14 0 16 1;
 #X connect 15 0 17 0;
 #X connect 15 0 18 0;
 #X connect 15 0 19 0;
+#X connect 15 0 36 0;
 #X connect 16 0 32 0;
+#X connect 16 0 37 0;
 #X connect 17 0 20 0;
 #X connect 18 0 22 0;
 #X connect 19 0 23 0;
@@ -329,11 +334,13 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X connect 32 1 28 0;
 #X connect 32 1 29 0;
 #X connect 34 0 16 0;
+#X connect 36 0 3 0;
+#X connect 37 0 3 0;
 #X restore 648 369 pd aux;
 #X obj 567 463 s aux-label-\$1;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array len-\$0 1 float 3;
-#A 0 0;
+#A 0 16;
 #X coords 0 65 1 0 10 50 1 0 0;
 #X restore 861 413 graph;
 #X obj 602 419 tabwrite len-\$0;
