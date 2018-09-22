@@ -1,4 +1,4 @@
-#N canvas 22 77 1351 548 10;
+#N canvas 22 0 1351 716 10;
 #X obj 142 70 poly 8 0;
 #X obj 140 109 pack 0 0 0;
 #N canvas 0 50 450 250 (subpatch) 0;
@@ -7,7 +7,7 @@
 #X restore 963 253 graph;
 #X obj 141 162 unpack 0 0 0, f 7;
 #X obj 83 162 unpack 0 0 0, f 6;
-#X obj 148 460 tabwrite notearray-\$0;
+#X obj 143 425 tabwrite notearray-\$0;
 #X obj 340 4 testkeys;
 #X obj 339 24 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -215,10 +215,10 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X msg 704 479 steps: \$1;
 #X obj 166 212 - 1;
 #X obj 501 489 outlet;
-#X obj 486 32 r ps_record-\$1;
+#X obj 486 19 r ps_record-\$1;
 #X obj 516 190 timer;
 #X obj 518 213 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 325.465 256;
+10 -262144 -1 -1 395.125 256;
 #X floatatom 512 140 5 0 0 0 - - -, f 5;
 #X obj 494 163 sel 1;
 #X obj 558 167 sel 0;
@@ -238,7 +238,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X restore 866 45 graph;
 #X obj 39 310 spigot 1;
 #X text 45 274 only write note ons;
-#X obj 29 404 tabwrite velarray-\$0;
+#X obj 34 567 tabwrite velarray-\$0;
 #X obj 109 313 spigot 1;
 #X obj 125 342 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -251,7 +251,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 313 445 r undo-\$0;
 #X obj 323 412 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas 8 60 1351 720 aux 1;
+#N canvas 8 60 1351 720 aux 0;
 #X obj 166 66 inlet;
 #X obj 50 223 bng 15 250 50 0 empty empty clear 17 7 0 10 -262144 -1
 -1;
@@ -396,6 +396,14 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 693 427 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 689 407 r steplabel-\$0;
+#X obj 178 452 r ps_velo_rec-\$1;
+#X obj 181 476 == 0;
+#X obj 226 481 != 0;
+#X obj 124 490 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 35 526 spigot 1;
+#X obj 113 520 spigot 0;
+#X obj 110 544 f;
 #X connect 0 0 1 0;
 #X connect 0 0 11 0;
 #X connect 0 1 1 1;
@@ -488,9 +496,10 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X connect 72 0 66 0;
 #X connect 73 0 40 0;
 #X connect 75 0 5 0;
-#X connect 78 0 77 0;
 #X connect 78 0 79 0;
 #X connect 78 0 80 0;
+#X connect 78 0 98 0;
+#X connect 78 0 99 0;
 #X connect 81 0 82 0;
 #X connect 82 0 83 0;
 #X connect 83 0 84 1;
@@ -501,3 +510,12 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X connect 92 0 57 0;
 #X connect 93 0 92 0;
 #X connect 94 0 93 0;
+#X connect 95 0 96 0;
+#X connect 95 0 97 0;
+#X connect 95 0 101 1;
+#X connect 96 0 99 1;
+#X connect 97 0 100 1;
+#X connect 98 0 100 0;
+#X connect 99 0 77 0;
+#X connect 100 0 101 0;
+#X connect 101 0 77 0;
