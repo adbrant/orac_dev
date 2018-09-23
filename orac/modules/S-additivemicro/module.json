@@ -2,7 +2,8 @@
     "name" : "S-additivemicro",
     "display" : "Microtonal Additive Synth",
     "parameters" :  [ 
-        ["pitch","add_trans","Transpose",-48,32,0],    
+        ["pitch","add_trans","Transpose",-48,32,0], 
+        ["int","add_preset","Preset",0,12,5],        
         ["pct","add_reso","Resonance",0,100,0],
 	      ["pct","add_cutoff","Cutoff",0,100,45],
 	      ["pct","add_attack","Attack",0,100,2],
@@ -13,8 +14,8 @@
     ],
     "pages" : [ 
         ["pg_main","Main", ["add_trans","add_preset","add_cutoff","add_reso"]],
-	      ["pg_adsr", "ADSR", ["add_attack", "add_decay", "add_sustain", "add_release"]]
-        ["pg_micro", "Microtuning", ["add_attack", "add_decay", "add_sustain", "add_release"]]
+	      ["pg_adsr", "ADSR", ["add_attack", "add_decay", "add_sustain", "add_release"]],
+        ["pg_micro", "Microtuning", ["microtuning"]]
     ]
 }
 
