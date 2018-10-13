@@ -14,7 +14,7 @@
         ["int","ps_transpose","Transpose",-24,24,0],
         ["time","ps_length","Length",1,2000,50],
         ["int","ps_velo","Play Vel.",0,127,0],
-        ["int","ps_velo_rec","Rec Vel",0,127,0]
+        ["int","ps_velo_rec","Rec Vel.",0,127,0]
      ],
     "pages" : [ 
         ["pg_main","Main",["ps_record","ps_play","ps_rev","ps_rand"]],
