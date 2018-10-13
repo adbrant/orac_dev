@@ -1,37 +1,39 @@
-Polyphonic Step Sequencer, up to 64 steps with up to 8 notes per step.
+Polystep: Polyphonic Step Sequencer
+Up to 64 steps with up to 8 notes per step. 
 Support saving and loading up to 32 patterns. 
 Playback order can be reversed or randomized.
+
 Usage:
-Behaviour is similar to Steppy, but multiple notes can be pressed 
+  Behaviour is similar to Steppy, but multiple notes can be pressed per step for polyphony.
+  Press one note and hold it, then press other notes to enter more notes on the same step.
+  Once all notes are released, the next step will become active.
 
-Press one note and hold it, then press other notes to enter more notes on the same step.
+  A short press of aux/fs will enter a rest.
 
-Once all notes are released, the next step will become active.
-A short press of AUX will enter a rest.
+  Long Press of aux/fs (>1.5 seconds) will perform functions that can be changed with the ‘Aux Func’ on page 4
 
-Long Press of aux/fs (>1.5 seconds) function can be changed with the ‘Aux Func’ on page 4
+Parameters:
+  Page 1: Main
+    Record:  When true, incoming notes are recorded into the sequence.
+    Play: When true, sequence will play. After going false, the sequence will restart at step 0.
+    Reverse: When true, sequence will play in reverse
+    Random: When true, sequence will play in random order
 
-Page 1: Main
-Record:  When true, incoming notes are recorded into the sequence.
-Play: When true, sequence will play. After going false, the sequence will restart at step 0.
-Reverse: When true, sequence will play in reverse
-Random: When true, sequence will play in random order
+  Page 2: Time 
+    Beat Div: Divides each beat length into up to 24 notes.
+    Beat Mul: Multiplies each beat up to 64 times
+    Length: Note length in ms
 
-Page 2: Time 
-Beat Div: Divides each beat length into up to 24 notes.
-Beat Mul: Multiplies each beat up to 64 times
-Length: Note length in ms
+  Page 3: Note
+    Transpose: Tranpose sequence from -24 to +24 semitones
+    Play Vel. : When set to 0, sequence plays with recorded velocity, otherwise value is overridden.
+    Rec Vel. : When set to 0, notes are recorded with incoming velocity, otherwise is overriden.
 
-Page 3: Note
-	Transpose: Tranpose sequence from -24 to +24 semitones
-	Play Vel. : When set to 0, sequence plays with recorded velocity, otherwise value is overridden.
-	Rec Vel. : When set to 0, notes are recorded with incoming velocity, otherwise is overriden.
-
-Page 4: Functions
-Midi Thru: When true, incoming midi notes are sent out to the next module.
-Aux Func. : Changes what a long press of Aux does:
-		0 (Default:): Erase all notes in pattern
-1 : Undo last step
-2: Save to active slot
-3: Load from active stlot
-Save Slot : Chooses slot to save/load from. When changed the number of steps in the slot are displayed
+  Page 4: Functions
+    Midi Thru: When true, incoming midi notes are sent out to the next module.
+    Aux Func. : Changes what a long press of Aux does:
+      0 (Default:): Erase all notes in pattern
+      1 : Undo last step
+      2: Save to active slot
+      3: Load from active slot
+    Save Slot : Chooses slot to save/load from. When changed the number of steps in the slot are displayed
