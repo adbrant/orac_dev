@@ -12,7 +12,7 @@
     "pages" : [ 
         ["pg_main","Main",["bp_trans","bp_wave","bp_decay"]],
         ["pg_vibr", "Vibrato",["bp_vrate","bp_vdepth"]],
-        ["pg_micro", "Microtuning", ["tuning"]]
+        ["pg_micro", "Microtuning", ["microtuning"]]
     ]
 }
 

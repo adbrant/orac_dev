@@ -15,7 +15,7 @@
     "pages" : [ 
         ["pg_main","Main", ["add_trans","add_preset","add_cutoff","add_reso"]],
 	      ["pg_adsr", "ADSR", ["add_attack", "add_decay", "add_sustain", "add_release"]],
-        ["pg_micro", "Microtuning", ["tuning"]]
+        ["pg_micro", "Microtuning", ["microtuning"]]
     ]
 }
 
