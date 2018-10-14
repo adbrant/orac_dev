@@ -4,7 +4,7 @@ Support saving and loading up to 32 patterns.
 Playback order can be reversed or randomized.
 
 Usage:
-  Behaviour is similar to Steppy, but multiple notes can be pressed per step for polyphony.
+  Behaviour is similar to C&Gs Punchy, but multiple notes can be pressed per step for polyphony.
   Press one note and hold it, then press other notes to enter more notes on the same step.
   Once all notes are released, the next step will become active.
 
