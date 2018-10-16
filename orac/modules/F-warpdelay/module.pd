@@ -10,9 +10,9 @@
 #X obj 135 186 inlet~ inR-\$1;
 #X obj 27 671 outlet~ outL-\$1;
 #X obj 136 671 outlet~ outR-\$1;
-#X obj 424 185 r auxIn-\$1;
+#X obj 445 180 r auxIn-\$1;
 #X obj 423 208 r expIn-\$1;
-#X obj 423 233 r fsIn-\$1;
+#X obj 456 225 r fsIn-\$1;
 #X text 652 30 C&G Simple 3 sec Delay Module with a hi-pass filter
 ;
 #X obj 128 358 pdelay \$1;
@@ -21,10 +21,10 @@
 #X obj 197 238 ../../../../in_tester;
 #X obj 105 446 C:/users/alexd_000/Documents/PD/out_tester;
 #X obj 253 279 notein_mono;
-#X obj 249 311 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 72 256;
-#X obj 337 312 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+#X obj 249 311 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 337 312 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 259 360 spigot 0;
 #X obj 327 338 r wdelay_midictrl-\$1;
 #X obj 308 335 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
