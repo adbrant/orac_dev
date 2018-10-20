@@ -1,4 +1,4 @@
-#N canvas 18 77 1345 720 10;
+#N canvas 28 91 1345 720 10;
 #X obj 222 165 r notesIn-\$1;
 #X obj 304 491 s notesOut-\$1;
 #X obj 23 9 r loaddefs-\$1;
@@ -28,7 +28,7 @@
 #X obj 615 271 * 24000;
 #X obj 324 275 notein_mono;
 #X obj 323 309 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 71 256;
+-262144 -1 -1 76 256;
 #X floatatom 432 288 5 0 0 0 - - -, f 5;
 #X obj 439 306 > 0;
 #N canvas 8 60 450 463 notegen 0;
