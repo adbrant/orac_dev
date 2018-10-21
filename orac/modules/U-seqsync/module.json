@@ -5,6 +5,7 @@
            ["int","seq_beats","Beats",1,64,16]
     ],
     "pages" : [ 
+            ["pg_main","Main",["seq_beats"]]
     ]
 }
 
