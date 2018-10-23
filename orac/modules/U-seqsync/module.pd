@@ -69,7 +69,7 @@
 #X msg 1300 233 0;
 #X obj 226 469 t b b b;
 #X obj 585 741 bag;
-#X msg 599 713 flush;
+#X msg 630 725 flush;
 #X obj 585 765 pack 0 0;
 #X msg 299 991 Sequencer: Playing;
 #X msg 447 991 Sequencer: Stopped;
@@ -263,6 +263,7 @@ sequencer., f 69;
 #X connect 5 0 1 0;
 #X connect 6 0 0 0;
 #X connect 6 0 59 0;
+#X connect 6 0 47 0;
 #X connect 7 0 9 1;
 #X connect 8 0 12 0;
 #X connect 8 1 23 0;
