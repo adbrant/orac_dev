@@ -1,5 +1,5 @@
 b3424658c743eb0770ad32ca92d25545c2618061  U-polystep/polystep.pd
-bd065cad62235728451bc8267b14707a60313de7  U-polystep/beatdiv.pd
+395e6208a25438e5dd983222e87b0dd6e91a8481  U-polystep/beatdiv.pd
 0538fbdacaac4abbd014e59a42764a22e11fbaca  U-polystep/keyfilter2.pd
 bd671f3af83500d08e150b9cef2b602890632db8  U-polystep/module.json
 ca436401a3886a878809d536871dac4d798017de  U-polystep/module.pd
@@ -19,5 +19,5 @@ ca42f9d65ddc12676a60adba8d27f4f2ea7f9ac4  U-polystep/vel_2.txt
 e75c7c040023af788d087179e939a34aefc01277  U-polystep/notes_4.txt
 17d4d4db9052da8ec61d02245195cc60f87b7f8a  U-polystep/vel_4.txt
 3596ea087bfdaf52380eae441077572ed289d657  U-polystep/len_4.txt
-39312f4d39fc29e67dba3106e1151ecdf73054f6  U-polystep/README
+e569cfd9d5cd43fbf18a5915c4e01db1e2f34135  U-polystep/README
 6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-polystep/deploy.sh
