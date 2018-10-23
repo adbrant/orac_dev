@@ -2,7 +2,7 @@
     "name" : "U-seqsync",
     "display" : "SeqSync",
     "parameters" :  [ 
-           ["int","seq_beats","Beats",1,64,16]
+           ["int","seq_beats","Beats",1,64,4]
     ],
     "pages" : [ 
             ["pg_main","Main",["seq_beats"]]
