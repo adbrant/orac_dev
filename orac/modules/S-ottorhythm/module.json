@@ -1,5 +1,5 @@
 {
-    "name" : "U-ottorhythm",
+    "name" : "S-ottorhythm",
     "display" : "OttoRhythm",
     "parameters" :  [ 
         ["int","otto_style","Style",0,29,0],
