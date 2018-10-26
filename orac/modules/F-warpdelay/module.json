@@ -12,12 +12,16 @@
         ["float","wdelay_pfilt","Prefilt",0,15000,12000],        
         ["float","wdelay_lfospd","LFO Speed",0.01,20,0.5],
         ["float","wdelay_lfodep","LFO Depth",0,1,0],
-        ["int","wdelay_midictrl","MIDI Control",0,1,0]
+        ["int","wdelay_midictrl","MIDI Control",0,1,0],
+        ["int","wdelay_quantize","Quantize",0,3,0],        
+        ["float","wdelay_drift","Drift",0,1,0.5],
+        ["float","wdelay_env","Drift",0,1,0.5]
                 
     ],
     "pages" : [ 
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
-        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_midictrl","wdelay_pfilt"]]
+        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_midictrl","wdelay_pfilt"]],
+        ["pg_3","Delay2",["wdelay_drift","wdelay_env"]]
     ]
 }
 
