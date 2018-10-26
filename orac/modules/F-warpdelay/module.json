@@ -15,7 +15,7 @@
         ["int","wdelay_midictrl","MIDI Control",0,1,0],
         ["int","wdelay_quantize","Quantize",0,3,0],        
         ["float","wdelay_drift","Drift",0,1,0.5],
-        ["float","wdelay_env","Drift",0,1,0.5]
+        ["float","wdelay_env","Fade",0,1,0.5]
                 
     ],
     "pages" : [ 

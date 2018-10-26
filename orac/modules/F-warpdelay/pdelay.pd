@@ -105,7 +105,6 @@
 #X obj 591 302 wdel;
 #X obj 717 304 wdel;
 #X obj 660 303 wdel;
-#X obj 1113 429;
 #N canvas -8 -8 1366 725 quantize 0;
 #X floatatom 295 90 5 0 0 0 - - -, f 5;
 #X obj 284 219 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -191,7 +190,7 @@
 #X connect 27 0 11 0;
 #X connect 27 0 43 0;
 #X connect 28 0 61 0;
-#X connect 29 0 92 0;
+#X connect 29 0 91 0;
 #X connect 30 0 31 0;
 #X connect 31 0 32 0;
 #X connect 32 0 33 0;
@@ -261,4 +260,4 @@
 #X connect 88 0 7 0;
 #X connect 89 0 7 0;
 #X connect 90 0 7 0;
-#X connect 92 0 33 0;
+#X connect 91 0 33 0;
