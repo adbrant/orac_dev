@@ -1,0 +1,13 @@
+{
+    "name" : "F-spectralwarper",
+    "display" : "Spectral Warper",
+    "parameters" :  [ 
+        ["pct","readoffset","Offset",0,100,50],
+        ["pct","transpose","Transpose",0,100,50],
+        ["pct","drywet","Dry/Wet",0,100,50]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["readoffset","transpose","drywet"]]
+    ]
+}
+

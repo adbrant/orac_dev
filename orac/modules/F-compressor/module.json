@@ -1,0 +1,17 @@
+{
+    "name" : "F-compressor",
+    "display" : "Compressor",
+    "parameters" :  [ 
+        ["int","thresh","Threshhold",-60,6,-20],
+        ["int","ratio","Ratio",1,30,6],
+        ["int","response","Response",0,150,40],
+        ["int","rmspeak","RMS/Peak",0,1,0],
+	["int","lookahead","Lookahead",0,1000,0],
+	["int","gain","Gain",0,30,5]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["thresh","ratio","response","gain"]],
+	["pg_more","More",["rmspeak","lookahead"]]
+    ]
+}
+

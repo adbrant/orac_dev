@@ -1,0 +1,31 @@
+{
+    "name" : "S-glassfm",
+    "display" : "Glass FM",
+    "parameters" :  [ 
+	["pct","oscr2","Op2 Ratio",0,100,13],
+	["pct","oscr3","Op3 Ratio",0,100,20],
+	["pct","oscr4","Op4 Ratio",0,100,0],
+	["pct","index","Index",0,100,13],
+	["pct","lforate","Rate",0,100,15],
+	["pct","lfodelay","Delay",0,100,20],
+	["pct","lfopitch","Pitch",0,100,0],
+	["pct","lfoindex","Index",0,100,20],
+	["pct","attack","Attack",0,100,5],
+	["pct","decay","Decay",0,100,30],
+	["pct","sustain","Sustain",0,100,80],
+	["pct","release","Release",0,100,70],
+	["pct","transpose","Transpose",0,100,0],
+	["pct","porta","Portamento",0,100,10],
+	["pct","sub","Sub Vol",0,100,40],
+	["pct","vol","Volume",0,100,50]
+      
+    ],
+    "pages" : [ 
+        ["pg_op","Ops",["oscr2","oscr3","oscr4","index"]],
+        ["pg_lfo","LFO", ["lforate","lfodelay","lfopitch","lfoindex"]],
+        ["pg_env","Env.", ["attack","decay","sustain","release"]],
+        ["pg_vol","Vol", ["transpose","porta","sub","vol"]]
+
+    ]
+}
+

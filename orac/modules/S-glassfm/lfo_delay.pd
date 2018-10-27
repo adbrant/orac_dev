@@ -1,0 +1,51 @@
+#N canvas 0 22 1044 650 10;
+#X obj 194 458 *~;
+#X obj 209 372 line~;
+#X obj 373 303 pack 0 1 f;
+#X obj 209 315 delay;
+#X msg 236 248 stop;
+#X msg 373 328 0 \, \$2 \$3;
+#X msg 209 340 stop \, 0 1;
+#X obj 194 115 inlet~;
+#X text 245 116 LFO input (signal);
+#X obj 194 502 outlet~;
+#X text 250 503 Delayed LFO output (signal);
+#X text 608 38 LFO delay time. What it does : It applies a ramp from
+0 to 1 in n ms to the LFO. Since there's only one LFO \, once the [*~]
+is fully open it must stay there until the release stage of the envelope
+is finished \, then resetted. If the synth runs out of voices \, and
+a new note is played \, the ramp must start over from 0;
+#X text 42 335 Close the LFO after release phase is done, f 22;
+#X obj 372 247 loadbang;
+#X msg 372 271 0;
+#X obj 209 200 sel 0;
+#X obj 236 223 bang;
+#X obj 209 174 inlet, f 6;
+#X text 260 175 Note on/off (velocity);
+#X text 427 227 LFO Delay Time slider input (0. \, 5000.);
+#X obj 430 247 r LFO_delay_time;
+#X obj 209 404 *~;
+#X obj 236 288 r release;
+#X text 192 16 LFO Delay;
+#X text 194 35 Must receive LFO Delay Time slider value via [s LFO_delay_time]
+(0. \, 5000.) ms, f 42;
+#X text 241 404 curve;
+#X connect 0 0 9 0;
+#X connect 1 0 21 0;
+#X connect 1 0 21 1;
+#X connect 2 0 5 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 0;
+#X connect 7 0 0 0;
+#X connect 13 0 14 0;
+#X connect 14 0 2 2;
+#X connect 15 0 3 0;
+#X connect 15 1 16 0;
+#X connect 16 0 2 0;
+#X connect 16 0 4 0;
+#X connect 17 0 15 0;
+#X connect 20 0 2 2;
+#X connect 21 0 0 1;
+#X connect 22 0 3 1;

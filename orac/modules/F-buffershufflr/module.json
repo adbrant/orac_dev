@@ -1,0 +1,19 @@
+{
+    "name" : "F-buffershufflr",
+    "display" : "Buffershufflr",
+    "parameters" :  [
+	["pct","buffer_update","Update",0,100,50],
+        ["pct","buffer_length","Length",0,100,0],
+        ["pct","buffer_wet","Wet/Dry",0,100,50],
+	
+	["pct","lfo_s","Wet Speed",0,100,50],
+	["pct","lfo_d","Wet Depth",0,100,0],
+	["pct","l_lfo_s","Length Speed",0,100,50],
+	["pct","l_lfo_d","Length Depth",0,100,0]
+    ],
+    "pages" : [
+	["pg_main","Main",["buffer_update","buffer_length","buffer_wet"]],
+	["pg_lfo","Wet LFO",["lfo_s","lfo_d","l_lfo_s","l_lfo_d"]]
+    ]
+}
+

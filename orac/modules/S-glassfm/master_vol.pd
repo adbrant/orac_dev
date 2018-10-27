@@ -1,0 +1,22 @@
+#N canvas 0 22 1167 736 10;
+#X obj 257 358 *~;
+#X obj 257 390 clip~ -1 1;
+#X obj 272 330 line~;
+#X obj 257 223 inlet~;
+#X obj 257 427 outlet~;
+#X text 420 28 Master volume (stereo);
+#X text 357 263 Master volume slider input (0. \, 1.);
+#X msg 272 302 \$1 10;
+#X obj 272 263 r master_vol;
+#X text 420 47 Must receive volume slider value via [s master_vol]
+(0. \, 1.);
+#X text 58 37 Inlet 1 : Left channel audio input (signal);
+#X text 57 71 Outlet 1 : Left channel audio output (signal);
+#X text 258 202 Audio input (signal);
+#X text 255 452 Audio output (signal);
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 7 0 2 0;
+#X connect 8 0 7 0;

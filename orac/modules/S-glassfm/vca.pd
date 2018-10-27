@@ -1,0 +1,14 @@
+#N canvas 226 45 652 583 10;
+#X obj 60 441 *~;
+#X obj 60 160 inlet~;
+#X obj 75 254 inlet~;
+#X obj 60 482 outlet~;
+#X text 59 14 VCA;
+#X text 57 126 Audio input (signal), f 12;
+#X text 119 483 Audio output (signal);
+#X text 73 216 Envelope input (signal 0~ to 1~), f 18;
+#X text 56 41 Must receive volume value via [s VCA_level] (0. \, 1.)
+;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;

@@ -1,0 +1,69 @@
+#N canvas 17 26 1513 960 10;
+#X obj 359 617 vline~;
+#X obj 807 409 pack 0 f, f 27;
+#X msg 359 523 1 \$2 \, \$4 \$3 \$2;
+#X obj 359 490 pack 0 f f f, f 32;
+#X text 546 442 Sustain (0. \, 1.);
+#X obj 359 813 outlet~;
+#X text 361 836 Envelope output (signal);
+#X text 592 566 [1 \$2 \, \$4 \$3 \$2];
+#X text 593 592 Go to 1 in \$2 (attack) ms \, go to \$4 (sustain) in
+\$3 (decay) ms after having waited \$2 (attack duration) ms, f 31
+;
+#X text 593 541 ADS stages;
+#X text 811 431 Release stage (go to 0 in (release) ms);
+#X obj 332 193 sel 0;
+#X text 373 168 Receives note on and off;
+#X obj 332 169 inlet;
+#X text 422 333 Attack (1.5 \, 3000.);
+#X text 484 386 Decay (1.5 \, 12000.);
+#X text 965 344 Release (1.5 \, 12000.);
+#X obj 422 351 r attack;
+#X obj 485 409 r decay;
+#X obj 548 463 r sustain;
+#X obj 966 367 r release;
+#X obj 178 486 r clear_notes;
+#X obj 178 508 bang;
+#X msg 178 530 0 5;
+#X text 139 440 Send a bang to [s clear_notes] to put envelope to 0
+, f 32;
+#X text 579 272 Note off (velocity = 0) start the release stage;
+#X text 83 248 Note on (velocity > 0) start the ADS stages;
+#X text 158 44 Must receive Attack slider value via [s attack] (0.
+\, 3000.) ms, f 69;
+#X text 158 63 Must receive Decay slider value via [s decay] (0. \,
+12000.) ms, f 63;
+#X text 157 83 Must receive Sustain slider value via [s sustain] (0.
+\, 1.), f 63;
+#X text 157 102 Must receive Release slider value via [s release] (0.
+\, 12000.) ms, f 66;
+#X text 156 122 Send a bang to [s clear_notes] to put envelope to 0
+, f 52;
+#X obj 410 733 / 127;
+#X obj 359 770 *~;
+#X text 451 733 Velocity;
+#X obj 359 248 t b f;
+#X obj 359 663 *~;
+#X text 157 24 Curvy ADSR Envelope Generator;
+#X text 537 168 (velocity value);
+#X text 310 663 Curve;
+#X connect 0 0 36 0;
+#X connect 0 0 36 1;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 11 0 1 0;
+#X connect 11 1 35 0;
+#X connect 13 0 11 0;
+#X connect 17 0 3 1;
+#X connect 18 0 3 2;
+#X connect 19 0 3 3;
+#X connect 20 0 1 1;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 0 0;
+#X connect 32 0 33 1;
+#X connect 33 0 5 0;
+#X connect 35 0 3 0;
+#X connect 35 1 32 0;
+#X connect 36 0 33 0;

@@ -1,0 +1,21 @@
+{
+    "name" : "U-clockswingx",
+    "display" : "ClockSwingX",
+    "parameters" :  [ 
+        ["int","c_bpm","BPM",10,480,120],
+        ["float","c_swing8","Swing 8",0,100,0],
+        ["float","c_swing16","Swing 16",0,100,0],
+        ["bool","c_midiout","Midi Out",0],      
+        ["float","c_jitter","Jitter",0,100,0],    
+        ["float","c_drift","Drift",0,100,0],        
+        ["float","c_driftrate","Drift rate",0,100,10],
+	["int","metrovol","Metro Vol",0,100,0],
+	["int","accent","Accent",0,16,4]
+	],
+    "pages" : [ 
+        ["pg_main","Main",["c_bpm","c_swing8","c_swing16","c_midiout"]],
+        ["pg_human","Humanize",["c_jitter","c_drift","c_driftrate"]],
+	["pg_metro","Metronome",["metrovol","accent"]]
+    ]
+}
+

@@ -1,0 +1,46 @@
+#N canvas 0 22 1636 984 10;
+#X obj 638 216 *~ 0.5;
+#X obj 261 539 *~;
+#X obj 276 512 line~;
+#X obj 638 498 *~, f 7;
+#X obj 677 469 line~;
+#X obj 261 580 +~;
+#X msg 677 441 \$1 5;
+#X msg 276 484 \$1 5;
+#X text 760 332 Mix slider input (0. \, 1.);
+#X obj 261 614 outlet~;
+#X text 433 454 Crossfade between oscillator and sub oscillator, f
+28;
+#X obj 261 404 inlet~ osc_in;
+#X text 256 640 Oscillator + sub oscillator output;
+#X text 265 382 Oscillator input;
+#X text 94 52 Inlet 1 : Oscillator input (signal \, -1 to 1);
+#X obj 677 334 r sub_mix;
+#X text 588 56 Must receive Sub oscillator amount slider input via
+[s sub_mix] (0. \, 1.), f 110;
+#X text 634 161 Oscillator frequency input (signal);
+#X text 94 72 Inlet 2 : Oscillator frequency input (signal \, in hz)
+;
+#X obj 638 183 inlet~ freq_in;
+#X text 694 219 half frequency (= -1 octave);
+#X obj 638 240 phasor~;
+#X obj 638 265 expr~ if ($v1 < 0.5 \, ($v1 * 4) - 1 \, ((1 - $v1) *
+4) - 1);
+#X text 993 264 Triangular waveform from [phasor~];
+#X text 588 29 tri Sub oscillator;
+#X obj 276 457 expr ($f1 * -1) + 1;
+#X connect 0 0 21 0;
+#X connect 1 0 5 0;
+#X connect 2 0 1 1;
+#X connect 3 0 5 1;
+#X connect 4 0 3 1;
+#X connect 5 0 9 0;
+#X connect 6 0 4 0;
+#X connect 7 0 2 0;
+#X connect 11 0 1 0;
+#X connect 15 0 6 0;
+#X connect 15 0 25 0;
+#X connect 19 0 0 0;
+#X connect 21 0 22 0;
+#X connect 22 0 3 0;
+#X connect 25 0 7 0;
