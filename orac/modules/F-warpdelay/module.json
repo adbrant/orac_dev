@@ -15,13 +15,16 @@
         ["int","wdelay_midictrl","MIDI Control",0,1,0],
         ["int","wdelay_quantize","Quantize",0,3,0],        
         ["float","wdelay_drift","Drift",0,3,0.5],
+        ["int","wdelay_exprange","Expr Range",0,36,0],
+        ["bool","wdelay_exprq","Expr Quant",1],
         ["float","wdelay_env","Fade",0,1,0.5]
                 
     ],
     "pages" : [ 
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
-        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_midictrl","wdelay_pfilt"]],
-        ["pg_3","Delay2",["wdelay_drift","wdelay_env","wdelay_quantize"]]
+        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_env","wdelay_pfilt"]],
+        ["pg_3","Control",["wdelay_midictrl","wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
+        ["pg_4","Mod",["wdelay_drift"]]     
     ]
 }
 
