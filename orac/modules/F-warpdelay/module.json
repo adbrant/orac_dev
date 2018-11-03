@@ -36,8 +36,8 @@
         ["pg_3","Control",["wdelay_midictrl","wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
         ["pg_4","Mod",["wdelay_drift","wdelay_pitchsmooth","wdelay_lensmooth"]],
         ["pg_5","Head Tuning",["wdelay_semi_1","wdelay_semi_2","wdelay_semi_3"]],
-        ["pg_5","Head Gain",["wdelay_gain_1","wdelay_gain_2","wdelay_gain_3"]],
-        ["pg_5","Head Len",["wdelay_len_1","wdelay_len_2","wdelay_len_3"]]
+        ["pg_6","Head Gain",["wdelay_gain_1","wdelay_gain_2","wdelay_gain_3"]],
+        ["pg_7","Head Len",["wdelay_len_1","wdelay_len_2","wdelay_len_3"]]
 
     ]
 }
