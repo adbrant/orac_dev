@@ -27,16 +27,12 @@
 #X obj 417 69 r wdelay_len_\$2-\$1;
 #X obj 407 492 r wdelay_gain_\$2-\$1;
 #X obj 379 531 *~ 1;
-#X obj 288 115 /~ 1;
+#X obj 290 148 /~ 1;
 #X obj 278 292 *~ 1;
 #X obj 290 188 *~ 1;
 #X obj 118 111 mtof;
 #X obj 115 132 / 8.1758;
-#X obj 39 206 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0.25 256;
-#X obj 64 94 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -24 256;
-#X obj 300 156 +~ 1;
+#X obj 280 87 +~ 1;
 #X obj 292 215 -~ 1;
 #X connect 0 0 10 0;
 #X connect 1 0 25 0;
@@ -44,7 +40,7 @@
 #X connect 2 0 27 0;
 #X connect 3 0 0 1;
 #X connect 3 0 9 1;
-#X connect 5 0 26 0;
+#X connect 5 0 31 0;
 #X connect 6 0 7 0;
 #X connect 7 0 11 0;
 #X connect 8 0 20 0;
@@ -66,12 +62,10 @@
 #X connect 23 0 27 1;
 #X connect 24 0 25 1;
 #X connect 25 0 4 0;
-#X connect 26 0 33 0;
+#X connect 26 0 28 0;
 #X connect 27 0 0 0;
-#X connect 28 0 34 0;
+#X connect 28 0 32 0;
 #X connect 29 0 30 0;
 #X connect 30 0 28 1;
-#X connect 30 0 31 0;
-#X connect 32 0 29 0;
-#X connect 33 0 28 0;
-#X connect 34 0 2 0;
+#X connect 31 0 26 0;
+#X connect 32 0 2 0;
