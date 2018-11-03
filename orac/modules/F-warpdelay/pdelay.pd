@@ -1,4 +1,4 @@
-#N canvas -8 -8 1366 725 10;
+#N canvas 0 50 1366 725 10;
 #X obj 566 62 hsl 128 15 0 8000 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 557 88 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -69,13 +69,13 @@
 #X obj 1066 275 nbx 10 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
 0 10 -262144 -1 -1 0 256;
 #X obj 599 233 /~;
-#X obj 784 199 lop~ 0.1;
+#X obj 759 205 lop~ 0.1;
 #X obj 864 77 t b f;
 #X obj 840 56 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 676 476 hsl 128 15 0 8000 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 232 0 r wdelay_exprange-\$1;
+#X obj 308 166 r wdelay_exprange-\$1;
 #X obj 445 180 r auxIn-\$1;
 #X obj 318 209 r fsIn-\$1;
 #X obj 355 190 == 0;
@@ -174,6 +174,12 @@
 #X obj 973 17 f;
 #X obj 1106 37 t b f;
 #X obj 1046 75 t b f;
+#X obj 244 17 r wdelay_lensmooth-\$1;
+#X obj 425 48 r wdelay_pitchsmooth-\$1;
+#X floatatom 207 72 5 0 0 0 - - -, f 5;
+#X floatatom 280 132 5 0 0 0 - - -, f 5;
+#X obj 274 116 expr ((100-$f1)*(100-$f1)/10000)*20+0.1;
+#X obj 260 70 expr ((100-$f1)*(100-$f1)/10000)*20+0.1;
 #X connect 0 0 1 0;
 #X connect 0 0 11 0;
 #X connect 0 0 43 0;
@@ -304,3 +310,9 @@
 #X connect 109 1 91 1;
 #X connect 110 0 108 0;
 #X connect 110 1 90 1;
+#X connect 111 0 116 0;
+#X connect 112 0 115 0;
+#X connect 113 0 115 0;
+#X connect 115 0 45 1;
+#X connect 115 0 114 0;
+#X connect 116 0 59 1;
