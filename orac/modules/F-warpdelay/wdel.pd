@@ -1,17 +1,17 @@
-#N canvas -6 1 1356 714 10;
+#N canvas -7 2 1364 714 10;
 #X obj 293 318 *~;
 #X obj 347 433 *~;
 #X obj 290 249 phasor~ 3.01;
-#X obj 530 130 inlet~;
+#X obj 544 132 inlet~;
 #X obj 365 565 outlet~;
 #X obj 265 63 inlet~;
 #X obj 413 121 noise~;
 #X obj 401 161 lop~ 0.5;
 #X obj 270 365 +~ 10;
 #X obj 397 364 +~;
-#X obj 381 312 *~ -1;
+#X obj 327 342 *~ -1;
 #X obj 362 195 *~ 1;
-#X obj 552 88 r wdelay_drift-\$1;
+#X obj 557 85 r wdelay_drift-\$1;
 #X obj 793 304 r wdelay_env-\$1;
 #X obj 786 369 - 1;
 #X obj 780 423 * -1;
@@ -24,7 +24,7 @@
 #X obj 604 152 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 114 72 r wdelay_semi_\$2-\$1;
-#X obj 417 69 r wdelay_len_\$2-\$1;
+#X obj 452 20 r wdelay_len_\$2-\$1;
 #X obj 407 492 r wdelay_gain_\$2-\$1;
 #X obj 379 531 *~ 1;
 #X obj 300 186 /~ 1;
@@ -36,13 +36,14 @@
 #X obj 284 150 -~ 1;
 #X obj 465 168 /~ 1000;
 #X obj 300 208 /~;
+#X obj 482 323 *~ 1;
 #X connect 0 0 10 0;
 #X connect 1 0 25 0;
 #X connect 2 0 16 0;
 #X connect 2 0 27 0;
 #X connect 3 0 0 1;
-#X connect 3 0 9 1;
 #X connect 3 0 33 0;
+#X connect 3 0 35 0;
 #X connect 5 0 31 0;
 #X connect 6 0 7 0;
 #X connect 7 0 11 0;
@@ -63,6 +64,7 @@
 #X connect 22 0 29 0;
 #X connect 23 0 26 1;
 #X connect 23 0 27 1;
+#X connect 23 0 35 1;
 #X connect 24 0 25 1;
 #X connect 25 0 4 0;
 #X connect 26 0 34 0;
@@ -74,3 +76,4 @@
 #X connect 32 0 26 0;
 #X connect 33 0 34 1;
 #X connect 34 0 2 0;
+#X connect 35 0 9 1;
