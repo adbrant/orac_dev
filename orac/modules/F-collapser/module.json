@@ -1,0 +1,23 @@
+{
+    "name" : "F-collapser",
+    "display" : "Collapser",
+    "parameters" :  [ 
+        ["pct","rev_dw","Dry/Wet Scale",0,100,50],
+        ["int","rev_size","Size",0,100,50],
+        ["pct","rev_damp","Damping",0,100,30],
+	["pct","size_rate","Size Rate",0,100,50],
+	["pct","size_depth","Size Depth",0,100,0],
+	["pct","dw_rate","Wet Rate",0,100,50],
+	["pct","dw_depth","Wet Depth",0,100,0],
+	["pct","pan_depth","Pan Depth",0,100,100],
+	["freq","filt1_cut","Filt1 Cut",0.5,15000,15000],
+	["pct","filt1_res","Filt1 Res",0,100,0],
+	["freq","filt2_cut","Filt2 Cut",0.5,15000,15000],
+	["pct","filt2_res","Filt2 Res",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["rev_dw","rev_size","rev_damp","pan_depth"]],
+	["pg_lfo","Size LFO",["size_rate","size_depth"]]
+    ]
+}
+
