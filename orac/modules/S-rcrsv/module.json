@@ -21,7 +21,7 @@
         ["pg_main","Main",["rcrsv_wet","rcrsv_fb","rcrsv_del","rcrsv_del_lfo"]],
         ["pg_2","Levels",["rcrsv_dry","rcrsv_byp","rcrsv_in","rcrsv_noise"]],   
         ["pg_3","Filter",["rcrsv_lp","rcrsv_lp_lfo","rcrsv_res","rcrsv_lfof"]],   
-        ["pg_3","Phasor",["rcrsv_ap","rcrsv_ap_lfo"]]          
+        ["pg_4","Phasor",["rcrsv_ap","rcrsv_ap_lfo"]]          
     ]
 }
 
