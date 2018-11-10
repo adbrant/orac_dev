@@ -15,8 +15,7 @@
         ["freq","rcrsv_lfof","LFO Freq",0.05,10,1],
         ["time","rcrsv_del","Delay",0,4000,250],
         ["pct","rcrsv_del_lfo","Del LFO",0,100,0],
-        ["int","rcrsv_res","Resonance",0,10,1],
-        
+        ["int","rcrsv_res","Resonance",0,10,1]       
     ],
     "pages" : [ 
         ["pg_main","Main",["rcrsv_wet","rcrsv_fb","rcrsv_del","rcrsv_del_lfo"]],
