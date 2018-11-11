@@ -1,4 +1,4 @@
-#N canvas -8 -8 1366 725 10;
+#N canvas 266 75 1351 720 10;
 #X obj 23 9 r loaddefs-\$1;
 #X msg 23 76 loaddefinitions \$1;
 #X obj 181 9 r loadbang-\$1;
@@ -26,7 +26,7 @@
 #X obj 252 199 *~ 0;
 #X obj 323 260 *~ 1;
 #X obj 389 279 +~;
-#N canvas 0 50 550 439 allpass 0;
+#N canvas 8 60 550 439 allpass 0;
 #X obj 153 70 inlet~;
 #X obj 140 363 outlet~;
 #X obj 128 166 rpole~;
@@ -55,13 +55,13 @@
 #X connect 10 0 6 1;
 #X connect 10 0 9 1;
 #X connect 10 0 8 1;
-#X restore 292 496 pd allpass;
+#X restore 255 482 pd allpass;
 #X obj 237 375 *~ 0;
 #X obj 120 570 / 100;
 #X obj 114 599 *~ 1;
 #X obj 289 558 *~ 0.5;
 #X obj 359 500 / 100;
-#X obj 264 459 vcf~ 1;
+#X obj 180 451 vcf~ 1;
 #X obj 306 153 / 100;
 #X obj 528 208 +~ 1;
 #X obj 529 232 *~ 0.5;
@@ -78,8 +78,11 @@
 #X obj 17 545 r rcrsv_dry-\$1;
 #X obj 128 544 r rcrsv_wet-\$1;
 #X obj 528 263 s~ rcrsv-lfo-\$1;
-#X obj 308 383 vd~ rcrsv-\$1;
+#X obj 308 373 vd~ rcrsv-\$1;
 #X obj 317 407 lfo_param \$1 rcrsv_lp;
+#X obj 468 576 lop~ 3000;
+#X obj 229 521 +~;
+#X obj 198 492 *~ 1.778;
 #X connect 0 0 4 0;
 #X connect 0 0 3 0;
 #X connect 1 0 12 0;
@@ -108,9 +111,7 @@
 #X connect 30 0 7 0;
 #X connect 31 0 26 1;
 #X connect 32 0 31 1;
-#X connect 33 1 27 0;
-#X connect 33 1 30 0;
-#X connect 33 1 31 0;
+#X connect 33 1 54 0;
 #X connect 34 0 24 1;
 #X connect 35 0 36 0;
 #X connect 36 0 49 0;
@@ -127,4 +128,9 @@
 #X connect 47 0 19 0;
 #X connect 48 0 29 0;
 #X connect 50 0 33 0;
+#X connect 50 0 27 0;
+#X connect 50 0 52 0;
 #X connect 51 0 33 1;
+#X connect 53 0 31 0;
+#X connect 53 0 30 0;
+#X connect 54 0 53 0;

@@ -15,7 +15,7 @@ ce09859916888c338887710f33baa72bbd9650e5  S-ottorhythm/latch-notes.pd
 1412532331e8d297bc9ca2dbf1af8f60e4a2a125  S-ottorhythm/leadvoice.pd
 e83ca9fa43c76d12b4829d53f41ff34ac37b45d8  S-ottorhythm/LICENSE.txt
 d3bf94ce5d51a197d92931e5be3f5482c52789cd  S-ottorhythm/master-metronome.pd
-8adcc4a4deb4efa5b6590a393e7379a022fbaa77  S-ottorhythm/module.json
+0246506234e6f28a39be070a6c96ff7dfa7ce768  S-ottorhythm/module.json
 5c0d6569e902a8d36a0bb30bebe5c6ece91d3f0c  S-ottorhythm/module.pd
 78c1b0973e3670befa13c4fc100133621d5a3c02  S-ottorhythm/otto.pd
 e711e747937ec71c8285004cd22aa97cdf3324ae  S-ottorhythm/perc.wav

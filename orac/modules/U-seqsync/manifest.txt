@@ -1,3 +1,3 @@
-482b1c800ace317b8614673e9e2e022605e087be  U-seqsync/module.json
-b7833ab76869de7b40e4cd13b3dcb1d6e4713398  U-seqsync/module.pd
+e037a0248935bf6bd8a5bfa346990535668233ec  U-seqsync/module.json
+3f13bb6daed218ad30adda23eef377322139b4d3  U-seqsync/module.pd
 6e8e61e721f76102b24c5dcb81e06092f8af4e4e  U-seqsync/deploy.sh
