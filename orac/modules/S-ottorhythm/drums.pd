@@ -1,6 +1,6 @@
-#N canvas 244 74 1351 659 10;
-#X obj 562 348 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 7881 256;
+#N canvas -8 -8 1366 725 10;
+#X obj 562 348 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array kick-\$1 5081 float 2;
 #X coords 0 1 5081 -1 200 140 1 0 0;
@@ -12,8 +12,8 @@
 #X msg 603 130 read -resize \$1 kick, f 21;
 #X obj 596 225 float;
 #X obj 566 280 + 1;
-#X obj 563 309 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 7881 256;
+#X obj 563 309 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array hat-\$1 4273 float 2;
 #X coords 0 1 4273 -1 200 140 1 0 0;
@@ -78,7 +78,7 @@
 #X msg 723 195 read -resize hat.wav hat;
 #X msg 724 219 read -resize snare.wav snare;
 #X msg 725 242 read -resize kick.wav kick;
-#X msg 732 270 read -resize perc.wav perc;
+#X msg 756 258 read -resize perc.wav perc;
 #X obj 816 31 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 307 622 outlet~;
@@ -89,12 +89,12 @@
 #X obj 202 280 seq_txt \$1;
 #X obj 340 290 seq_txt \$1;
 #X obj 463 290 seq_txt \$1;
-#X obj 537 426 s step-\$1;
+#X obj 554 453 s step-\$1;
 #X obj 702 19 r loadbang-\$1;
 #X floatatom 672 458 5 0 0 0 - - -, f 5;
 #X obj 678 437 r otto_kit-\$1;
-#X obj 489 473 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+#X obj 489 473 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X msg 725 533 read -resize ./drums/\$1/snare.wav snare-\$2;
 #X msg 725 567 read -resize ./drums/\$1/kick.wav kick-\$2;
 #X msg 728 601 read -resize ./drums/\$1/perc.wav perc-\$2;
@@ -109,6 +109,16 @@
 #X obj 293 575 *~ 0.01;
 #X obj 627 334 r otto_play-\$1;
 #X obj 605 386 spigot 1;
+#X obj 727 348 sel 1;
+#X obj 699 371 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 727 371 freeze;
+#X obj 580 418 spigot 1;
+#X obj 738 323 r fsIn-\$1;
+#X obj 140 523 sel 1;
+#X obj 95 607 s aux-label-\$1;
+#X msg 68 561 Stopped;
+#X msg 133 571 Playing;
 #X connect 0 0 80 0;
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
@@ -190,4 +200,13 @@
 #X connect 77 0 69 0;
 #X connect 78 0 54 0;
 #X connect 79 0 80 1;
-#X connect 80 0 62 0;
+#X connect 80 0 84 0;
+#X connect 81 0 82 0;
+#X connect 82 0 84 1;
+#X connect 82 0 86 0;
+#X connect 84 0 62 0;
+#X connect 85 0 81 0;
+#X connect 86 0 89 0;
+#X connect 86 1 88 0;
+#X connect 88 0 87 0;
+#X connect 89 0 87 0;
