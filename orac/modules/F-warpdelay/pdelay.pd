@@ -1,4 +1,4 @@
-#N canvas -7 2 1356 714 10;
+#N canvas 115 33 1356 714 10;
 #X obj 566 62 hsl 128 15 0 8000 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 557 88 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -170,16 +170,17 @@
 #X obj 1106 37 t b f;
 #X obj 1046 75 t b f;
 #X obj 244 17 r wdelay_lensmooth-\$1;
-#X obj 425 48 r wdelay_pitchsmooth-\$1;
+#X obj 425 24 r wdelay_pitchsmooth-\$1;
 #X floatatom 207 72 5 0 0 0 - - -, f 5;
-#X floatatom 280 132 5 0 0 0 - - -, f 5;
+#X floatatom 272 149 5 0 0 0 - - -, f 5;
 #X obj 274 116 expr ((100-$f1)*(100-$f1)/10000)*20+0.1;
 #X obj 260 70 expr ((100-$f1)*(100-$f1)/10000)*20+0.1;
 #X obj 533 295 wdel \$1 1;
-#X obj 633 302 wdel \$1 2;
-#X obj 717 304 wdel \$1 3;
 #X obj 461 386 +~;
 #X obj 500 387 +~;
+#X obj 633 302 wdel \$1 2;
+#X obj 717 304 wdel \$1 3;
+#X obj 262 201 s psmooth_internal-\$1;
 #X connect 0 0 1 0;
 #X connect 0 0 11 0;
 #X connect 0 0 43 0;
@@ -230,8 +231,8 @@
 #X connect 43 0 44 0;
 #X connect 44 0 33 0;
 #X connect 45 0 112 0;
-#X connect 45 0 113 0;
-#X connect 45 0 114 0;
+#X connect 45 0 115 0;
+#X connect 45 0 116 0;
 #X connect 46 0 9 0;
 #X connect 47 0 9 0;
 #X connect 48 0 46 1;
@@ -246,8 +247,8 @@
 #X connect 55 0 46 0;
 #X connect 56 0 47 0;
 #X connect 57 0 112 1;
-#X connect 57 0 113 1;
-#X connect 57 0 114 1;
+#X connect 57 0 115 1;
+#X connect 57 0 116 1;
 #X connect 58 0 33 0;
 #X connect 58 1 49 0;
 #X connect 59 0 58 0;
@@ -305,17 +306,18 @@
 #X connect 106 0 111 0;
 #X connect 107 0 110 0;
 #X connect 108 0 110 0;
+#X connect 109 0 117 0;
 #X connect 110 0 45 1;
 #X connect 110 0 109 0;
 #X connect 111 0 57 1;
 #X connect 112 0 7 0;
-#X connect 112 1 115 0;
-#X connect 112 2 116 0;
-#X connect 113 0 7 0;
-#X connect 113 1 115 0;
-#X connect 113 2 116 0;
-#X connect 114 0 7 0;
-#X connect 114 1 115 0;
-#X connect 114 2 116 0;
-#X connect 115 0 17 1;
-#X connect 116 0 16 1;
+#X connect 112 1 113 0;
+#X connect 112 2 114 0;
+#X connect 113 0 17 1;
+#X connect 114 0 16 1;
+#X connect 115 0 7 0;
+#X connect 115 1 113 0;
+#X connect 115 2 114 0;
+#X connect 116 0 7 0;
+#X connect 116 1 113 0;
+#X connect 116 2 114 0;
