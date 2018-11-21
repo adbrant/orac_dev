@@ -1,0 +1,14 @@
+{
+    "name" : "F-lfodelay",
+    "display" : "LFO Delay",
+    "parameters" :  [ 
+        ["pct","ratea","Rate A",0,100,50],
+        ["pct","rateb","Rate B",0,100,50],
+        ["pct","scalar","Scale",0,100,50],
+	["pct","dw","Dry/Wet",0,100,50]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["ratea","rateb","scalar","dw"]]
+    ]
+}
+
