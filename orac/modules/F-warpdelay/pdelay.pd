@@ -1,14 +1,14 @@
-#N canvas 115 33 1356 714 10;
+#N canvas 13 67 1345 714 10;
 #X obj 566 62 hsl 128 15 0 8000 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 557 88 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 557 88 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 558 137 hsl 128 15 -10 10 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 611 185 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
-#X obj 616 165 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 611 185 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 616 165 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X msg 701 185 0.5;
 #X obj 666 357 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
@@ -59,14 +59,14 @@
 1;
 #X obj 1128 136 inlet;
 #X obj 1128 157 - 72;
-#X obj 1129 177 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
+#X obj 1129 177 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 981 177 + 0;
 #X obj 1125 196 t b f;
-#X obj 955 273 nbx 10 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
-#X obj 1066 275 nbx 10 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
+#X obj 955 273 nbx 10 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 1 256;
+#X obj 1066 275 nbx 10 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 -3 256;
 #X obj 759 205 lop~ 0.1;
 #X obj 864 77 t b f;
 #X obj 840 56 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -79,7 +79,7 @@
 #X obj 355 190 == 0;
 #X obj 375 229 spigot 1;
 #X obj 452 247 sel 1;
-#X obj 424 270 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 424 270 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 452 270 freeze;
 #X obj 805 508 r wdelay_len-\$1;
@@ -99,23 +99,23 @@
 #X obj 301 328 s aux-label-\$1;
 #N canvas 0 50 1366 725 quantize 0;
 #X floatatom 295 90 5 0 0 0 - - -, f 5;
-#X obj 284 219 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 284 219 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 282 185 expr $f1 % 12;
 #X obj 379 156 / 12;
 #X obj 384 186 int;
 #X obj 381 209 * 12;
-#X obj 388 236 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 388 236 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 36 256;
 #X obj 174 284 tabread quantize-\$1;
 #X obj 299 150 t f f;
 #X obj 308 312 +;
-#X obj 300 442 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 300 442 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 12 256;
 #X obj 287 248 + 0;
 #X obj 397 351 * 12;
-#X obj 308 374 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 308 374 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 243 163 + 24;
 #X obj 268 120 + 24;
 #X obj 300 348 - 24;
@@ -177,7 +177,7 @@
 #X obj 260 70 expr ((100-$f1)*(100-$f1)/10000)*20+0.1;
 #X obj 533 295 wdel \$1 1;
 #X obj 461 386 +~;
-#X obj 500 387 +~;
+#X obj 503 415 +~;
 #X obj 633 302 wdel \$1 2;
 #X obj 717 304 wdel \$1 3;
 #X obj 262 201 s psmooth_internal-\$1;
@@ -230,9 +230,9 @@
 #X connect 42 0 33 0;
 #X connect 43 0 44 0;
 #X connect 44 0 33 0;
-#X connect 45 0 112 0;
 #X connect 45 0 115 0;
 #X connect 45 0 116 0;
+#X connect 45 0 112 0;
 #X connect 46 0 9 0;
 #X connect 47 0 9 0;
 #X connect 48 0 46 1;
