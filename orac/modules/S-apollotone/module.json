@@ -1,23 +1,30 @@
 {
-    "name" : "S-polyfolder",
-    "display" : "Polyfolder",
+    "name" : "S-apollo",
+    "display" : "Apollo",
     "parameters" :  [ 
-        ["int","folder_offset","Semitone Offset",-24,24,0],
-        ["int","folder_type","Type",0,3,0],
-        ["pct","folder_vol","Volume",0,100,50],
-        ["pct","folder_attack","Attack",0,100,50],
-        ["pct","folder_decay","Decay",0,100,50],
-        ["pct","folder_sustain","Sustain",0,100,50],
-        ["pct","folder_folding","Folding",0,100,50],
-        ["freq","folder_vrate","Vibr Rate",0.01,50,1],
-        ["pct","folder_vdepth","Vibr Depth",0,100,0],
-        ["freq","folder_mrate","Mod Rate",0.01,50,1],
-        ["pct","folder_mdepth","Mod Depth",0,100,0]
+        ["int","transpose","Semitone Offset",-24,24,0],
+        ["int","waveselect","Wavetable",0,79,0],
+        ["float","attack","Attack",5,3000,50],
+        ["float","decay","Decay",5,3000,50],
+        ["float","sustain","sustain",0,1,1],
+        ["float","release","Release",5,3000,50],
+        ["bool","envfilt","Filter mix",0,1,0],
+        ["float","filt_cutoff","Cutoff",1,16,8],
+        ["float","filt_q","Resonance",1,5,2],
+        ["float","mod_speed","Mod Speed",0.1,15,2],
+        ["float","vibrato_depth","Vib. Depth",5,3000,0],
+        ["float","tremolo_depth","Trem. Depth",0,1,0],
+        ["float","chorus_rate","Chorus Rate",0.1,15,3],        
+        ["float","chorus_depth","Chorus Depth",0,1,10],
+        ["float","chorus_mix","Chorus Mix",0,1,0]        
+
     ],
     "pages" : [ 
-        ["pg_main","Main",["folder_offset","folder_type","folder_folding","folder_vol"]],
-        ["pg_env","Env",["folder_attack","folder_decay","folder_sustain"]],
-        ["pg_mod","Mod",["folder_vrate","folder_vdepth","folder_mrate","folder_mdepth"]]
+        ["pg_main","Main",["transpose","waveselect"]],
+        ["pg_env","Env",["attack",|"decay","sustain","release"]],
+        ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q"]],
+        ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth"]],
+        ["pg_chorus","Chprus",["chorus_rate","chorus_depth","chorus_mix"]]
     ]
 }
 

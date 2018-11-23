@@ -15,9 +15,9 @@
 #X obj 423 233 r fsIn-\$1;
 #X obj 22 112 KontrolModule \$1 S-polyfolder;
 #X obj 182 35 print loaded:polyfolder into \$1, f 35;
-#X obj 340 363 polyfolder \$1;
-#X connect 0 0 16 0;
+#X obj 415 327 aptone/aptone \$1;
 #X connect 0 0 1 0;
+#X connect 0 0 16 0;
 #X connect 2 0 6 0;
 #X connect 2 0 5 0;
 #X connect 3 0 14 0;
