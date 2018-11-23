@@ -8,7 +8,7 @@
         ["float","decay","Decay",5,3000,50],
         ["float","sustain","sustain",0,1,1],
         ["float","release","Release",5,3000,50],
-        ["bool","envfilt","Filter mix",0,1,0],
+        ["float","envfilt","Filter mix",0,1,0],
         ["float","filt_cutoff","Cutoff",1,16,8],
         ["float","filt_q","Resonance",1,5,2],
         ["float","mod_speed","Mod Speed",0.1,15,2],
