@@ -40,7 +40,7 @@
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
         ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_env","wdelay_pfilt"]],
         ["pg_3","Control",["wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
-        ["pg_2","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate","wdelay_gatear"]],
+        ["pg_35","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate","wdelay_gatear"]],
         ["pg_4","Mod",["wdelay_drift","wdelay_pitchsmooth","wdelay_lensmooth"]],
         ["pg_5","Head Tuning",["wdelay_semi_1","wdelay_semi_2","wdelay_semi_3"]],
         ["pg_6","Head Len",["wdelay_len_1","wdelay_len_2","wdelay_len_3"]],
