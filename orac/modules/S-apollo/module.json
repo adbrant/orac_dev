@@ -12,10 +12,10 @@
         ["float","filt_cutoff","Cutoff",1,16,8],
         ["float","filt_q","Resonance",1,5,2],
         ["float","mod_speed","Mod Speed",0.1,15,2],
-        ["float","vibrato_depth","Vib. Depth",0,5,0],
+        ["float","vibrato_depth","Vib. Depth",0,10,0],
         ["float","tremolo_depth","Trem. Depth",0,1,0],
         ["float","chorus_rate","Chorus Rate",0.1,15,3],        
-        ["float","chorus_depth","Chorus Depth",0,1,10],
+        ["float","chorus_depth","Chorus Depth",0,1,0.5],
         ["float","chorus_mix","Chorus Mix",0,1,0]        
 
     ],
