@@ -21,10 +21,10 @@
     ],
     "pages" : [ 
         ["pg_main","Main",["transpose","waveselect"]],
-        ["pg_env","Env",["attack",|"decay","sustain","release"]],
+        ["pg_env","Env",["attack","decay","sustain","release"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth"]],
-        ["pg_chorus","Chprus",["chorus_rate","chorus_depth","chorus_mix"]]
+        ["pg_chorus","Chorus",["chorus_rate","chorus_depth","chorus_mix"]]
     ]
 }
 
