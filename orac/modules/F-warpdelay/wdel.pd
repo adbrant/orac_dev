@@ -1,4 +1,4 @@
-#N canvas 0 50 1364 714 10;
+#N canvas 18 74 1345 714 10;
 #X obj 293 318 *~;
 #X obj 347 433 *~;
 #X obj 290 249 phasor~ 3.01;
@@ -18,11 +18,11 @@
 #X obj 572 489 expr~ tanh($v2*$v1*(1-$v1));
 #X obj 785 447 * 16;
 #X obj 768 469 sig~ 8;
-#X obj 832 469 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 832 469 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 285 396 vd~ del_line-\$1;
-#X obj 604 152 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 604 152 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 106 42 r wdelay_semi_\$2-\$1;
 #X obj 452 20 r wdelay_len_\$2-\$1;
 #X obj 402 470 r wdelay_gain_\$2-\$1;
@@ -40,14 +40,14 @@
 #X obj 467 586 outlet~;
 #X obj 824 180 r wdelay_pan_\$2-\$1;
 #X floatatom 592 321 5 -1 1 0 - - -, f 5;
-#X obj 590 445 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 590 445 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 571 298 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 540 406 expr 1.4142*sin(($f1+1)*3.14159/4);
 #X floatatom 1034 338 5 -1 1 0 - - -, f 5;
-#X obj 998 466 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 998 466 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 1023 317 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 982 425 expr 1.4142*cos((1+$f1)*3.1414/4);
@@ -63,10 +63,14 @@
 #X obj 282 123 *~;
 #X obj 751 42 r polygate-\$1-\$2;
 #X obj 858 93 expr ((100-$f1)*(100-$f1)/10000)*20+0.1;
-#X obj 746 138 lop~ 5;
+#X obj 734 133 lop~ 5;
 #X obj 736 89 sig~ 1;
 #X obj 931 31 r wdelay_gatear-\$1;
 #X obj 362 468 *~;
+#X obj 795 76 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 846 134 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 20.1 256;
 #X connect 0 0 10 0;
 #X connect 1 0 61 0;
 #X connect 2 0 16 0;
@@ -130,7 +134,9 @@
 #X connect 54 0 50 0;
 #X connect 55 0 31 0;
 #X connect 56 0 59 0;
+#X connect 56 0 62 0;
 #X connect 57 0 58 1;
+#X connect 57 0 63 0;
 #X connect 58 0 61 1;
 #X connect 59 0 58 0;
 #X connect 60 0 57 0;
