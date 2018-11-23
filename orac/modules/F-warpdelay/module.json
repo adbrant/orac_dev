@@ -15,7 +15,7 @@
         ["int","wdelay_midictrl","MIDI Control",0,1,0],
         ["int","wdelay_midipoly","Mono/Poly",0,1,0],
         ["int","wdelay_midigate","MIDI Gate",0,1,0],
-        ["float","wdelay_gatear","Gate A/R",0,1,0.8],
+        ["float","wdelay_gatear","Gate A/R",0,100,80],
         ["int","wdelay_quantize","Quantize",0,3,0],        
         ["float","wdelay_drift","Drift",0,3,0.5],
         ["int","wdelay_exprange","Expr Range",0,36,0],
