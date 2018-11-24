@@ -1,4 +1,4 @@
-#N canvas -8 -8 1366 725 10;
+#N canvas 0 50 1366 725 10;
 #X obj 23 9 r loaddefs-\$1;
 #X msg 23 76 loaddefinitions \$1;
 #X obj 181 9 r loadbang-\$1;
@@ -114,7 +114,7 @@
 #X obj 473 411 lop~ 5;
 #X obj 558 296 min 8000;
 #X obj 448 3 inlet;
-#X obj 632 218 r rcrsv_midinote_\$1;
+#X obj 632 218 r rcrsv_midinote-\$1;
 #X connect 1 0 6 0;
 #X connect 2 0 4 0;
 #X connect 3 0 2 1;
@@ -155,10 +155,10 @@
 #X obj 537 305 notein_mono;
 #X obj 757 379 spigot 0;
 #X obj 830 462 sig~ 1;
-#X obj 632 218 r rcrsv_midigate_\$1;
 #X obj 820 302 sel 0;
 #X obj 854 366 1;
 #X obj 823 554 lop~ 5;
+#X obj 632 218 r rcrsv_midigate-\$1;
 #X connect 0 0 4 0;
 #X connect 0 0 3 0;
 #X connect 1 0 12 0;
@@ -216,7 +216,7 @@
 #X connect 58 0 56 0;
 #X connect 58 1 57 0;
 #X connect 59 0 60 0;
-#X connect 60 0 64 0;
+#X connect 60 0 63 0;
 #X connect 61 0 62 0;
-#X connect 61 0 59 1;
-#X connect 62 0 63 0;
+#X connect 64 0 61 0;
+#X connect 64 0 59 1;
