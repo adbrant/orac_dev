@@ -27,7 +27,7 @@
         ["pg_main","Main",["transpose","waveselect"]],
         ["pg_env","Env",["attack","decay","sustain","release"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q"]],
-        ["pg_env","Filt Env",["attack-f","decay-f","sustain-f","release-f"]],
+        ["pg_fenv","Filt Env",["attack-f","decay-f","sustain-f","release-f"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth"]],
         ["pg_chorus","Chorus",["chorus_rate","chorus_depth","chorus_mix"]]
     ]
