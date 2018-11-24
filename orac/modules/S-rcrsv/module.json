@@ -16,12 +16,13 @@
         ["time","rcrsv_del","Delay",0,4000,250],
         ["pct","rcrsv_del_lfo","Del LFO",0,100,0],
         ["int","rcrsv_res","Resonance",0,10,1],
-        ["bool","rcrsv_midigate","Midi Gate",0,10,1],
-        ["int","rcrsv_midinote","Midi Speed",0,10,1],        
+        ["bool","rcrsv_midigate","Midi Gate",0],
+        ["bool","rcrsv_midinote","Midi Speed",0]        
     ],
     "pages" : [ 
         ["pg_main","Main",["rcrsv_wet","rcrsv_fb","rcrsv_del","rcrsv_del_lfo"]],
         ["pg_2","Levels",["rcrsv_dry","rcrsv_byp","rcrsv_in","rcrsv_noise"]],   
+        ["pg_midi","Midi",["rcrsv_midigate","rcrsv_midinote","rcrsv_in","rcrsv_noise"]],
         ["pg_3","Filter",["rcrsv_lp","rcrsv_lp_lfo","rcrsv_res","rcrsv_lfof"]],   
         ["pg_4","Phasor",["rcrsv_ap","rcrsv_ap_lfo"]]          
     ]
