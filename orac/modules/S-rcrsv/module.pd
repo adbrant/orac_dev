@@ -1,4 +1,4 @@
-#N canvas -8 -8 1366 725 10;
+#N canvas 8 60 1345 720 10;
 #X obj 23 9 r loaddefs-\$1;
 #X msg 23 76 loaddefinitions \$1;
 #X obj 181 9 r loadbang-\$1;
@@ -80,9 +80,8 @@
 #X obj 468 576 lop~ 3000;
 #X obj 229 521 +~;
 #X obj 198 492 *~ 1.778;
-#N canvas 0 50 1366 725 delcalc 1;
+#N canvas 8 60 1345 720 delcalc 1;
 #X obj 139 420 outlet~;
-#X obj 77 115 sig~;
 #X obj 180 151 *~ 0;
 #X obj 204 113 / 100;
 #X obj 172 179 *~ 1;
@@ -97,13 +96,13 @@
 #X obj 508 180 /;
 #X msg 494 146 1;
 #X obj 533 128 t b f;
-#X obj 504 204 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 504 204 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 2 256;
 #X obj 491 386 vline~;
 #X msg 488 365 \$1 \$1;
 #X obj 481 339 list;
-#X obj 507 17 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 507 17 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 60 256;
 #X obj 147 366 *~;
 #X obj 637 264 sel 0;
 #X obj 561 233 spigot 0;
@@ -111,52 +110,55 @@
 #X obj 474 322 min 8000, f 9;
 #X obj 448 3 inlet;
 #X obj 657 156 r rcrsv_midinote-\$1;
-#X obj 371 242 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 17 256;
+#X obj 373 231 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 469.208 256;
 #X obj 534 257 t b f;
-#X obj 460 301 * 1;
+#X obj 457 264 * 1;
 #X msg 648 362 1;
-#X connect 1 0 6 0;
-#X connect 2 0 4 0;
-#X connect 3 0 2 1;
-#X connect 4 0 6 1;
-#X connect 5 0 2 0;
-#X connect 6 0 21 0;
-#X connect 8 0 5 0;
-#X connect 9 0 1 0;
-#X connect 9 0 4 1;
-#X connect 9 0 28 0;
-#X connect 10 0 3 0;
-#X connect 11 0 15 0;
-#X connect 12 0 11 0;
-#X connect 13 0 16 0;
+#X obj 80 166 sig~ 1;
+#X obj 458 296 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X connect 1 0 3 0;
+#X connect 2 0 1 1;
+#X connect 3 0 5 1;
+#X connect 4 0 1 0;
+#X connect 5 0 20 0;
+#X connect 7 0 4 0;
+#X connect 8 0 3 1;
+#X connect 8 0 27 0;
+#X connect 9 0 2 0;
+#X connect 10 0 14 0;
+#X connect 11 0 10 0;
+#X connect 12 0 15 0;
+#X connect 13 0 12 0;
 #X connect 14 0 13 0;
-#X connect 15 0 14 0;
-#X connect 15 1 13 1;
+#X connect 14 1 12 1;
+#X connect 15 0 22 0;
 #X connect 16 0 23 0;
-#X connect 17 0 24 0;
+#X connect 17 0 16 0;
 #X connect 18 0 17 0;
-#X connect 19 0 18 0;
-#X connect 20 0 12 0;
-#X connect 21 0 0 0;
-#X connect 22 0 31 0;
-#X connect 23 0 29 0;
-#X connect 24 0 21 1;
+#X connect 19 0 11 0;
+#X connect 20 0 0 0;
+#X connect 21 0 30 0;
+#X connect 22 0 28 0;
+#X connect 23 0 20 1;
+#X connect 24 0 18 0;
 #X connect 25 0 19 0;
-#X connect 26 0 20 0;
-#X connect 27 0 22 0;
-#X connect 27 0 23 1;
-#X connect 28 0 30 0;
-#X connect 29 0 28 0;
-#X connect 29 1 30 1;
-#X connect 30 0 25 0;
-#X connect 31 0 29 0;
+#X connect 26 0 21 0;
+#X connect 26 0 22 1;
+#X connect 27 0 29 0;
+#X connect 28 0 27 0;
+#X connect 28 1 29 1;
+#X connect 29 0 32 0;
+#X connect 30 0 28 0;
+#X connect 31 0 5 0;
+#X connect 32 0 24 0;
 #X restore 467 359 pd delcalc;
 #X obj 334 668;
-#X obj 533 337 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
-#X obj 616 332 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 533 337 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 60 256;
+#X obj 616 332 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 537 305 notein_mono;
 #X obj 757 379 spigot 0;
 #X obj 830 462 sig~ 1;
