@@ -3,8 +3,7 @@
     "display" : "Apollo",
     "parameters" :  [ 
         ["int","transpose","Semitone Offset",-24,24,0],
-        ["int","waveselect-1","Wavetable 1",0,79,0],
-        ["int","waveselect-2","Wavetable 2",0,79,0],
+        ["int","waveselect","Wavetable",0,79,0],
         ["float","attack","Attack",5,3000,50],
         ["float","decay","Decay",5,3000,50],
         ["float","sustain","sustain",0,1,1],
@@ -25,7 +24,7 @@
 
     ],
     "pages" : [ 
-        ["pg_main","Main",["transpose","waveselect-1","waveselect-2"]],
+        ["pg_main","Main",["transpose","waveselect"]],
         ["pg_env","Env",["attack","decay","sustain","release"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q"]],
         ["pg_fenv","Filt Env",["attack-f","decay-f","sustain-f","release-f"]],
