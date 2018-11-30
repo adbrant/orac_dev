@@ -1,0 +1,7 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 102 96 osc~;
+#X obj 221 90 phasor~;
+#X obj 168 144 expr~ ($v1>0)*2-1;
+#X obj 61 35 r lfotype-\$1;
+#X obj 394 106 brownian;
+#X connect 0 0 2 0;

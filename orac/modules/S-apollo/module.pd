@@ -16,6 +16,17 @@
 #X obj 22 112 KontrolModule \$1 S-apollo;
 #X obj 181 35 print loaded:apollo into \$1, f 35;
 #X obj 415 327 aptone/aptone \$1;
+#X obj 249 220 ../../../../in_tester;
+#X obj 350 447 C:/users/alexd_000/Documents/PD/out_tester;
+#X obj 627 365 s envpitch-0;
+#X obj 686 221 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2100 1;
+#X obj 718 430 s attack-f-0;
+#X obj 734 395 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 66 256;
+#X obj 702 471 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 1 256;
+#X obj 686 506 s sustain-f-0;
 #X connect 0 0 1 0;
 #X connect 0 0 16 0;
 #X connect 2 0 6 0;
@@ -27,3 +38,9 @@
 #X connect 8 0 10 0;
 #X connect 16 0 10 0;
 #X connect 16 0 9 0;
+#X connect 16 0 18 0;
+#X connect 16 0 18 1;
+#X connect 17 2 16 0;
+#X connect 20 0 19 0;
+#X connect 22 0 21 0;
+#X connect 23 0 24 0;
