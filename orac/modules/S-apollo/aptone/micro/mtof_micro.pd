@@ -1,0 +1,18 @@
+#N canvas 95 108 1366 347 10;
+#X obj 47 -823 mtof;
+#X obj 53 -1038 inlet;
+#X obj 29 -766 outlet;
+#X obj 69 -767 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 87 -878 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 69 -852 + 0;
+#X obj 84 -914 tabread tuning_table-\$1;
+#X obj 211 -1041 r microtuning_offset-\$0;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 6 0 4 0;
+#X connect 7 0 5 1;
