@@ -1,4 +1,4 @@
-#N canvas 0 50 1360 716 10;
+#N canvas 8 60 1351 716 10;
 #X obj 64 94 pack 0 0 0, f 11;
 #X obj 47 115 route 1 2 3 4 5 6 7 8, f 81;
 #X text 24 19 basic polyphonic patch with 8 voices;
@@ -14,8 +14,8 @@
 #X coords 0 1 6144 -1 400 50 1 0 0;
 #X restore 372 18 graph;
 #X obj 550 285 soundfiler;
-#X obj 577 207 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 577 207 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 54 256;
 #X msg 578 256 read -resize ./samplemap/\$1.wav wavemap-\$2;
 #X obj 599 175 r waveselect-\$1;
 #X obj 56 180 voice \$1;
@@ -28,6 +28,8 @@
 #X obj 479 165 voice \$1;
 #X obj 556 156 voice \$1;
 #X obj 632 389 micro/micro_master \$1;
+#X obj 640 510 r microtuning-label-\$1;
+#X obj 663 548 s aux-label-\$1;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 1 0 14 0;
@@ -55,3 +57,4 @@
 #X connect 20 0 5 0;
 #X connect 21 0 5 0;
 #X connect 22 0 5 0;
+#X connect 24 0 25 0;
