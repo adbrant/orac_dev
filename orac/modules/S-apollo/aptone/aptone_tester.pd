@@ -6,23 +6,48 @@
 #X obj 514 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 702 49 hsl 128 15 0 80 0 0 empty empty waveselect -2 -8 0 10
--262144 -1 -1 8200 1;
+-262144 -1 -1 7500 1;
 #X obj 709 94 nbx 5 14 -1e+037 1e+037 0 0 waveselect-m0 empty empty
-0 -8 0 10 -262144 -1 -1 51 256;
+0 -8 0 10 -262144 -1 -1 47 256;
 #X obj 704 70 int;
 #X obj 633 168 hsl 128 15 5 3000 0 0 attack-m0 empty attack -2 -8 0
-10 -262144 -1 -1 8900 1;
+10 -262144 -1 -1 0 1;
 #X obj 631 190 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 3505.43 256;
+10 -262144 -1 -1 5 256;
 #X obj 896 50 hsl 128 15 0 2 0 0 empty empty filttype -2 -8 0 10 -262144
--1 -1 7700 1;
+-1 -1 6500 1;
 #X obj 903 95 nbx 5 14 -1e+037 1e+037 0 0 filttype-m0 empty empty 0
 -8 0 10 -262144 -1 -1 1 256;
 #X obj 898 71 int;
-#X obj 641 279 hsl 128 15 0 32 0 0 filt_cutoff-m0 empty attack -2 -8
-0 10 -262144 -1 -1 0 1;
+#X obj 800 260 hsl 128 15 1 8 0 0 filt_q-m0 empty ffilt_q -2 -8 0 10
+-262144 -1 -1 8500 1;
+#X obj 810 286 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 5.68504 256;
+#X obj 614 275 hsl 128 15 0 32 0 0 filt_cutoff-m0 empty filt_cutoff
+-2 -8 0 10 -262144 -1 -1 4700 1;
 #X obj 639 301 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 11.8425 256;
+#X obj 786 167 hsl 128 15 5 3000 0 0 decay-m0 empty decay -2 -8 0 10
+-262144 -1 -1 12300 1;
+#X obj 784 189 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 2905.67 256;
+#X obj 928 168 hsl 128 15 0 1 0 0 sustain-m0 empty sustain -2 -8 0
+10 -262144 -1 -1 11900 1;
+#X obj 926 190 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0.937008 256;
+#X obj 1090 165 hsl 128 15 5 3000 0 0 release-m0 empty release -2 -8
+0 10 -262144 -1 -1 6400 1;
+#X obj 1088 187 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
+0 10 -262144 -1 -1 1514.29 256;
+#X obj 1071 50 hsl 128 15 0 16 0 0 empty empty microtuning -2 -8 0
+10 -262144 -1 -1 6000 1;
+#X obj 1079 92 nbx 5 14 -1e+037 1e+037 0 0 microtuning-m0 empty empty
+0 -8 0 10 -262144 -1 -1 7 256;
+#X obj 1074 68 int;
+#X obj 970 258 hsl 128 15 0 1 0 0 fmod_depth-m0 empty fmod -2 -8 0
+10 -262144 -1 -1 12700 1;
+#X obj 980 284 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 1 256;
 #X connect 1 0 0 0;
 #X connect 1 0 0 1;
 #X connect 2 0 3 0;
@@ -34,3 +59,10 @@
 #X connect 10 0 12 0;
 #X connect 12 0 11 0;
 #X connect 13 0 14 0;
+#X connect 15 0 16 0;
+#X connect 17 0 18 0;
+#X connect 19 0 20 0;
+#X connect 21 0 22 0;
+#X connect 23 0 25 0;
+#X connect 25 0 24 0;
+#X connect 26 0 27 0;

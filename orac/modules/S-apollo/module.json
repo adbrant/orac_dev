@@ -15,11 +15,12 @@
         ["float","envfilt","Filter Env",0,1,0],
         ["float","envpitch","Pitch Env",0,1,0],
         ["float","filt_cutoff","Cutoff",0,32,8],
-        ["float","filt_q","Resonance",1,4,2],
+        ["float","filt_q","Resonance",1,5,2],
         ["int","filttype","FiltType",0,2,0],
         ["float","mod_speed","Mod Speed",0.1,15,2],
         ["float","vibrato_depth","Vib. Depth",0,10,0],
         ["float","tremolo_depth","Trem. Depth",0,1,0],
+        ["float","fmod_depth","Filtmod. Depth",0,1,0],
         ["int","microtuning","Tuning",0,16,0]	    
 
     ],
@@ -28,7 +29,7 @@
         ["pg_env","Amp Env",["attack","decay","sustain","release"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
         ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
-        ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth"]],
+        ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
         ["pg_micro", "Microtuning", ["microtuning"]]
     ]
 }
