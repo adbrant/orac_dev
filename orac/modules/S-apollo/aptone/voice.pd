@@ -1,7 +1,7 @@
 #N canvas 18 74 1351 720 10;
 #X text 451 49 note messages;
 #X obj 405 65 inlet;
-#X obj 537 605 outlet~;
+#X obj 536 609 outlet~;
 #X text 25 10 synth voice with waveform change;
 #X obj 428 86 unpack 0 0;
 #X obj 549 446 *~;
@@ -11,7 +11,7 @@
 #X obj 639 233 *~ 0.1;
 #X obj 575 165 * 0.001;
 #X obj 684 385 +~ 1;
-#X obj 554 584 *~;
+#X obj 549 574 *~;
 #X obj 649 344 *~ 0.1;
 #X obj 666 53 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
@@ -101,10 +101,14 @@
 #X obj 1074 360 sig~ 1;
 #X obj 990 256 *~ 0;
 #X obj 836 407 *~;
+#X obj 592 394 / 128;
+#X obj 524 418 *~ 1;
+#X obj 527 79 sel 0;
 #X connect 1 0 4 0;
 #X connect 4 0 19 0;
 #X connect 4 1 47 0;
 #X connect 4 1 48 0;
+#X connect 4 1 57 0;
 #X connect 5 0 16 0;
 #X connect 6 0 8 0;
 #X connect 6 0 25 0;
@@ -133,7 +137,7 @@
 #X connect 23 0 30 2;
 #X connect 24 0 17 0;
 #X connect 24 0 29 1;
-#X connect 25 0 5 0;
+#X connect 25 0 56 0;
 #X connect 26 0 10 1;
 #X connect 27 0 19 1;
 #X connect 28 0 15 0;
@@ -167,3 +171,6 @@
 #X connect 52 0 54 1;
 #X connect 53 0 54 1;
 #X connect 54 0 50 0;
+#X connect 55 0 56 1;
+#X connect 56 0 5 1;
+#X connect 57 1 55 0;
