@@ -14,7 +14,7 @@
         ["float","release-f","Release",5,3000,50],
         ["float","envfilt","Filter Env",0,1,0],
         ["float","envpitch","Pitch Env",0,1,0],
-        ["float","filt_cutoff","Cutoff",1,32,8],
+        ["float","filt_cutoff","Cutoff",0,32,8],
         ["float","filt_q","Resonance",1,4,2],
         ["int","filttype","FiltType",0,2,0],
         ["float","mod_speed","Mod Speed",0.1,15,2],

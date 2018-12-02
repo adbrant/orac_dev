@@ -1,0 +1,36 @@
+#N canvas 0 50 1366 725 10;
+#X obj 373 380 dac~;
+#X obj 415 327 aptone m0;
+#X obj 436 202 test/keyboard;
+#X obj 441 282 spigot 0;
+#X obj 514 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 702 49 hsl 128 15 0 80 0 0 empty empty waveselect -2 -8 0 10
+-262144 -1 -1 8200 1;
+#X obj 709 94 nbx 5 14 -1e+037 1e+037 0 0 waveselect-m0 empty empty
+0 -8 0 10 -262144 -1 -1 51 256;
+#X obj 704 70 int;
+#X obj 633 168 hsl 128 15 5 3000 0 0 attack-m0 empty attack -2 -8 0
+10 -262144 -1 -1 8900 1;
+#X obj 631 190 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 3505.43 256;
+#X obj 896 50 hsl 128 15 0 2 0 0 empty empty filttype -2 -8 0 10 -262144
+-1 -1 7700 1;
+#X obj 903 95 nbx 5 14 -1e+037 1e+037 0 0 filttype-m0 empty empty 0
+-8 0 10 -262144 -1 -1 1 256;
+#X obj 898 71 int;
+#X obj 641 279 hsl 128 15 0 32 0 0 filt_cutoff-m0 empty attack -2 -8
+0 10 -262144 -1 -1 0 1;
+#X obj 639 301 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 1;
+#X connect 5 0 7 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 10 0 12 0;
+#X connect 12 0 11 0;
+#X connect 13 0 14 0;
