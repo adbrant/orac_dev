@@ -1,0 +1,20 @@
+#N canvas 498 112 450 300 10;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array1 44100 float 2;
+#X coords 0 1 44100 -1 200 140 1;
+#X restore 220 19 graph;
+#X obj 33 166 parabolic_line~;
+#X obj 128 274 tabwrite~ array1;
+#X obj 136 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 16 14 0 1 0;
+#X msg 66 46 1 750 0;
+#X msg 103 58 1 750 1;
+#X connect 1 0 2 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 0;
+#X connect 5 0 3 0;
+#X connect 6 0 1 0;
+#X connect 6 0 3 0;
