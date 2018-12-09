@@ -1,0 +1,14 @@
+{
+    "name" : "S-buzz",
+    "display" : "Buzz Synth",
+    "parameters" :  [ 
+        ["pitch","trans","Transpose",-24,24,0],
+        ["time","decay","Decay Time",5,2000,5],
+        ["float","tone","Tone",0,100,50],
+        ["int","microtuning","Tuning",0,16,0]	
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["trans","tone","decay","microtuning"]]
+    ]
+}
+
