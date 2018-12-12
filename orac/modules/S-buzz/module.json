@@ -8,7 +8,8 @@
         ["int","microtuning","Tuning",0,16,0]	
     ],
     "pages" : [ 
-        ["pg_main","Main",["trans","tone","decay","microtuning"]]
+        ["pg_main","Main",["trans","tone","decay"]],
+        ["pg_micro", "Microtuning", ["microtuning"]]
     ]
 }
 
