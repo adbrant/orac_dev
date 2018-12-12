@@ -18,19 +18,19 @@
 #X obj 572 489 expr~ tanh($v2*$v1*(1-$v1));
 #X obj 785 447 * 16;
 #X obj 768 469 sig~ 8;
-#X obj 832 469 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+#X obj 832 469 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 285 396 vd~ del_line-\$1;
-#X obj 604 152 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
-#X obj 106 42 r wdelay_semi_\$2-\$1;
+#X obj 604 152 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 106 35 r wdelay_semi_\$2-\$1;
 #X obj 452 20 r wdelay_len_\$2-\$1;
 #X obj 402 470 r wdelay_gain_\$2-\$1;
 #X obj 373 517 *~ 1;
 #X obj 300 186 /~ 1;
 #X obj 278 292 *~ 1;
-#X obj 48 144 mtof;
-#X obj 55 166 / 8.1758;
+#X obj 44 204 mtof;
+#X obj 51 226 / 8.1758;
 #X obj 280 87 +~ 1;
 #X obj 295 162 -~ 1;
 #X obj 465 168 /~ 1000;
@@ -40,24 +40,24 @@
 #X obj 467 586 outlet~;
 #X obj 824 180 r wdelay_pan_\$2-\$1;
 #X floatatom 592 321 5 -1 1 0 - - -, f 5;
-#X obj 590 445 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+#X obj 590 445 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 571 298 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 540 406 expr 1.4142*sin(($f1+1)*3.14159/4);
 #X floatatom 1034 338 5 -1 1 0 - - -, f 5;
-#X obj 998 466 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+#X obj 998 466 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 1023 317 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 982 425 expr 1.4142*cos((1+$f1)*3.1414/4);
 #X obj 708 535 *~ 1;
 #X obj 476 551 *~ 1;
-#X obj 59 188 sig~ 1;
+#X obj 55 248 sig~ 1;
 #X obj 31 19 r polynote-\$1-\$2;
 #X obj 47 122 +;
 #X obj 123 179 r psmooth_internal-\$1;
-#X obj 62 206 lop~ 5;
+#X obj 58 266 lop~ 5;
 #X obj 92 67 t b f;
 #X obj 46 87 f;
 #X obj 282 123 *~;
@@ -67,10 +67,14 @@
 #X obj 736 89 sig~ 1;
 #X obj 931 31 r wdelay_gatear-\$1;
 #X obj 362 468 *~;
-#X obj 795 76 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
-#X obj 846 134 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 20.1 256;
+#X obj 795 76 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 846 134 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 133 95 r wdelay_cent_\$2-\$1;
+#X obj 122 117 / 100;
+#X obj 112 144 t b f;
+#X obj 57 174 +;
 #X connect 0 0 10 0;
 #X connect 1 0 61 0;
 #X connect 2 0 16 0;
@@ -126,7 +130,7 @@
 #X connect 47 0 36 0;
 #X connect 48 0 52 0;
 #X connect 49 0 54 0;
-#X connect 50 0 28 0;
+#X connect 50 0 67 0;
 #X connect 51 0 52 1;
 #X connect 52 0 55 1;
 #X connect 53 0 54 0;
@@ -141,3 +145,8 @@
 #X connect 59 0 58 0;
 #X connect 60 0 57 0;
 #X connect 61 0 25 0;
+#X connect 64 0 65 0;
+#X connect 65 0 66 0;
+#X connect 66 0 54 0;
+#X connect 66 1 67 1;
+#X connect 67 0 28 0;
