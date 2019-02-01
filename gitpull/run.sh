@@ -9,6 +9,7 @@ oscsend localhost 4001 /oled/aux/line/3 s "Updates"
 
 cd ..
 git pull
+sleep 1
 
 
 oscsend localhost 4001 /oled/aux/clear i 1
