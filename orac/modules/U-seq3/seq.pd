@@ -1,0 +1,142 @@
+#N canvas 289 64 1403 789 10;
+#X msg 680 563 clear;
+#X msg 575 260 loop \$1;
+#X msg 638 261 quantize-length \$1;
+#X obj 66 74 inlet;
+#X obj 66 103 s \$0beat-clock;
+#X obj 223 403 r \$0beat-clock;
+#X obj 252 77 inlet;
+#X obj 647 19 inlet;
+#X obj 223 678 outlet;
+#X msg 828 260 start-sync;
+#X msg 1017 259 arm;
+#X obj 578 350 r \$0beat-clock;
+#X obj 578 683 outlet;
+#X text 709 17 controls;
+#X msg 712 529 rec;
+#X text 291 679 events out;
+#X text 306 74 events in;
+#X msg 492 586 end;
+#X msg 578 506 length \$1;
+#X obj 311 443 r \$0player;
+#X obj 780 333 s \$0player;
+#X obj 997 303 s \$0recorder;
+#X obj 680 444 r \$0recorder;
+#X msg 780 259 start;
+#X text 129 74 clock;
+#X text 662 684 send all status out;
+#X obj 647 57 t a a;
+#X obj 587 88 s \$0status;
+#X obj 625 638 r \$0status;
+#X obj 923 362 s \$0status;
+#X text 1006 363 send out stop status too;
+#X obj 252 114 s \$0events-in;
+#X obj 629 378 r \$0events-in;
+#N canvas 4 50 680 291 stop-all 0;
+#X obj 98 58 inlet;
+#X msg 148 128 stop;
+#X obj 98 80 t b b b;
+#X msg 109 129 stop;
+#X msg 69 128 stop;
+#X obj 171 181 outlet;
+#X obj 117 193 outlet;
+#X obj 51 184 outlet;
+#X text 199 81 stop recorder \, player \, send stop status out;
+#X connect 0 0 2 0;
+#X connect 1 0 5 0;
+#X connect 2 0 4 0;
+#X connect 2 1 3 0;
+#X connect 2 2 1 0;
+#X connect 3 0 6 0;
+#X connect 4 0 7 0;
+#X restore 923 259 pd stop-all;
+#X obj 946 189 t b;
+#X obj 1017 193 t b b;
+#X obj 1133 193 t a b;
+#X obj 1145 305 s \$0text;
+#X obj 745 564 r \$0text;
+#X obj 1104 281 list trim;
+#X obj 1241 283 list trim;
+#X obj 1241 259 list prepend read;
+#X obj 1104 257 list prepend write;
+#X text 1190 186 stop sequencer before reading new file, f 23;
+#X obj 680 591 text define -k \$1;
+#A set 0 length 142 \; 0 note 67 100 \; 5 note 65 100 \; 7 note 67
+0 \; 9 note 64 100 \; 12 note 65 0 \; 13 note 67 100 \; 13 note 64
+0 \; 18 note 65 100 \; 19 note 67 0 \; 21 note 64 100 \; 24 note 67
+100 \; 24 note 65 0 \; 25 note 64 0 \; 30 note 65 100 \; 30 note 67
+0 \; 31 note 64 100 \; 36 note 67 100 \; 40 note 67 0 \; 41 note 60
+100 \; 46 note 67 100 \; 46 note 60 0 \; 46 note 64 0 \; 48 note 65
+0 \; 49 note 71 100 \; 54 note 67 0 \; 60 note 79 100 \; 61 note 74
+100 \; 61 note 77 100 \; 64 note 79 0 \; 66 note 77 0 \; 67 note 74
+0 \; 68 note 71 0 \; 82 note 81 100 \; 83 note 71 100 \; 83 note 77
+100 \; 84 note 74 100 \; 90 note 74 0 \; 90 note 71 0 \; 91 note 81
+0 \; 91 note 77 0 \; 97 note 81 100 \; 98 note 77 100 \; 98 note 71
+100 \; 98 note 74 100 \; 106 note 74 0 \; 106 note 71 0 \; 107 note
+77 0 \; 108 note 81 0 \; 109 note 69 100 \; 109 note 65 100 \; 109
+note 62 100 \; 110 note 60 100 \; 119 note 65 0 \; 119 note 60 0 \;
+119 note 69 0 \; 119 note 62 0 \; 120 note 81 100 \; 120 note 77 100
+\; 121 note 71 100 \; 122 note 74 100 \; 127 note 71 0 \; 127 note
+74 0 \; 128 note 81 0 \; 128 note 77 0 \; 131 note 81 100 \; 133 note
+71 100 \; 134 note 77 100 \; 134 note 74 100 \; 140 note 74 0 \; 140
+note 71 0 \; 140 note 81 0 \;;
+#X obj 865 188 t b b;
+#X obj 789 191 t b b;
+#X obj 680 501 t b b;
+#X obj 599 537 r \$0-clear;
+#X obj 679 92 route loop quantize-length play play-sync stop arm write
+read, f 82;
+#X obj 223 495 seq-player \$1 \$2;
+#X obj 578 470 seq-recorder \$1 \$2;
+#X connect 0 0 44 0;
+#X connect 1 0 20 0;
+#X connect 2 0 20 0;
+#X connect 3 0 4 0;
+#X connect 5 0 50 0;
+#X connect 6 0 31 0;
+#X connect 7 0 26 0;
+#X connect 9 0 20 0;
+#X connect 10 0 21 0;
+#X connect 11 0 51 0;
+#X connect 14 0 12 0;
+#X connect 17 0 12 0;
+#X connect 18 0 12 0;
+#X connect 19 0 50 1;
+#X connect 22 0 51 2;
+#X connect 23 0 20 0;
+#X connect 26 0 27 0;
+#X connect 26 1 49 0;
+#X connect 28 0 12 0;
+#X connect 32 0 51 1;
+#X connect 33 0 29 0;
+#X connect 33 1 20 0;
+#X connect 33 2 21 0;
+#X connect 34 0 33 0;
+#X connect 35 0 10 0;
+#X connect 35 1 33 0;
+#X connect 36 0 41 0;
+#X connect 36 1 33 0;
+#X connect 38 0 44 0;
+#X connect 39 0 37 0;
+#X connect 40 0 37 0;
+#X connect 41 0 40 0;
+#X connect 42 0 39 0;
+#X connect 45 0 9 0;
+#X connect 45 1 33 0;
+#X connect 46 0 23 0;
+#X connect 46 1 33 0;
+#X connect 47 0 0 0;
+#X connect 47 1 14 0;
+#X connect 48 0 0 0;
+#X connect 49 0 1 0;
+#X connect 49 1 2 0;
+#X connect 49 2 46 0;
+#X connect 49 3 45 0;
+#X connect 49 4 34 0;
+#X connect 49 5 35 0;
+#X connect 49 6 42 0;
+#X connect 49 7 36 0;
+#X connect 50 0 8 0;
+#X connect 50 1 17 0;
+#X connect 51 0 18 0;
+#X connect 51 1 47 0;
