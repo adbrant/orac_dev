@@ -23,8 +23,3 @@ else
   oscsend localhost 4001 /oled/aux/line/3 s "Pulled"
 fi
 
-
-
-
-
-
