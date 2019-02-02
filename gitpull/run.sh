@@ -14,7 +14,7 @@ sleep 1
 oscsend localhost 4001 /oled/aux/clear i 1
 oscsend localhost 4001 /oled/setscreen i 1
 
-if [ "$changed" -eq 0 ];then
+if [ "$changed" -eq 0 ];
 then
   oscsend localhost 4001 /oled/aux/line/2 s "No Updates"
   oscsend localhost 4001 /oled/aux/line/3 s "Pulled"
