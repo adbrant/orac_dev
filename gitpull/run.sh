@@ -8,6 +8,7 @@ oscsend localhost 4001 /oled/aux/line/2 s "Pulling"
 oscsend localhost 4001 /oled/aux/line/3 s "Updates"
 changed=0
 cd  /usbdrive/Patches/orac_dev
+
 git pull | grep -q -v 'Already up-to-date.' && changed=1
 sleep 1
 
