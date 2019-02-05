@@ -1,0 +1,11 @@
+{
+    "name" : "U-micro",
+    "display" : "utonal midi translate",
+    "parameters" :  [ 
+        ["int","microtuning","Tuning",0,16,0]	
+    ],
+    "pages" : [ 
+        ["pg_micro", "Microtuning", ["microtuning"]]
+    ]
+}
+
