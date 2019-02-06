@@ -1,4 +1,4 @@
-#N canvas 13 116 1351 720 10;
+#N canvas 253 248 1351 720 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 491 s notesOut-\$1;
 #X obj 23 9 r loaddefs-\$1;
@@ -21,10 +21,10 @@
 #X obj 682 360 s aux-label-\$1;
 #X obj 24 112 KontrolModule \$1 U-micro;
 #X obj 179 36 print loaded:microtonal into \$1, f 35;
-#X obj 272 303 mtof_micro \$1;
 #X obj 306 247 unpack 0 0;
-#X obj 323 411 pack 0 0;
-#X connect 0 0 23 0;
+#X obj 321 389 pack 0 0;
+#X obj 272 303 mtom_micro \$1;
+#X connect 0 0 22 0;
 #X connect 2 0 6 0;
 #X connect 2 0 5 0;
 #X connect 3 0 20 0;
@@ -36,6 +36,6 @@
 #X connect 16 0 10 0;
 #X connect 18 0 19 0;
 #X connect 22 0 24 0;
-#X connect 23 0 22 0;
-#X connect 23 1 24 1;
-#X connect 24 0 1 0;
+#X connect 22 1 23 1;
+#X connect 23 0 1 0;
+#X connect 24 0 23 0;
