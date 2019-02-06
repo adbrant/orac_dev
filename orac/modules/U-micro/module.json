@@ -1,6 +1,6 @@
 {
     "name" : "U-micro",
-    "display" : "utonal midi translate",
+    "display" : "microtuner",
     "parameters" :  [ 
         ["int","microtuning","Tuning",0,16,0]	
     ],
