@@ -1,0 +1,17 @@
+0 length 884;
+0 note 83 100;
+0 note 76 100;
+0 note 72 100;
+14 note 79 100;
+194 note 72 0;
+209 note 76 0;
+209 note 79 0;
+224 note 83 0;
+299 note 76 100;
+299 note 79 100;
+299 note 83 100;
+314 note 72 100;
+509 note 72 0;
+509 note 83 0;
+509 note 76 0;
+509 note 79 0;
