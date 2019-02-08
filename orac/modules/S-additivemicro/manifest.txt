@@ -1,9 +1,0 @@
-ad90642963df68cb44b4d89dbef125420ed2fad3  S-additive/module.pd
-83bce982d1369a25eebf5afdc3d30594bff8a921  S-additive/add-adsr.pd
-1a0c5e0ef075903c4912fed4dd2ae1fb58fca200  S-additive/additive-sound.pd
-c726339ae194751c4bae09a06d6a1f59558e1a65  S-additive/module.json
-c2f0425815a2191a0633a0fe2b93edd639475d03  S-additive/additive-synth-partial.pd
-faaec022360434a78b4bb62deadde2063061ddbc  S-additive/additive-synth-voice.pd
-48f45081b4fd8b8a4d90d927ab35c5a9bf46b868  S-additive/addsyn-relTxt.txt
-fc233407225e38ecaa4aca2b3e11d010b13ab5d4  S-additive/skel-band-store.txt
-c21901810cac54d809ef3b9b6de611a806a5d1fa  S-additive/deploy.sh
