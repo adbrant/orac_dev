@@ -28,8 +28,8 @@
 #X obj 716 402 t f f;
 #X obj 563 530 lop~ 4000;
 #X obj 648 446 hip~ 3;
-#X obj 291 487 r wdelay_mix-\$1;
-#X obj 712 380 r wdelay_feedback-\$1;
+#X obj 291 472 r wdelay_mix-\$1;
+#X obj 721 363 r wdelay_feedback-\$1;
 #X obj 619 507 r wdelay_pfilt-\$1;
 #X obj 679 25 r wdelay_len-\$1;
 #X obj 802 28 r wdelay_dir-\$1;
@@ -43,7 +43,7 @@
 #X obj 979 198 mtof;
 #X obj 976 219 / 8.1758;
 #X text 909 330 F(forward) = (mtof(IN)/mtof(0)-1)/Delay F(reverse)
-= (-mtof(IN)/mtof(0)-1)/Delay;
+= (-mtof(IN)/mtof(0)-1)/Delay, f 51;
 #X obj 1068 250 - 1;
 #X obj 1062 232 * -1;
 #X obj 967 246 - 1;
@@ -224,6 +224,8 @@
 #X connect 14 0 13 0;
 #X restore 20 494 pd expressionpedal;
 #X obj 637 605 delwrite~ del_line-\$1 12000;
+#X obj 722 382 / 100;
+#X obj 293 497 / 100;
 #X connect 0 0 1 0;
 #X connect 0 0 11 0;
 #X connect 0 0 42 0;
@@ -250,8 +252,8 @@
 #X connect 20 1 19 1;
 #X connect 21 0 75 0;
 #X connect 22 0 21 0;
-#X connect 23 0 18 0;
-#X connect 24 0 20 0;
+#X connect 23 0 105 0;
+#X connect 24 0 104 0;
 #X connect 25 0 21 1;
 #X connect 26 0 11 0;
 #X connect 26 0 42 0;
@@ -346,3 +348,5 @@
 #X connect 100 0 7 0;
 #X connect 100 1 97 0;
 #X connect 100 2 98 0;
+#X connect 104 0 20 0;
+#X connect 105 0 18 0;
