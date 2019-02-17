@@ -1,4 +1,4 @@
-#N canvas 743 190 1071 479 10;
+#N canvas 346 101 1071 479 10;
 #X declare -path externals;
 #X declare -path subpatches;
 #N canvas 302 457 1338 833 rack 0;
@@ -263,7 +263,7 @@
 #X obj 362 61 r exp;
 #X text 197 37 dummy targets;
 #X obj 550 63 declare -path externals;
-#N canvas 778 635 763 454 startup 0;
+#N canvas 388 107 763 454 startup 1;
 #X obj 175 39 r activeModule;
 #X obj 63 39 loadbang;
 #X obj 63 202 symbol m0;
@@ -282,10 +282,13 @@ being set \, as they are not loaded yet \, so here we repeat it after
 #X obj 211 151 s screenLine5;
 #X obj 331 129 int 0;
 #X obj 331 150 s led;
+#X msg 248 239 0;
+#X obj 248 271 s midiOutGate;
 #X connect 0 0 11 0;
 #X connect 1 0 3 0;
 #X connect 1 0 12 0;
 #X connect 1 0 14 0;
+#X connect 1 0 16 0;
 #X connect 2 0 5 0;
 #X connect 3 0 6 0;
 #X connect 5 0 4 0;
@@ -297,5 +300,6 @@ being set \, as they are not loaded yet \, so here we repeat it after
 #X connect 11 0 2 1;
 #X connect 12 0 13 0;
 #X connect 14 0 15 0;
+#X connect 16 0 17 0;
 #X restore 114 9 pd startup;
 #X obj 550 86 declare -path subpatches;
