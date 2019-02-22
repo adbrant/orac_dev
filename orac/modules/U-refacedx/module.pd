@@ -1,0 +1,52 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 304 186 r notesIn-\$1;
+#X obj 304 491 s notesOut-\$1;
+#X obj 23 9 r loaddefs-\$1;
+#X msg 23 76 loaddefinitions \$1;
+#X obj 181 9 r loadbang-\$1;
+#X obj 181 76 print loading definiton for \$1;
+#X obj 23 41 symbol;
+#X obj 25 186 inlet~ inL-\$1;
+#X obj 135 186 inlet~ inR-\$1;
+#X obj 27 491 outlet~ outL-\$1;
+#X obj 136 491 outlet~ outR-\$1;
+#X obj 424 185 r auxIn-\$1;
+#X obj 423 208 r expIn-\$1;
+#X obj 423 233 r fsIn-\$1;
+#X text 446 35 C&G basic polyphonic patch with 8 voices;
+#X obj 29 406 +~;
+#X obj 137 407 +~;
+#X obj 24 112 KontrolModule \$1 U-micro;
+#X obj 179 36 print loaded:microtonal into \$1, f 35;
+#X obj 420 294 ctlin;
+#X obj 377 337 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 58 256;
+#X obj 446 338 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 80 256;
+#X obj 523 331 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 1 256;
+#X obj 526 439 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 108 256;
+#X obj 628 516 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 665 393 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 6 256;
+#X obj 602 472 ctlout;
+#X obj 85 1166 sysexin;
+#X obj 801 316 rfdx \$0;
+#X connect 0 0 1 0;
+#X connect 2 0 6 0;
+#X connect 2 0 5 0;
+#X connect 3 0 17 0;
+#X connect 4 0 18 0;
+#X connect 6 0 3 0;
+#X connect 7 0 15 0;
+#X connect 8 0 16 0;
+#X connect 15 0 9 0;
+#X connect 16 0 10 0;
+#X connect 19 0 20 0;
+#X connect 19 1 21 0;
+#X connect 19 2 22 0;
+#X connect 21 0 26 1;
+#X connect 23 0 26 0;
+#X connect 25 0 26 2;

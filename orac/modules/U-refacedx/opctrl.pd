@@ -1,0 +1,15 @@
+#N canvas 0 118 1364 725 10;
+#X obj 316 330 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 286 112 sysctrl level_\$2 0 127 \$1 49 \$2 18 0 127;
+#X obj 286 176 sysctrl lfodep_\$2 0 40 \$1 49 \$2 14;
+#X obj 818 173 sysctrl fine_\$2 0 99 \$1 49 \$2 23;
+#X obj 105 111 sysctrl fb_\$2 0 127 \$1 49 \$2 19 0 127;
+#X obj 819 111 sysctrl coarse_\$2 0 31 \$1 49 \$2 22 0 6;
+#X obj 465 110 sysctrl detune_\$2 0 127 \$1 49 \$2 24 32 96;
+#X obj 107 179 sysctrl fbtype_\$2 0 1 \$1 49 \$2 20 0 1;
+#X obj 465 175 sysctrl pmd_\$2 0 1 \$1 49 \$2 15 0 1;
+#X obj 471 371;
+#X obj 642 110 sysctrl peg_\$2 0 1 \$1 49 \$2 16 0 1;
+#X obj 642 175 sysctrl fmode_\$2 0 1 \$1 49 \$2 21 0 0;
+#X coords 0 -1 1 1 900 150 1 100 100;

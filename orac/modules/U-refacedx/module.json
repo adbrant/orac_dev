@@ -1,0 +1,11 @@
+{
+    "name" : "U-micro",
+    "display" : "microtuner",
+    "parameters" :  [ 
+        ["int","microtuning","Tuning",0,16,0]	
+    ],
+    "pages" : [ 
+        ["pg_micro", "Microtuning", ["microtuning"]]
+    ]
+}
+

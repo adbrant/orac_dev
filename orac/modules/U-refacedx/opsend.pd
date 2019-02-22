@@ -1,0 +1,10 @@
+#N canvas 195 104 450 300 10;
+#X obj 90 61 inlet;
+#X obj 65 151 s \$2_1-\$1;
+#X obj 169 173 s \$2_2-\$1;
+#X obj 165 132 s \$2_3-\$1;
+#X obj 183 221 s \$2_0-\$1;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 0 0 4 0;
