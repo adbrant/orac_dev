@@ -46,7 +46,7 @@
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
         ["pg_2","Delay",["wdelay_temposync","wdelay_cent","wdelay_dir","wdelay_pfilt"]],
         ["pg_3","Control",["wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
-        ["pg_loop","Freeze",["wdelay_len","wdelay_overdub","wdelay_freezegate","wdelay_gatear"]],
+        ["pg_loop","Freeze",["wdelay_overdub","wdelay_freezegate","wdelay_gatear"]],
         ["pg_35","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate"]],                
         ["pg_4","Tweaks",["wdelay_pitchsmooth","wdelay_lensmooth", "wdelay_gatereset","wdelay_env"]],        
         ["pg_5","Head Tuning",["wdelay_semi_1","wdelay_semi_2","wdelay_semi_3"]],
