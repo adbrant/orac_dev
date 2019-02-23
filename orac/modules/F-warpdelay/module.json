@@ -14,8 +14,7 @@
         ["int","wdelay_midipoly","Mono/Poly",0,1,0],
         ["int","wdelay_midigate","MIDI Gate",0,1,0],
         ["float","wdelay_gatear","Gate Speed",0,100,80],
-        ["int","wdelay_quantize","Quantize",0,5,0], 
-        ["bool","wdelay_stepquantize","Quantize Length",0], 
+        ["int","wdelay_quantize","Pitch Quantize",0,5,0], 
         ["float","wdelay_drift","Drift",0,3,0],
         ["int","wdelay_exprange","Expr Range",0,36,0],
         ["bool","wdelay_exprq","Expr Quant",1],
@@ -45,16 +44,17 @@
     ],
     "pages" : [ 
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
-        ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_env","wdelay_pfilt"]],
+        ["pg_2","Delay",["wdelay_temposync","wdelay_cent","wdelay_dir","wdelay_pfilt"]],
         ["pg_3","Control",["wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
-        ["pg_4","Mod",["wdelay_drift","wdelay_pitchsmooth","wdelay_lensmooth"]],
-        ["pg_35","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate","wdelay_gatear"]],        
-        ["pg_loop","Looper",["wdelay_temposync", "wdelay_gatereset","wdelay_overdub","wdelay_freezegate"]],      
+        ["pg_loop","Freeze",["wdelay_len","wdelay_overdub","wdelay_freezegate","wdelay_gatear"]],
+        ["pg_35","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate",]],                
+        ["pg_4","Tweaks",["wdelay_pitchsmooth","wdelay_lensmooth", "wdelay_gatereset","wdelay_env"]],        
         ["pg_5","Head Tuning",["wdelay_semi_1","wdelay_semi_2","wdelay_semi_3"]],
         ["pg_6","Head Len",["wdelay_len_1","wdelay_len_2","wdelay_len_3"]],
         ["pg_7","Head Gain",["wdelay_gain_1","wdelay_gain_2","wdelay_gain_3"]],
         ["pg_8","Head Pan",["wdelay_pan_1","wdelay_pan_2","wdelay_pan_3"]],
-        ["pg_9","Head Detune",["wdelay_cent_1","wdelay_cent_2","wdelay_cent_3"]]
+        ["pg_9","Head Detune",["wdelay_cent_1","wdelay_cent_2","wdelay_cent_3"]],
+        ["pg_mod","Mod",["wdelay_drift"]],    
 
 
     ]
