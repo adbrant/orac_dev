@@ -1,4 +1,4 @@
-#N canvas 6 2 1345 714 10;
+#N canvas 12 2 1345 714 10;
 #X obj 347 433 *~;
 #X obj 329 566 outlet~;
 #X obj 148 305 vd~ del_line-\$1;
@@ -32,7 +32,7 @@
 #X obj 846 134 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 408 495 / 100;
-#N canvas -6 1 1356 714 fcalc 0;
+#N canvas -2 12 1356 625 fcalc 1;
 #X obj 365 418 sig~ 1;
 #X obj 782 355 sig~ 1000;
 #X obj 693 241 r wdelay_len-\$1;
@@ -197,6 +197,7 @@
 ;
 #X obj 766 55 inlet;
 #X msg 763 149 0;
+#X obj 356 675 +~ 3;
 #X connect 0 0 17 0;
 #X connect 1 0 28 0;
 #X connect 2 0 67 0;
@@ -246,7 +247,7 @@
 #X connect 39 0 75 0;
 #X connect 40 0 41 0;
 #X connect 41 0 44 0;
-#X connect 42 0 60 0;
+#X connect 42 0 85 0;
 #X connect 43 0 42 0;
 #X connect 44 0 39 0;
 #X connect 45 0 44 1;
@@ -292,6 +293,7 @@
 #X connect 81 0 71 0;
 #X connect 83 0 84 0;
 #X connect 84 0 39 1;
+#X connect 85 0 60 0;
 #X restore 226 252 pd fcalc;
 #X obj 482 34 r wdelay_freezegate-\$1;
 #X obj 446 10 r freeze-\$1;
