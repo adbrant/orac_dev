@@ -1,4 +1,4 @@
-#N canvas 0 50 1364 725 10;
+#N canvas -8 -8 1360 725 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 671 s notesOut-\$1;
 #X obj 23 9 r loaddefs-\$1;
@@ -121,5 +121,4 @@
 #X connect 21 0 23 0;
 #X connect 21 1 22 0;
 #X connect 21 2 24 0;
-#X connect 25 0 14 2;
 #X connect 25 0 26 0;
