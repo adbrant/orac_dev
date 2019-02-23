@@ -43,7 +43,7 @@
         
     ],
     "pages" : [ 
-        ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
+        ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len_raw","wdelay_mix"]],
         ["pg_2","Delay",["wdelay_temposync","wdelay_cent","wdelay_dir","wdelay_pfilt"]],
         ["pg_3","Control",["wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
         ["pg_loop","Freeze",["wdelay_overdub","wdelay_freezegate","wdelay_gatear"]],
