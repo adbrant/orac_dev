@@ -6,7 +6,7 @@
         ["int","wdelay_cent","Cents",-50,50,0],
         ["pct","wdelay_feedback","Feedback",0,150,25],
         ["pct","wdelay_mix","Dry/Wet",0,100,50],
-        ["int","wdelay_len","Length ",25,10000,1000],
+        ["int","wdelay_len_raw","Length ",25,10000,1000],
         ["int","wdelay_dir","FW/RV",0,1,0],
         ["int","wdelay_heads","Heads",1,3,3],
         ["float","wdelay_pfilt","Prefilt",0,15000,12000],        
@@ -36,14 +36,20 @@
         ["pct","wdelay_len_3","Head 3 Len", 1,100,100],
         ["int","wdelay_cent_1","Head 1 Cents",-50,50,0],
         ["int","wdelay_cent_2","Head 2 Cents",-50,50,0],
-        ["int","wdelay_cent_3","Head 3 Cents",-50,50,0]      
+        ["int","wdelay_cent_3","Head 3 Cents",-50,50,0],
+        ["int","wdelay_freezegate","Freeze Gate",0,1,0],
+        ["int","wdelay_gatereset","Reset on Gate",0,1,1],
+        ["int","wdelay_temposync","Tempo Sync",0,1,0],
+        ["int","wdelay_overdub","Overdub",0,1,0]
+        
     ],
     "pages" : [ 
         ["pg_main","Main",["wdelay_semi","wdelay_feedback","wdelay_len","wdelay_mix"]],
         ["pg_2","Delay",["wdelay_cent","wdelay_dir","wdelay_env","wdelay_pfilt"]],
         ["pg_3","Control",["wdelay_quantize","wdelay_exprange","wdelay_exprq"]],
         ["pg_4","Mod",["wdelay_drift","wdelay_pitchsmooth","wdelay_lensmooth"]],
-        ["pg_35","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate","wdelay_gatear"]],
+        ["pg_35","MIDI",["wdelay_midictrl","wdelay_midipoly","wdelay_midigate","wdelay_gatear"]],        
+        ["pg_loop","Looper",["wdelay_temposync", "wdelay_gatereset","wdelay_overdub","wdelay_freezegate"]],      
         ["pg_5","Head Tuning",["wdelay_semi_1","wdelay_semi_2","wdelay_semi_3"]],
         ["pg_6","Head Len",["wdelay_len_1","wdelay_len_2","wdelay_len_3"]],
         ["pg_7","Head Gain",["wdelay_gain_1","wdelay_gain_2","wdelay_gain_3"]],
