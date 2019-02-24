@@ -1,4 +1,4 @@
-#N canvas 4 35 1345 685 10;
+#N canvas 6 50 1345 685 10;
 #X obj 620 391 +~;
 #X obj 635 417 *~ 0.01;
 #X obj 132 303 +~;
@@ -25,7 +25,7 @@
 #X obj 424 270 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 452 270 freeze;
-#X obj 793 495 r wdelay_len-\$1;
+#X obj 683 304 r wdelay_len-\$1;
 #X obj 793 534 delread~ del_line-\$1 8000;
 #X obj 426 289 s freeze-\$1;
 #X obj 894 383 r freeze-\$1;
@@ -110,7 +110,7 @@
 #X obj 1106 258 int;
 #X obj 1130 313 * 1;
 #X obj 1141 359 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 4000 256;
+10 -262144 -1 -1 2000 256;
 #X obj 1132 278 max 1;
 #X obj 1201 122 r wdelay_temposync-\$1;
 #X obj 1058 46 r wdelay_len_raw-\$1;
@@ -123,15 +123,17 @@
 #X obj 1217 148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 1187 301 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 8 256;
+10 -262144 -1 -1 4 256;
 #X obj 1217 358 s aux-label-\$1;
 #X msg 1218 326 Beats: \$1;
 #X obj 833 473 lop~ 10;
 #X obj 931 477 lop~ 10;
-#X obj 607 232 wdel \$1 2;
-#X obj 727 230 wdel \$1 3;
 #X obj 410 458 *~ 0.5;
 #X obj 430 478 *~ 0.5;
+#X obj 743 453 f 0;
+#X obj 607 232 wdel \$1 2;
+#X obj 727 230 wdel \$1 3;
+#X obj 691 351 delay 1000;
 #X connect 0 0 1 0;
 #X connect 1 0 13 0;
 #X connect 2 0 32 0;
@@ -160,8 +162,8 @@
 #X connect 22 0 23 0;
 #X connect 23 0 27 0;
 #X connect 23 0 36 0;
-#X connect 25 0 26 0;
-#X connect 25 0 56 0;
+#X connect 25 0 90 1;
+#X connect 25 0 93 0;
 #X connect 26 0 33 0;
 #X connect 28 0 29 0;
 #X connect 28 0 31 0;
@@ -181,8 +183,8 @@
 #X connect 42 0 0 0;
 #X connect 42 1 43 0;
 #X connect 42 2 44 0;
-#X connect 43 0 90 0;
-#X connect 44 0 91 0;
+#X connect 43 0 88 0;
+#X connect 44 0 89 0;
 #X connect 48 0 11 0;
 #X connect 49 0 9 0;
 #X connect 51 0 53 0;
@@ -227,11 +229,14 @@
 #X connect 86 0 32 1;
 #X connect 87 0 33 1;
 #X connect 87 0 52 1;
-#X connect 88 0 0 0;
-#X connect 88 1 43 0;
-#X connect 88 2 44 0;
-#X connect 89 0 0 0;
-#X connect 89 1 43 0;
-#X connect 89 2 44 0;
-#X connect 90 0 8 1;
-#X connect 91 0 7 1;
+#X connect 88 0 8 1;
+#X connect 89 0 7 1;
+#X connect 90 0 26 0;
+#X connect 90 0 56 0;
+#X connect 91 0 0 0;
+#X connect 91 1 43 0;
+#X connect 91 2 44 0;
+#X connect 92 0 0 0;
+#X connect 92 1 43 0;
+#X connect 92 2 44 0;
+#X connect 93 0 90 0;
