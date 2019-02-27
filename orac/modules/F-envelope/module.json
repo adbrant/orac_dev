@@ -1,0 +1,11 @@
+{
+    "name" : "F-envelope",
+    "display" : "Envelope",
+    "parameters" :  [ 
+
+    ],
+    "pages" : [ 
+        ["pg_main","Main",[]]
+    ]
+}
+
