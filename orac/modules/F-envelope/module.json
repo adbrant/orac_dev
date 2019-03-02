@@ -2,10 +2,16 @@
     "name" : "F-envelope",
     "display" : "Envelope",
     "parameters" :  [ 
-
+        ["int","midi","MIDI Control",0,1,0],
+        ["float","attack","Attack",5,3000,50],
+        ["float","threshold","Threshold",0,100,50],
+        ["float","decay","Decay",5,3000,50],
+        ["float","sustain","Sustain",0,100,100],
+        ["float","release","Release",5,3000,50]
     ],
     "pages" : [ 
-        ["pg_main","Main",[]]
+        ["pg_main","Main",["attack","release","threshold" ]],
+        ["pg_env","Extra",["midi","decay","sustain"]]
     ]
 }
 

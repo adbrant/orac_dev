@@ -1,4 +1,4 @@
-#N canvas 29 114 1364 580 10;
+#N canvas -149 87 1046 580 10;
 #X obj 374 137 sel 1;
 #X obj 466 136 sel 0;
 #X obj 449 363 f;
@@ -10,7 +10,7 @@
 #X obj 458 465 lop~ 25;
 #X floatatom 404 304 5 0 0 0 - - -, f 5;
 #X floatatom 504 276 5 0 0 0 - - -, f 5;
-#X floatatom 687 343 5 0 0 0 - - -, f 5;
+#X floatatom 687 322 5 0 0 0 - - -, f 5;
 #X floatatom 683 206 5 0 0 0 - - -, f 5;
 #X obj 348 22 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -22,7 +22,7 @@
 #X obj 457 510 outlet~;
 #X obj 398 277 r attack-\$1;
 #X obj 678 168 r release-\$1;
-#X obj 846 232 r sustain-\$1;
+#X obj 722 263 r sustain-\$1;
 #X obj 499 184 r decay-\$1;
 #X msg 371 401 1 \$1 0;
 #X msg 446 398 0 \$1 1;
