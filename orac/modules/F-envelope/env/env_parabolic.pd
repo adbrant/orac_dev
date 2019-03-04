@@ -1,4 +1,4 @@
-#N canvas -149 87 1046 580 10;
+#N canvas 4 84 1046 580 10;
 #X obj 374 137 sel 1;
 #X obj 466 136 sel 0;
 #X obj 449 363 f;
@@ -27,6 +27,7 @@
 #X msg 371 401 1 \$1 0;
 #X msg 446 398 0 \$1 1;
 #X msg 540 409 \$1 \$2 1;
+#X obj 688 352 / 100;
 #X connect 0 0 3 0;
 #X connect 0 0 16 0;
 #X connect 1 0 2 0;
@@ -41,7 +42,7 @@
 #X connect 9 0 3 1;
 #X connect 9 0 4 1;
 #X connect 10 0 5 1;
-#X connect 11 0 6 1;
+#X connect 11 0 26 0;
 #X connect 12 0 2 1;
 #X connect 13 0 15 0;
 #X connect 14 0 8 0;
@@ -56,3 +57,4 @@
 #X connect 23 0 14 0;
 #X connect 24 0 14 0;
 #X connect 25 0 14 0;
+#X connect 26 0 6 1;
