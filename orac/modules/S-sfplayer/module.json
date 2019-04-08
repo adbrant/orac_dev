@@ -1,0 +1,18 @@
+{
+    "name" : "S-sfplayer",
+    "display" : "sfplayer",
+    "parameters" :  [ 
+        ["float","sf_select","Soundfont Select",0,100,0],
+        ["int","sf_semitone","Semitone",-24,24,0],
+        ["int","sf_cent","Fine Tune",-50,50,0],
+        ["float","sf_pan","Pan",-1,1,0],
+        ["float","sf_vol","Volume",0,1,0.7],
+        ["int","sf_bank","Bank",1,8,1],
+        ["float","sf_slot","Slot",1,16,1]         
+    ],
+    "pages" : [ 
+        ["pg_main","Page 1",["sf_select","sf_bank","sf_slot","sf_vol"]],
+        ["pg_pitch","Page 2",["samp_semitone","samp_cent","sf_pan"]]
+    ]
+}
+
