@@ -2,7 +2,7 @@
     "name" : "S-sfplayer",
     "display" : "sfplayer",
     "parameters" :  [ 
-        ["float","sf_select","Soundfont Select",0,100,0],
+        ["float","sf_select","SF Select",0,100,0],
         ["int","sf_semitone","Semitone",-24,24,0],
         ["int","sf_cent","Fine Tune",-50,50,0],
         ["float","sf_pan","Pan",-1,1,0],
